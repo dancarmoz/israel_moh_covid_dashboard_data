@@ -1,64 +1,64 @@
 {
   "isolatedDoctorsAndNurses": {
-    "isolated_Doctors": 364, 
-    "isolated_Nurses": 651, 
-    "Verified_Nurses": 124, 
-    "Verified_Doctors": 38, 
-    "isolated_Other_Sector": 1450
+    "isolated_Doctors": 431, 
+    "isolated_Nurses": 718, 
+    "Verified_Nurses": 118, 
+    "Verified_Doctors": 44, 
+    "isolated_Other_Sector": 1490
   }, 
   "lastUpdate": {
-    "lastUpdate": "2020-07-08T07:31:44.197Z"
+    "lastUpdate": "2020-07-08T15:51:46.940Z"
   }, 
   "infectedByAgeAndGenderPublic": [
     {
       "section": 0, 
-      "male": 1290, 
-      "female": 1238
+      "male": 1304, 
+      "female": 1261
     }, 
     {
       "section": 10, 
-      "male": 3304, 
-      "female": 2544
+      "male": 3356, 
+      "female": 2586
     }, 
     {
       "section": 20, 
-      "male": 3796, 
-      "female": 3165
+      "male": 3840, 
+      "female": 3223
     }, 
     {
       "section": 30, 
-      "male": 2515, 
-      "female": 1998
+      "male": 2562, 
+      "female": 2037
     }, 
     {
       "section": 40, 
-      "male": 2124, 
-      "female": 1884
+      "male": 2163, 
+      "female": 1921
     }, 
     {
       "section": 50, 
-      "male": 1769, 
-      "female": 1590
+      "male": 1793, 
+      "female": 1608
     }, 
     {
       "section": 60, 
-      "male": 1305, 
-      "female": 1007
+      "male": 1319, 
+      "female": 1023
     }, 
     {
       "section": 70, 
-      "male": 688, 
-      "female": 551
+      "male": 694, 
+      "female": 560
     }, 
     {
       "section": 80, 
-      "male": 297, 
-      "female": 379
+      "male": 300, 
+      "female": 384
     }, 
     {
       "section": 90, 
-      "male": 93, 
-      "female": 211
+      "male": 94, 
+      "female": 212
     }
   ], 
   "patientsPerDate": [
@@ -514,13 +514,13 @@
       "Counthospitalized": 619, 
       "Counthospitalized_without_release": 570, 
       "StandardOccupancy": 0.2666953899181387, 
-      "CountMediumStatus": 105, 
+      "CountMediumStatus": 104, 
       "CountBreath": 54, 
       "num_visits": 3886, 
       "patients_home": 4212, 
       "CountHardStatus": 87, 
       "new_hospitalized": 122, 
-      "CountEasyStatus": 427, 
+      "CountEasyStatus": 428, 
       "patients_hotel": 0, 
       "date": "2020-03-30T00:00:00.000Z", 
       "CountDeath": 1, 
@@ -981,7 +981,7 @@
       "CountMediumStatus": 85, 
       "CountBreath": 101, 
       "num_visits": 4854, 
-      "patients_home": 5176, 
+      "patients_home": 5175, 
       "CountHardStatus": 128, 
       "new_hospitalized": 28, 
       "CountEasyStatus": 177, 
@@ -997,7 +997,7 @@
       "CountMediumStatus": 87, 
       "CountBreath": 96, 
       "num_visits": 4207, 
-      "patients_home": 4833, 
+      "patients_home": 4832, 
       "CountHardStatus": 121, 
       "new_hospitalized": 23, 
       "CountEasyStatus": 168, 
@@ -1013,7 +1013,7 @@
       "CountMediumStatus": 88, 
       "CountBreath": 90, 
       "num_visits": 5673, 
-      "patients_home": 4589, 
+      "patients_home": 4588, 
       "CountHardStatus": 113, 
       "new_hospitalized": 19, 
       "CountEasyStatus": 176, 
@@ -1029,7 +1029,7 @@
       "CountMediumStatus": 85, 
       "CountBreath": 89, 
       "num_visits": 4551, 
-      "patients_home": 4049, 
+      "patients_home": 4048, 
       "CountHardStatus": 111, 
       "new_hospitalized": 20, 
       "CountEasyStatus": 156, 
@@ -1045,7 +1045,7 @@
       "CountMediumStatus": 67, 
       "CountBreath": 90, 
       "num_visits": 3973, 
-      "patients_home": 3978, 
+      "patients_home": 3977, 
       "CountHardStatus": 112, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 155, 
@@ -1061,7 +1061,7 @@
       "CountMediumStatus": 72, 
       "CountBreath": 84, 
       "num_visits": 5982, 
-      "patients_home": 3899, 
+      "patients_home": 3898, 
       "CountHardStatus": 102, 
       "new_hospitalized": 14, 
       "CountEasyStatus": 149, 
@@ -1077,7 +1077,7 @@
       "CountMediumStatus": 74, 
       "CountBreath": 78, 
       "num_visits": 5531, 
-      "patients_home": 3644, 
+      "patients_home": 3643, 
       "CountHardStatus": 98, 
       "new_hospitalized": 19, 
       "CountEasyStatus": 147, 
@@ -1093,7 +1093,7 @@
       "CountMediumStatus": 66, 
       "CountBreath": 72, 
       "num_visits": 5408, 
-      "patients_home": 3402, 
+      "patients_home": 3401, 
       "CountHardStatus": 92, 
       "new_hospitalized": 9, 
       "CountEasyStatus": 119, 
@@ -1109,7 +1109,7 @@
       "CountMediumStatus": 63, 
       "CountBreath": 70, 
       "num_visits": 5362, 
-      "patients_home": 3317, 
+      "patients_home": 3316, 
       "CountHardStatus": 89, 
       "new_hospitalized": 15, 
       "CountEasyStatus": 117, 
@@ -1125,7 +1125,7 @@
       "CountMediumStatus": 62, 
       "CountBreath": 71, 
       "num_visits": 5634, 
-      "patients_home": 3134, 
+      "patients_home": 3133, 
       "CountHardStatus": 85, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 110, 
@@ -1141,7 +1141,7 @@
       "CountMediumStatus": 54, 
       "CountBreath": 64, 
       "num_visits": 4819, 
-      "patients_home": 2926, 
+      "patients_home": 2925, 
       "CountHardStatus": 78, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 107, 
@@ -1157,7 +1157,7 @@
       "CountMediumStatus": 50, 
       "CountBreath": 64, 
       "num_visits": 3270, 
-      "patients_home": 2994, 
+      "patients_home": 2993, 
       "CountHardStatus": 78, 
       "new_hospitalized": 10, 
       "CountEasyStatus": 111, 
@@ -1173,7 +1173,7 @@
       "CountMediumStatus": 52, 
       "CountBreath": 66, 
       "num_visits": 6334, 
-      "patients_home": 2907, 
+      "patients_home": 2906, 
       "CountHardStatus": 74, 
       "new_hospitalized": 14, 
       "CountEasyStatus": 117, 
@@ -1189,7 +1189,7 @@
       "CountMediumStatus": 55, 
       "CountBreath": 60, 
       "num_visits": 5506, 
-      "patients_home": 2502, 
+      "patients_home": 2501, 
       "CountHardStatus": 69, 
       "new_hospitalized": 9, 
       "CountEasyStatus": 102, 
@@ -1205,7 +1205,7 @@
       "CountMediumStatus": 54, 
       "CountBreath": 56, 
       "num_visits": 5597, 
-      "patients_home": 2477, 
+      "patients_home": 2476, 
       "CountHardStatus": 65, 
       "new_hospitalized": 10, 
       "CountEasyStatus": 102, 
@@ -1221,7 +1221,7 @@
       "CountMediumStatus": 49, 
       "CountBreath": 53, 
       "num_visits": 5582, 
-      "patients_home": 2423, 
+      "patients_home": 2422, 
       "CountHardStatus": 61, 
       "new_hospitalized": 10, 
       "CountEasyStatus": 88, 
@@ -1237,7 +1237,7 @@
       "CountMediumStatus": 44, 
       "CountBreath": 52, 
       "num_visits": 5986, 
-      "patients_home": 2258, 
+      "patients_home": 2257, 
       "CountHardStatus": 61, 
       "new_hospitalized": 6, 
       "CountEasyStatus": 84, 
@@ -1253,7 +1253,7 @@
       "CountMediumStatus": 44, 
       "CountBreath": 52, 
       "num_visits": 5174, 
-      "patients_home": 2142, 
+      "patients_home": 2141, 
       "CountHardStatus": 61, 
       "new_hospitalized": 2, 
       "CountEasyStatus": 77, 
@@ -1269,7 +1269,7 @@
       "CountMediumStatus": 41, 
       "CountBreath": 51, 
       "num_visits": 4525, 
-      "patients_home": 2111, 
+      "patients_home": 2110, 
       "CountHardStatus": 60, 
       "new_hospitalized": 4, 
       "CountEasyStatus": 77, 
@@ -1285,7 +1285,7 @@
       "CountMediumStatus": 40, 
       "CountBreath": 45, 
       "num_visits": 6784, 
-      "patients_home": 2013, 
+      "patients_home": 2012, 
       "CountHardStatus": 55, 
       "new_hospitalized": 9, 
       "CountEasyStatus": 91, 
@@ -1301,7 +1301,7 @@
       "CountMediumStatus": 43, 
       "CountBreath": 43, 
       "num_visits": 6222, 
-      "patients_home": 1784, 
+      "patients_home": 1783, 
       "CountHardStatus": 52, 
       "new_hospitalized": 3, 
       "CountEasyStatus": 76, 
@@ -1317,7 +1317,7 @@
       "CountMediumStatus": 44, 
       "CountBreath": 40, 
       "num_visits": 6324, 
-      "patients_home": 1736, 
+      "patients_home": 1735, 
       "CountHardStatus": 51, 
       "new_hospitalized": 7, 
       "CountEasyStatus": 64, 
@@ -1333,7 +1333,7 @@
       "CountMediumStatus": 40, 
       "CountBreath": 41, 
       "num_visits": 6272, 
-      "patients_home": 1669, 
+      "patients_home": 1668, 
       "CountHardStatus": 46, 
       "new_hospitalized": 4, 
       "CountEasyStatus": 67, 
@@ -1349,7 +1349,7 @@
       "CountMediumStatus": 32, 
       "CountBreath": 37, 
       "num_visits": 6562, 
-      "patients_home": 1531, 
+      "patients_home": 1530, 
       "CountHardStatus": 47, 
       "new_hospitalized": 8, 
       "CountEasyStatus": 70, 
@@ -1365,7 +1365,7 @@
       "CountMediumStatus": 33, 
       "CountBreath": 37, 
       "num_visits": 5412, 
-      "patients_home": 1438, 
+      "patients_home": 1437, 
       "CountHardStatus": 47, 
       "new_hospitalized": 5, 
       "CountEasyStatus": 65, 
@@ -1381,7 +1381,7 @@
       "CountMediumStatus": 35, 
       "CountBreath": 37, 
       "num_visits": 4776, 
-      "patients_home": 1453, 
+      "patients_home": 1452, 
       "CountHardStatus": 47, 
       "new_hospitalized": 3, 
       "CountEasyStatus": 66, 
@@ -1397,7 +1397,7 @@
       "CountMediumStatus": 39, 
       "CountBreath": 34, 
       "num_visits": 7118, 
-      "patients_home": 1374, 
+      "patients_home": 1373, 
       "CountHardStatus": 43, 
       "new_hospitalized": 0, 
       "CountEasyStatus": 64, 
@@ -1413,7 +1413,7 @@
       "CountMediumStatus": 32, 
       "CountBreath": 29, 
       "num_visits": 6532, 
-      "patients_home": 1262, 
+      "patients_home": 1261, 
       "CountHardStatus": 41, 
       "new_hospitalized": 8, 
       "CountEasyStatus": 57, 
@@ -1429,7 +1429,7 @@
       "CountMediumStatus": 37, 
       "CountBreath": 32, 
       "num_visits": 6477, 
-      "patients_home": 1285, 
+      "patients_home": 1284, 
       "CountHardStatus": 36, 
       "new_hospitalized": 4, 
       "CountEasyStatus": 48, 
@@ -1445,7 +1445,7 @@
       "CountMediumStatus": 38, 
       "CountBreath": 37, 
       "num_visits": 6565, 
-      "patients_home": 1231, 
+      "patients_home": 1230, 
       "CountHardStatus": 39, 
       "new_hospitalized": 4, 
       "CountEasyStatus": 42, 
@@ -1461,7 +1461,7 @@
       "CountMediumStatus": 36, 
       "CountBreath": 34, 
       "num_visits": 5574, 
-      "patients_home": 1165, 
+      "patients_home": 1164, 
       "CountHardStatus": 36, 
       "new_hospitalized": 7, 
       "CountEasyStatus": 39, 
@@ -1477,7 +1477,7 @@
       "CountMediumStatus": 36, 
       "CountBreath": 37, 
       "num_visits": 4730, 
-      "patients_home": 1257, 
+      "patients_home": 1256, 
       "CountHardStatus": 39, 
       "new_hospitalized": 5, 
       "CountEasyStatus": 40, 
@@ -1493,7 +1493,7 @@
       "CountMediumStatus": 43, 
       "CountBreath": 33, 
       "num_visits": 4954, 
-      "patients_home": 1248, 
+      "patients_home": 1247, 
       "CountHardStatus": 35, 
       "new_hospitalized": 5, 
       "CountEasyStatus": 41, 
@@ -1509,7 +1509,7 @@
       "CountMediumStatus": 47, 
       "CountBreath": 31, 
       "num_visits": 7352, 
-      "patients_home": 1275, 
+      "patients_home": 1274, 
       "CountHardStatus": 35, 
       "new_hospitalized": 5, 
       "CountEasyStatus": 40, 
@@ -1525,7 +1525,7 @@
       "CountMediumStatus": 45, 
       "CountBreath": 30, 
       "num_visits": 6487, 
-      "patients_home": 1287, 
+      "patients_home": 1286, 
       "CountHardStatus": 34, 
       "new_hospitalized": 12, 
       "CountEasyStatus": 44, 
@@ -1541,7 +1541,7 @@
       "CountMediumStatus": 45, 
       "CountBreath": 29, 
       "num_visits": 6493, 
-      "patients_home": 1371, 
+      "patients_home": 1370, 
       "CountHardStatus": 29, 
       "new_hospitalized": 12, 
       "CountEasyStatus": 45, 
@@ -1557,7 +1557,7 @@
       "CountMediumStatus": 42, 
       "CountBreath": 25, 
       "num_visits": 6487, 
-      "patients_home": 1404, 
+      "patients_home": 1403, 
       "CountHardStatus": 28, 
       "new_hospitalized": 8, 
       "CountEasyStatus": 44, 
@@ -1573,7 +1573,7 @@
       "CountMediumStatus": 37, 
       "CountBreath": 23, 
       "num_visits": 6894, 
-      "patients_home": 1471, 
+      "patients_home": 1470, 
       "CountHardStatus": 30, 
       "new_hospitalized": 11, 
       "CountEasyStatus": 55, 
@@ -1589,7 +1589,7 @@
       "CountMediumStatus": 41, 
       "CountBreath": 23, 
       "num_visits": 5712, 
-      "patients_home": 1556, 
+      "patients_home": 1555, 
       "CountHardStatus": 29, 
       "new_hospitalized": 8, 
       "CountEasyStatus": 46, 
@@ -1621,7 +1621,7 @@
       "CountMediumStatus": 42, 
       "CountBreath": 23, 
       "num_visits": 7776, 
-      "patients_home": 1640, 
+      "patients_home": 1641, 
       "CountHardStatus": 29, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 49, 
@@ -1637,7 +1637,7 @@
       "CountMediumStatus": 46, 
       "CountBreath": 23, 
       "num_visits": 6607, 
-      "patients_home": 1757, 
+      "patients_home": 1758, 
       "CountHardStatus": 30, 
       "new_hospitalized": 17, 
       "CountEasyStatus": 54, 
@@ -1653,7 +1653,7 @@
       "CountMediumStatus": 44, 
       "CountBreath": 24, 
       "num_visits": 6812, 
-      "patients_home": 1884, 
+      "patients_home": 1885, 
       "CountHardStatus": 31, 
       "new_hospitalized": 10, 
       "CountEasyStatus": 55, 
@@ -1669,7 +1669,7 @@
       "CountMediumStatus": 44, 
       "CountBreath": 24, 
       "num_visits": 6900, 
-      "patients_home": 2023, 
+      "patients_home": 2024, 
       "CountHardStatus": 32, 
       "new_hospitalized": 24, 
       "CountEasyStatus": 57, 
@@ -1685,7 +1685,7 @@
       "CountMediumStatus": 41, 
       "CountBreath": 24, 
       "num_visits": 6902, 
-      "patients_home": 2083, 
+      "patients_home": 2084, 
       "CountHardStatus": 35, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 62, 
@@ -1701,7 +1701,7 @@
       "CountMediumStatus": 45, 
       "CountBreath": 25, 
       "num_visits": 5734, 
-      "patients_home": 2177, 
+      "patients_home": 2178, 
       "CountHardStatus": 34, 
       "new_hospitalized": 13, 
       "CountEasyStatus": 59, 
@@ -1717,7 +1717,7 @@
       "CountMediumStatus": 49, 
       "CountBreath": 26, 
       "num_visits": 5089, 
-      "patients_home": 2242, 
+      "patients_home": 2243, 
       "CountHardStatus": 35, 
       "new_hospitalized": 10, 
       "CountEasyStatus": 54, 
@@ -1733,7 +1733,7 @@
       "CountMediumStatus": 50, 
       "CountBreath": 23, 
       "num_visits": 7534, 
-      "patients_home": 2334, 
+      "patients_home": 2335, 
       "CountHardStatus": 32, 
       "new_hospitalized": 15, 
       "CountEasyStatus": 64, 
@@ -1749,7 +1749,7 @@
       "CountMediumStatus": 48, 
       "CountBreath": 25, 
       "num_visits": 6390, 
-      "patients_home": 2430, 
+      "patients_home": 2431, 
       "CountHardStatus": 36, 
       "new_hospitalized": 23, 
       "CountEasyStatus": 73, 
@@ -1765,7 +1765,7 @@
       "CountMediumStatus": 45, 
       "CountBreath": 26, 
       "num_visits": 6506, 
-      "patients_home": 2671, 
+      "patients_home": 2672, 
       "CountHardStatus": 38, 
       "new_hospitalized": 20, 
       "CountEasyStatus": 76, 
@@ -1781,7 +1781,7 @@
       "CountMediumStatus": 48, 
       "CountBreath": 29, 
       "num_visits": 5905, 
-      "patients_home": 2854, 
+      "patients_home": 2855, 
       "CountHardStatus": 36, 
       "new_hospitalized": 22, 
       "CountEasyStatus": 72, 
@@ -1797,7 +1797,7 @@
       "CountMediumStatus": 43, 
       "CountBreath": 28, 
       "num_visits": 6145, 
-      "patients_home": 3030, 
+      "patients_home": 3032, 
       "CountHardStatus": 39, 
       "new_hospitalized": 40, 
       "CountEasyStatus": 100, 
@@ -1813,7 +1813,7 @@
       "CountMediumStatus": 47, 
       "CountBreath": 29, 
       "num_visits": 5230, 
-      "patients_home": 3228, 
+      "patients_home": 3230, 
       "CountHardStatus": 39, 
       "new_hospitalized": 30, 
       "CountEasyStatus": 99, 
@@ -1829,7 +1829,7 @@
       "CountMediumStatus": 50, 
       "CountBreath": 28, 
       "num_visits": 4580, 
-      "patients_home": 3280, 
+      "patients_home": 3282, 
       "CountHardStatus": 40, 
       "new_hospitalized": 34, 
       "CountEasyStatus": 118, 
@@ -1845,7 +1845,7 @@
       "CountMediumStatus": 59, 
       "CountBreath": 29, 
       "num_visits": 6969, 
-      "patients_home": 3394, 
+      "patients_home": 3396, 
       "CountHardStatus": 45, 
       "new_hospitalized": 38, 
       "CountEasyStatus": 139, 
@@ -1861,7 +1861,7 @@
       "CountMediumStatus": 55, 
       "CountBreath": 29, 
       "num_visits": 6202, 
-      "patients_home": 3646, 
+      "patients_home": 3648, 
       "CountHardStatus": 44, 
       "new_hospitalized": 23, 
       "CountEasyStatus": 127, 
@@ -1877,7 +1877,7 @@
       "CountMediumStatus": 51, 
       "CountBreath": 26, 
       "num_visits": 5878, 
-      "patients_home": 3957, 
+      "patients_home": 3959, 
       "CountHardStatus": 40, 
       "new_hospitalized": 19, 
       "CountEasyStatus": 122, 
@@ -1893,7 +1893,7 @@
       "CountMediumStatus": 43, 
       "CountBreath": 27, 
       "num_visits": 5899, 
-      "patients_home": 4344, 
+      "patients_home": 4346, 
       "CountHardStatus": 45, 
       "new_hospitalized": 32, 
       "CountEasyStatus": 125, 
@@ -1909,7 +1909,7 @@
       "CountMediumStatus": 54, 
       "CountBreath": 28, 
       "num_visits": 5999, 
-      "patients_home": 4710, 
+      "patients_home": 4713, 
       "CountHardStatus": 44, 
       "new_hospitalized": 25, 
       "CountEasyStatus": 108, 
@@ -1925,7 +1925,7 @@
       "CountMediumStatus": 56, 
       "CountBreath": 26, 
       "num_visits": 5028, 
-      "patients_home": 4981, 
+      "patients_home": 4984, 
       "CountHardStatus": 45, 
       "new_hospitalized": 47, 
       "CountEasyStatus": 130, 
@@ -1941,7 +1941,7 @@
       "CountMediumStatus": 55, 
       "CountBreath": 23, 
       "num_visits": 4536, 
-      "patients_home": 5267, 
+      "patients_home": 5270, 
       "CountHardStatus": 40, 
       "new_hospitalized": 28, 
       "CountEasyStatus": 138, 
@@ -1957,7 +1957,7 @@
       "CountMediumStatus": 66, 
       "CountBreath": 23, 
       "num_visits": 6791, 
-      "patients_home": 5568, 
+      "patients_home": 5571, 
       "CountHardStatus": 39, 
       "new_hospitalized": 46, 
       "CountEasyStatus": 147, 
@@ -1973,7 +1973,7 @@
       "CountMediumStatus": 65, 
       "CountBreath": 24, 
       "num_visits": 6136, 
-      "patients_home": 6098, 
+      "patients_home": 6101, 
       "CountHardStatus": 44, 
       "new_hospitalized": 46, 
       "CountEasyStatus": 154, 
@@ -1989,7 +1989,7 @@
       "CountMediumStatus": 67, 
       "CountBreath": 24, 
       "num_visits": 5884, 
-      "patients_home": 6706, 
+      "patients_home": 6709, 
       "CountHardStatus": 56, 
       "new_hospitalized": 53, 
       "CountEasyStatus": 163, 
@@ -2005,9 +2005,9 @@
       "CountMediumStatus": 72, 
       "CountBreath": 24, 
       "num_visits": 5680, 
-      "patients_home": 7535, 
+      "patients_home": 7538, 
       "CountHardStatus": 59, 
-      "new_hospitalized": 81, 
+      "new_hospitalized": 82, 
       "CountEasyStatus": 190, 
       "patients_hotel": 771, 
       "date": "2020-07-01T00:00:00.000Z", 
@@ -2021,7 +2021,7 @@
       "CountMediumStatus": 71, 
       "CountBreath": 28, 
       "num_visits": 5990, 
-      "patients_home": 8509, 
+      "patients_home": 8512, 
       "CountHardStatus": 71, 
       "new_hospitalized": 64, 
       "CountEasyStatus": 185, 
@@ -2037,7 +2037,7 @@
       "CountMediumStatus": 74, 
       "CountBreath": 28, 
       "num_visits": 5134, 
-      "patients_home": 9229, 
+      "patients_home": 9232, 
       "CountHardStatus": 82, 
       "new_hospitalized": 58, 
       "CountEasyStatus": 188, 
@@ -2053,7 +2053,7 @@
       "CountMediumStatus": 81, 
       "CountBreath": 32, 
       "num_visits": 3409, 
-      "patients_home": 9796, 
+      "patients_home": 9801, 
       "CountHardStatus": 84, 
       "new_hospitalized": 59, 
       "CountEasyStatus": 189, 
@@ -2069,7 +2069,7 @@
       "CountMediumStatus": 79, 
       "CountBreath": 31, 
       "num_visits": 6722, 
-      "patients_home": 10462, 
+      "patients_home": 10466, 
       "CountHardStatus": 93, 
       "new_hospitalized": 81, 
       "CountEasyStatus": 238, 
@@ -2079,51 +2079,51 @@
       "total_beds": 2321
     }, 
     {
-      "Counthospitalized": 428, 
-      "Counthospitalized_without_release": 352, 
-      "StandardOccupancy": 0.1844032744506678, 
+      "Counthospitalized": 430, 
+      "Counthospitalized_without_release": 354, 
+      "StandardOccupancy": 0.1852649719948298, 
       "CountMediumStatus": 94, 
       "CountBreath": 34, 
       "num_visits": 5918, 
-      "patients_home": 11369, 
-      "CountHardStatus": 90, 
-      "new_hospitalized": 78, 
-      "CountEasyStatus": 244, 
+      "patients_home": 11371, 
+      "CountHardStatus": 91, 
+      "new_hospitalized": 80, 
+      "CountEasyStatus": 245, 
       "patients_hotel": 1022, 
       "date": "2020-07-06T00:00:00.000Z", 
       "CountDeath": 6, 
       "total_beds": 2321
     }, 
     {
-      "Counthospitalized": 449, 
-      "Counthospitalized_without_release": 393, 
-      "StandardOccupancy": 0.1934510986643688, 
+      "Counthospitalized": 455, 
+      "Counthospitalized_without_release": 398, 
+      "StandardOccupancy": 0.1960361912968548, 
       "CountMediumStatus": 94, 
       "CountBreath": 35, 
       "num_visits": 5717, 
-      "patients_home": 12330, 
-      "CountHardStatus": 92, 
-      "new_hospitalized": 101, 
-      "CountEasyStatus": 263, 
+      "patients_home": 12343, 
+      "CountHardStatus": 93, 
+      "new_hospitalized": 105, 
+      "CountEasyStatus": 268, 
       "patients_hotel": 1202, 
       "date": "2020-07-07T00:00:00.000Z", 
       "CountDeath": 5, 
       "total_beds": 2321
     }, 
     {
-      "Counthospitalized": 397, 
-      "Counthospitalized_without_release": 397, 
-      "StandardOccupancy": 0.1710469625161568, 
+      "Counthospitalized": 405, 
+      "Counthospitalized_without_release": 405, 
+      "StandardOccupancy": 0.1744937526928048, 
       "CountMediumStatus": 82, 
-      "CountBreath": 36, 
+      "CountBreath": 39, 
       "num_visits": 404, 
-      "patients_home": 12350, 
-      "CountHardStatus": 107, 
-      "new_hospitalized": 12, 
-      "CountEasyStatus": 208, 
+      "patients_home": 12754, 
+      "CountHardStatus": 113, 
+      "new_hospitalized": 37, 
+      "CountEasyStatus": 210, 
       "patients_hotel": 1357, 
       "date": "2020-07-08T00:00:00.000Z", 
-      "CountDeath": 1, 
+      "CountDeath": 2, 
       "total_beds": 2321
     }
   ], 
@@ -2990,7 +2990,7 @@
       "date": "2020-06-23T00:00:00.000Z", 
       "amount": 19842, 
       "positiveAmount": 447, 
-      "amountVirusDiagnosis": 19159
+      "amountVirusDiagnosis": 19158
     }, 
     {
       "date": "2020-06-24T00:00:00.000Z", 
@@ -3002,7 +3002,7 @@
       "date": "2020-06-25T00:00:00.000Z", 
       "amount": 18662, 
       "positiveAmount": 512, 
-      "amountVirusDiagnosis": 17978
+      "amountVirusDiagnosis": 17977
     }, 
     {
       "date": "2020-06-26T00:00:00.000Z", 
@@ -3031,14 +3031,14 @@
     {
       "date": "2020-06-30T00:00:00.000Z", 
       "amount": 20838, 
-      "positiveAmount": 781, 
-      "amountVirusDiagnosis": 20148
+      "positiveAmount": 780, 
+      "amountVirusDiagnosis": 20147
     }, 
     {
       "date": "2020-07-01T00:00:00.000Z", 
-      "amount": 21461, 
+      "amount": 21460, 
       "positiveAmount": 966, 
-      "amountVirusDiagnosis": 20832
+      "amountVirusDiagnosis": 20831
     }, 
     {
       "date": "2020-07-02T00:00:00.000Z", 
@@ -3055,32 +3055,32 @@
     {
       "date": "2020-07-04T00:00:00.000Z", 
       "amount": 17261, 
-      "positiveAmount": 813, 
+      "positiveAmount": 814, 
       "amountVirusDiagnosis": 16671
     }, 
     {
       "date": "2020-07-05T00:00:00.000Z", 
       "amount": 20899, 
-      "positiveAmount": 821, 
+      "positiveAmount": 820, 
       "amountVirusDiagnosis": 20077
     }, 
     {
       "date": "2020-07-06T00:00:00.000Z", 
-      "amount": 25385, 
+      "amount": 25467, 
       "positiveAmount": 1128, 
-      "amountVirusDiagnosis": 24540
+      "amountVirusDiagnosis": 24620
     }, 
     {
       "date": "2020-07-07T00:00:00.000Z", 
-      "amount": 26603, 
-      "positiveAmount": 1320, 
-      "amountVirusDiagnosis": 25782
+      "amount": 28143, 
+      "positiveAmount": 1348, 
+      "amountVirusDiagnosis": 27250
     }, 
     {
       "date": "2020-07-08T00:00:00.000Z", 
-      "amount": 4044, 
-      "positiveAmount": 198, 
-      "amountVirusDiagnosis": 3904
+      "amount": 13979, 
+      "positiveAmount": 632, 
+      "amountVirusDiagnosis": 13574
     }
   ], 
   "hospitalStatus": [
@@ -3088,103 +3088,103 @@
       "coronaOccupancy": 43.33333333333334, 
       "normalOccupancy": 86.99028778076172, 
       "name": "\u05d4\u05dc\u05dc \u05d9\u05e4\u05d4", 
-      "isolatedTeam": 39
+      "isolatedTeam": 62
     }, 
     {
-      "coronaOccupancy": 41.55844155844156, 
+      "coronaOccupancy": 40.25974025974026, 
       "normalOccupancy": 62.51403045654297, 
       "name": "\u05e9\u05de\u05d9\u05e8 (\u05d0\u05e1\u05e3 \u05d4\u05e8\u05d5\u05e4\u05d0)", 
-      "isolatedTeam": 75
+      "isolatedTeam": 96
     }, 
     {
       "coronaOccupancy": 33.33333333333333, 
       "normalOccupancy": 75.06427001953125, 
       "name": "\u05de\u05d0\u05d9\u05e8", 
-      "isolatedTeam": 65
+      "isolatedTeam": 66
     }, 
     {
-      "coronaOccupancy": 32.08955223880597, 
-      "normalOccupancy": 113.2253723144531, 
-      "name": "\u05d4\u05d3\u05e1\u05d4 \u05e2\u05d9\u05df \u05db\u05e8\u05dd", 
-      "isolatedTeam": 134
+      "coronaOccupancy": 32.20338983050847, 
+      "normalOccupancy": null, 
+      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d0\u05e9\u05d3\u05d5\u05d3 \u05d1\u05d9\"\u05d7", 
+      "isolatedTeam": 42
     }, 
     {
       "coronaOccupancy": 31.818181818181817, 
       "normalOccupancy": 91.3402099609375, 
       "name": "\u05e8\u05de\u05d1\"\u05dd", 
-      "isolatedTeam": 18
+      "isolatedTeam": 22
     }, 
     {
-      "coronaOccupancy": 28.8135593220339, 
-      "normalOccupancy": null, 
-      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d0\u05e9\u05d3\u05d5\u05d3 \u05d1\u05d9\"\u05d7", 
-      "isolatedTeam": 28
-    }, 
-    {
-      "coronaOccupancy": 27.142857142857142, 
+      "coronaOccupancy": 30, 
       "normalOccupancy": null, 
       "name": "\u05de\u05e2\u05d9\u05d9\u05e0\u05d9 \u05d4\u05d9\u05e9\u05d5\u05e2\u05d4", 
-      "isolatedTeam": 27
+      "isolatedTeam": 32
     }, 
     {
-      "coronaOccupancy": 20.58823529411765, 
+      "coronaOccupancy": 28.35820895522388, 
+      "normalOccupancy": 113.2253723144531, 
+      "name": "\u05d4\u05d3\u05e1\u05d4 \u05e2\u05d9\u05df \u05db\u05e8\u05dd", 
+      "isolatedTeam": 140
+    }, 
+    {
+      "coronaOccupancy": 23.333333333333332, 
+      "normalOccupancy": 74.13793182373047, 
+      "name": "\u05d4\u05de\u05e8\u05db\u05d6\u05d9 \u05d1\u05e2\u05de\u05e7", 
+      "isolatedTeam": 38
+    }, 
+    {
+      "coronaOccupancy": 21.76470588235294, 
       "normalOccupancy": 93.9803466796875, 
       "name": "\u05e9\u05e2\u05e8\u05d9 \u05e6\u05d3\u05e7", 
-      "isolatedTeam": 93
+      "isolatedTeam": 103
+    }, 
+    {
+      "coronaOccupancy": 21, 
+      "normalOccupancy": 95, 
+      "name": "\u05e9\u05d9\u05d1\u05d0", 
+      "isolatedTeam": 125
     }, 
     {
       "coronaOccupancy": 20, 
       "normalOccupancy": 105.806999206543, 
       "name": "\u05e1\u05d5\u05e8\u05d0\u05e1\u05e7\u05d9", 
-      "isolatedTeam": 62
+      "isolatedTeam": 78
     }, 
     {
-      "coronaOccupancy": 19, 
-      "normalOccupancy": 95, 
-      "name": "\u05e9\u05d9\u05d1\u05d0", 
-      "isolatedTeam": 136
+      "coronaOccupancy": 18.39080459770115, 
+      "normalOccupancy": 73.58804321289062, 
+      "name": "\u05d1\u05e8\u05d6\u05d9\u05dc\u05d9", 
+      "isolatedTeam": 29
     }, 
     {
       "coronaOccupancy": 18.26923076923077, 
       "normalOccupancy": 68.22840118408203, 
       "name": "\u05d5\u05d5\u05dc\u05e4\u05e1\u05d5\u05df", 
-      "isolatedTeam": 32
+      "isolatedTeam": 37
     }, 
     {
-      "coronaOccupancy": 16.66666666666667, 
-      "normalOccupancy": 74.13793182373047, 
-      "name": "\u05d4\u05de\u05e8\u05db\u05d6\u05d9 \u05d1\u05e2\u05de\u05e7", 
-      "isolatedTeam": 22
-    }, 
-    {
-      "coronaOccupancy": 16.09195402298851, 
-      "normalOccupancy": 73.58804321289062, 
-      "name": "\u05d1\u05e8\u05d6\u05d9\u05dc\u05d9", 
-      "isolatedTeam": 13
-    }, 
-    {
-      "coronaOccupancy": 14.54545454545455, 
+      "coronaOccupancy": 16.36363636363636, 
       "normalOccupancy": 1.392757654190064, 
       "name": "\u05dc\u05e0\u05d9\u05d0\u05d3\u05d5", 
-      "isolatedTeam": 28
-    }, 
-    {
-      "coronaOccupancy": 11.76470588235294, 
-      "normalOccupancy": 89.71118927001953, 
-      "name": "\u05e7\u05e4\u05dc\u05df", 
-      "isolatedTeam": 34
+      "isolatedTeam": 25
     }, 
     {
       "coronaOccupancy": 11.1764705882353, 
+      "normalOccupancy": 89.71118927001953, 
+      "name": "\u05e7\u05e4\u05dc\u05df", 
+      "isolatedTeam": 52
+    }, 
+    {
+      "coronaOccupancy": 10.58823529411765, 
       "normalOccupancy": 75.23892211914062, 
       "name": "\u05e1\u05d5\u05e8\u05d5\u05e7\u05d4", 
-      "isolatedTeam": 79
+      "isolatedTeam": 86
     }, 
     {
       "coronaOccupancy": 1.724137931034483, 
       "normalOccupancy": 82.67898559570312, 
       "name": "\u05d1\u05e0\u05d9 \u05e6\u05d9\u05d5\u05df", 
-      "isolatedTeam": 9
+      "isolatedTeam": 13
     }, 
     {
       "coronaOccupancy": 1.666666666666667, 
@@ -3193,34 +3193,28 @@
       "isolatedTeam": 3
     }, 
     {
-      "coronaOccupancy": 1.19047619047619, 
-      "normalOccupancy": 75.46012115478516, 
-      "name": "\u05d4\u05db\u05e8\u05de\u05dc", 
-      "isolatedTeam": 9
-    }, 
-    {
       "coronaOccupancy": 0.5235602094240838, 
       "normalOccupancy": 55.60165786743164, 
       "name": "\u05d4\u05e9\u05e8\u05d5\u05df \u05e7. \u05d2\u05d5\u05dc\u05d3\u05d4", 
-      "isolatedTeam": 35
-    }, 
-    {
-      "coronaOccupancy": 0, 
-      "normalOccupancy": 96.88623046875, 
-      "name": "\u05e8\u05d1\u05d9\u05df \u05e7. \u05d1\u05d9\u05dc\u05d9\u05e0\u05e1\u05d5\u05df", 
-      "isolatedTeam": 78
+      "isolatedTeam": 30
     }, 
     {
       "coronaOccupancy": 0, 
       "normalOccupancy": 97.7443618774414, 
       "name": "\u05d4\u05e1\u05e7\u05d5\u05d8\u05d9", 
-      "isolatedTeam": 2
+      "isolatedTeam": 4
     }, 
     {
       "coronaOccupancy": 0, 
-      "normalOccupancy": null, 
-      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2", 
-      "isolatedTeam": 0
+      "normalOccupancy": 96.88623046875, 
+      "name": "\u05e8\u05d1\u05d9\u05df \u05e7. \u05d1\u05d9\u05dc\u05d9\u05e0\u05e1\u05d5\u05df", 
+      "isolatedTeam": 77
+    }, 
+    {
+      "coronaOccupancy": 0, 
+      "normalOccupancy": 89.62655639648438, 
+      "name": "\u05e0\u05d4\u05e8\u05d9\u05d4", 
+      "isolatedTeam": 33
     }, 
     {
       "coronaOccupancy": 0, 
@@ -3230,15 +3224,21 @@
     }, 
     {
       "coronaOccupancy": 0, 
-      "normalOccupancy": 88.18565368652344, 
-      "name": "\u05e9\u05e0\u05d9\u05d9\u05d3\u05e8", 
-      "isolatedTeam": 27
+      "normalOccupancy": null, 
+      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d7\u05d9\u05e4\u05d4", 
+      "isolatedTeam": 0
     }, 
     {
       "coronaOccupancy": 0, 
-      "normalOccupancy": 89.62655639648438, 
-      "name": "\u05e0\u05d4\u05e8\u05d9\u05d4", 
-      "isolatedTeam": 25
+      "normalOccupancy": 88.18565368652344, 
+      "name": "\u05e9\u05e0\u05d9\u05d9\u05d3\u05e8", 
+      "isolatedTeam": 29
+    }, 
+    {
+      "coronaOccupancy": 0, 
+      "normalOccupancy": 75.46012115478516, 
+      "name": "\u05d4\u05db\u05e8\u05de\u05dc", 
+      "isolatedTeam": 10
     }, 
     {
       "coronaOccupancy": 0, 
@@ -3262,7 +3262,7 @@
       "coronaOccupancy": 0, 
       "normalOccupancy": 84.02777862548828, 
       "name": "\u05d4\u05e8 \u05d4\u05e6\u05d5\u05e4\u05d9\u05dd", 
-      "isolatedTeam": 41
+      "isolatedTeam": 37
     }, 
     {
       "coronaOccupancy": 0, 
@@ -3274,7 +3274,13 @@
       "coronaOccupancy": 0, 
       "normalOccupancy": null, 
       "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df", 
-      "isolatedTeam": 9
+      "isolatedTeam": 13
+    }, 
+    {
+      "coronaOccupancy": 0, 
+      "normalOccupancy": null, 
+      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2", 
+      "isolatedTeam": 2
     }, 
     {
       "coronaOccupancy": 0, 
@@ -3286,19 +3292,13 @@
       "coronaOccupancy": 0, 
       "normalOccupancy": null, 
       "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05e8\u05de\u05ea \u05d4\u05d7\u05d9\u05d9\u05dc", 
-      "isolatedTeam": 9
-    }, 
-    {
-      "coronaOccupancy": 0, 
-      "normalOccupancy": null, 
-      "name": "\u05d0\u05e1\u05d5\u05ea\u05d0 \u05d7\u05d9\u05e4\u05d4", 
-      "isolatedTeam": 0
+      "isolatedTeam": 7
     }, 
     {
       "coronaOccupancy": 0, 
       "normalOccupancy": 69.57746124267578, 
       "name": "\u05e4\u05d5\u05e8\u05d9\u05d4", 
-      "isolatedTeam": 16
+      "isolatedTeam": 15
     }
   ], 
   "infectedPerDate": [
@@ -3685,7 +3685,7 @@
     {
       "date": "2020-04-28T00:00:00.000Z", 
       "amount": 160, 
-      "recovered": 499
+      "recovered": 500
     }, 
     {
       "date": "2020-04-29T00:00:00.000Z", 
@@ -3880,12 +3880,12 @@
     {
       "date": "2020-06-06T00:00:00.000Z", 
       "amount": 78, 
-      "recovered": 42
+      "recovered": 41
     }, 
     {
       "date": "2020-06-07T00:00:00.000Z", 
       "amount": 140, 
-      "recovered": 58
+      "recovered": 57
     }, 
     {
       "date": "2020-06-08T00:00:00.000Z", 
@@ -3940,7 +3940,7 @@
     {
       "date": "2020-06-18T00:00:00.000Z", 
       "amount": 303, 
-      "recovered": 74
+      "recovered": 73
     }, 
     {
       "date": "2020-06-19T00:00:00.000Z", 
@@ -3975,7 +3975,7 @@
     {
       "date": "2020-06-25T00:00:00.000Z", 
       "amount": 512, 
-      "recovered": 119
+      "recovered": 118
     }, 
     {
       "date": "2020-06-26T00:00:00.000Z", 
@@ -3999,8 +3999,8 @@
     }, 
     {
       "date": "2020-06-30T00:00:00.000Z", 
-      "amount": 781, 
-      "recovered": 115
+      "amount": 780, 
+      "recovered": 114
     }, 
     {
       "date": "2020-07-01T00:00:00.000Z", 
@@ -4019,12 +4019,12 @@
     }, 
     {
       "date": "2020-07-04T00:00:00.000Z", 
-      "amount": 813, 
-      "recovered": 133
+      "amount": 814, 
+      "recovered": 132
     }, 
     {
       "date": "2020-07-05T00:00:00.000Z", 
-      "amount": 821, 
+      "amount": 820, 
       "recovered": 134
     }, 
     {
@@ -4034,13 +4034,13 @@
     }, 
     {
       "date": "2020-07-07T00:00:00.000Z", 
-      "amount": 1320, 
-      "recovered": 133
+      "amount": 1348, 
+      "recovered": 147
     }, 
     {
       "date": "2020-07-08T00:00:00.000Z", 
-      "amount": 198, 
-      "recovered": 18
+      "amount": 632, 
+      "recovered": 57
     }
   ], 
   "doublingRate": [
@@ -4741,43 +4741,43 @@
     }, 
     {
       "date": "2020-06-30T00:00:00.000Z", 
-      "dailyDoublingRate": 9.72626674432151, 
-      "numberOfDoublingDays": 7.467762103532802
+      "dailyDoublingRate": 9.697146185206762, 
+      "numberOfDoublingDays": 7.489178477188259
     }, 
     {
       "date": "2020-07-01T00:00:00.000Z", 
-      "dailyDoublingRate": 12.76539278131634, 
-      "numberOfDoublingDays": 5.769528830840094
+      "dailyDoublingRate": 12.76878152375898, 
+      "numberOfDoublingDays": 5.768086041860013
     }, 
     {
       "date": "2020-07-02T00:00:00.000Z", 
-      "dailyDoublingRate": 14.779948223111312, 
-      "numberOfDoublingDays": 5.02839462228971
+      "dailyDoublingRate": 14.783427495291889, 
+      "numberOfDoublingDays": 5.027289135509018
     }, 
     {
       "date": "2020-07-03T00:00:00.000Z", 
-      "dailyDoublingRate": 9.739594012712738, 
-      "numberOfDoublingDays": 7.458003408229137
+      "dailyDoublingRate": 9.741591468416733, 
+      "numberOfDoublingDays": 7.456543100094578
     }, 
     {
       "date": "2020-07-04T00:00:00.000Z", 
-      "dailyDoublingRate": 7.754110612855003, 
-      "numberOfDoublingDays": 9.281353485510406
+      "dailyDoublingRate": 7.774247804148748, 
+      "numberOfDoublingDays": 9.258188270689303
     }, 
     {
       "date": "2020-07-05T00:00:00.000Z", 
-      "dailyDoublingRate": 7.646956823305007, 
-      "numberOfDoublingDays": 9.406670926732142
+      "dailyDoublingRate": 7.629616785156923, 
+      "numberOfDoublingDays": 9.427281032327212
     }, 
     {
       "date": "2020-07-06T00:00:00.000Z", 
-      "dailyDoublingRate": 6.088917525773185, 
-      "numberOfDoublingDays": 11.72691013263961
+      "dailyDoublingRate": 6.0898985016916365, 
+      "numberOfDoublingDays": 11.72507587592322
     }, 
     {
       "date": "2020-07-07T00:00:00.000Z", 
-      "dailyDoublingRate": 8.184026723352567, 
-      "numberOfDoublingDays": 8.811542948229608
+      "dailyDoublingRate": 8.625664388762356, 
+      "numberOfDoublingDays": 8.377665071469044
     }
   ], 
   "otherHospitalizedStaff": [
@@ -4787,57 +4787,57 @@
     }, 
     {
       "name": "\u05e4\u05e8\u05de\u05d3\u05d9\u05e7\u05d9\u05dd", 
-      "value": 14
+      "value": 13
     }, 
     {
       "name": "\u05d3\u05d9\u05d0\u05d8\u05e0\u05d9\u05d5\u05ea", 
-      "value": 28
+      "value": 22
     }, 
     {
       "name": "\u05e4\u05e1\u05d9\u05db\u05d5\u05dc\u05d5\u05d2\u05d9\u05dd/\u05d5\u05ea", 
-      "value": 46
+      "value": 38
     }, 
     {
       "name": "\u05e2\u05d5\u05d1\u05d3\u05d9 \u05de\u05e2\u05d1\u05d3\u05d4", 
-      "value": 50
+      "value": 49
     }, 
     {
       "name": "\u05e2\u05d5\u05d1\u05d3\u05d9 \u05de\u05e2\u05e8\u05da \u05dc\u05d5\u05d2\u05d9\u05e1\u05d8\u05d9", 
-      "value": 56
+      "value": 50
     }, 
     {
       "name": "\u05e8\u05d5\u05e7\u05d7\u05d9\u05dd", 
-      "value": 62
+      "value": 59
     }, 
     {
       "name": "\u05d7\u05d5\u05d1\u05e9\u05d9 \u05e8\u05e4\u05d5\u05d0\u05ea \u05d7\u05d9\u05e8\u05d5\u05dd", 
-      "value": 94
+      "value": 93
     }, 
     {
       "name": "\u05e4\u05d9\u05d6\u05d9\u05d5\u05ea\u05e8\u05e4\u05d9\u05e1\u05d8\u05d9\u05dd/\u05e8\u05d9\u05e4\u05d5\u05d9 \u05d1\u05e2\u05d9\u05e1\u05d5\u05e7/\u05e7\u05dc\u05d9\u05e0\u05d0\u05d9 \u05ea\u05e7\u05e9\u05d5\u05e8\u05ea", 
-      "value": 119
+      "value": 114
     }, 
     {
       "name": "\u05d0\u05e0\u05e9\u05d9 \u05db\u05d5\u05d7 \u05e2\u05d6\u05e8", 
-      "value": 174
+      "value": 173
     }, 
     {
       "name": "\u05e1\u05e7\u05d8\u05d5\u05e8\u05d9\u05dd \u05d0\u05d7\u05e8\u05d9\u05dd", 
-      "value": 202
+      "value": 244
     }, 
     {
       "name": "\u05e2\u05d5\u05d1\u05d3\u05d9 \u05de\u05d9\u05e0\u05d4\u05dc \u05d5\u05de\u05e9\u05e7", 
-      "value": 571
+      "value": 599
     }
   ], 
   "sickPerDateTwoDays": [
     {
-      "date": "2020-07-07T08:14:29.321Z", 
-      "amount": 13925
+      "date": "2020-07-07T16:14:58.374Z", 
+      "amount": 13943
     }, 
     {
-      "date": "2020-07-08T08:14:29.321Z", 
-      "amount": 179
+      "date": "2020-07-08T16:14:58.374Z", 
+      "amount": 573
     }
   ], 
   "deadPatientsPerDate": [
@@ -5355,7 +5355,7 @@
     }, 
     {
       "date": "2020-07-08T00:00:00.000Z", 
-      "amount": 1
+      "amount": 2
     }
   ], 
   "contagionDataPerCityPublic": [
@@ -5364,687 +5364,719 @@
       "city": "\u05ea\u05e4\u05e8\u05d7", 
       "actualSick": 19, 
       "verifiedLast7Days": 18, 
-      "testLast7Days": 227, 
+      "testLast7Days": 230, 
       "sickCount": 23
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd", 
-      "actualSick": 1925, 
-      "verifiedLast7Days": 1000, 
-      "testLast7Days": 124041, 
-      "sickCount": 5942
+      "actualSick": 1988, 
+      "verifiedLast7Days": 1068, 
+      "testLast7Days": 125418, 
+      "sickCount": 6010
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 - \u05d9\u05e4\u05d5", 
-      "actualSick": 1226, 
-      "verifiedLast7Days": 502, 
-      "testLast7Days": 64568, 
-      "sickCount": 1991
+      "actualSick": 1250, 
+      "verifiedLast7Days": 528, 
+      "testLast7Days": 65257, 
+      "sickCount": 2018
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d1\u05e0\u05d9 \u05d1\u05e8\u05e7", 
-      "actualSick": 1054, 
-      "verifiedLast7Days": 477, 
-      "testLast7Days": 44980, 
-      "sickCount": 4116
+      "actualSick": 1062, 
+      "verifiedLast7Days": 492, 
+      "testLast7Days": 45221, 
+      "sickCount": 4134
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d0\u05e9\u05d3\u05d5\u05d3", 
-      "actualSick": 783, 
-      "verifiedLast7Days": 327, 
-      "testLast7Days": 29772, 
-      "sickCount": 1136
+      "actualSick": 793, 
+      "verifiedLast7Days": 338, 
+      "testLast7Days": 30237, 
+      "sickCount": 1148
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d1\u05d9\u05ea\u05e8 \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": 291, 
-      "verifiedLast7Days": 167, 
-      "testLast7Days": 5973, 
-      "sickCount": 597
+      "actualSick": 306, 
+      "verifiedLast7Days": 183, 
+      "testLast7Days": 6079, 
+      "sickCount": 613
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05e8\u05e2\u05e0\u05e0\u05d4", 
-      "actualSick": 154, 
-      "verifiedLast7Days": 114, 
-      "testLast7Days": 10922, 
-      "sickCount": 303
+      "actualSick": 158, 
+      "verifiedLast7Days": 118, 
+      "testLast7Days": 11019, 
+      "sickCount": 307
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05e7\u05e8\u05d9\u05ea \u05de\u05dc\u05d0\u05db\u05d9", 
-      "actualSick": 116, 
-      "verifiedLast7Days": 88, 
-      "testLast7Days": 2594, 
-      "sickCount": 174
+      "actualSick": 121, 
+      "verifiedLast7Days": 93, 
+      "testLast7Days": 2694, 
+      "sickCount": 180
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05db\u05e4\u05e8 \u05e7\u05e8\u05e2", 
-      "actualSick": 53, 
-      "verifiedLast7Days": 39, 
-      "testLast7Days": 1967, 
-      "sickCount": 71
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
-      "city": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df", 
-      "actualSick": 48, 
-      "verifiedLast7Days": 36, 
-      "testLast7Days": 4874, 
-      "sickCount": 94
+      "actualSick": 54, 
+      "verifiedLast7Days": 40, 
+      "testLast7Days": 2010, 
+      "sickCount": 72
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d9\u05d1\u05e0\u05d0\u05dc", 
-      "actualSick": 22, 
-      "verifiedLast7Days": 19, 
-      "testLast7Days": 444, 
-      "sickCount": 40
+      "actualSick": 23, 
+      "verifiedLast7Days": 21, 
+      "testLast7Days": 450, 
+      "sickCount": 41
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05e0\u05d7\u05e3", 
       "actualSick": 19, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1009, 
+      "testLast7Days": 1027, 
       "sickCount": 30
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
-      "city": "\u05e7\u05d3\u05d9\u05de\u05d4-\u05e6\u05d5\u05e8\u05df", 
-      "actualSick": 18, 
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05e9\u05de\u05d5\u05e0\u05d4", 
+      "actualSick": 15, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1593, 
-      "sickCount": 34
+      "testLast7Days": 1505, 
+      "sickCount": 31
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d2\u05d3\u05dc\u05d4 \u05e9\u05dc \u05de\u05e1\u05e4\u05e8 \u05d4\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea", 
       "city": "\u05d7\u05e6\u05d5\u05e8 \u05d4\u05d2\u05dc\u05d9\u05dc\u05d9\u05ea", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 750, 
+      "testLast7Days": 753, 
       "sickCount": 16
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d1\u05ea \u05d9\u05dd", 
-      "actualSick": 429, 
-      "verifiedLast7Days": 132, 
-      "testLast7Days": 19831, 
-      "sickCount": 663
+      "actualSick": 437, 
+      "verifiedLast7Days": 140, 
+      "testLast7Days": 20111, 
+      "sickCount": 674
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e4\u05ea\u05d7 \u05ea\u05e7\u05d5\u05d5\u05d4", 
-      "actualSick": 365, 
-      "verifiedLast7Days": 173, 
-      "testLast7Days": 31685, 
-      "sickCount": 732
+      "actualSick": 378, 
+      "verifiedLast7Days": 185, 
+      "testLast7Days": 32010, 
+      "sickCount": 746
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df", 
-      "actualSick": 268, 
-      "verifiedLast7Days": 137, 
-      "testLast7Days": 28688, 
-      "sickCount": 550
+      "actualSick": 277, 
+      "verifiedLast7Days": 146, 
+      "testLast7Days": 29072, 
+      "sickCount": 560
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d7\u05d5\u05dc\u05d5\u05df", 
-      "actualSick": 260, 
-      "verifiedLast7Days": 105, 
-      "testLast7Days": 24172, 
-      "sickCount": 491
+      "actualSick": 267, 
+      "verifiedLast7Days": 112, 
+      "testLast7Days": 24460, 
+      "sickCount": 502
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d1\u05d9\u05ea \u05e9\u05de\u05e9", 
-      "actualSick": 253, 
-      "verifiedLast7Days": 144, 
-      "testLast7Days": 11960, 
-      "sickCount": 817
+      "actualSick": 267, 
+      "verifiedLast7Days": 157, 
+      "testLast7Days": 12071, 
+      "sickCount": 829
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2", 
-      "actualSick": 246, 
-      "verifiedLast7Days": 79, 
-      "testLast7Days": 31033, 
-      "sickCount": 508
+      "actualSick": 247, 
+      "verifiedLast7Days": 85, 
+      "testLast7Days": 31257, 
+      "sickCount": 514
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e0\u05ea\u05e0\u05d9\u05d4", 
-      "actualSick": 223, 
-      "verifiedLast7Days": 106, 
-      "testLast7Days": 20963, 
-      "sickCount": 460
+      "actualSick": 224, 
+      "verifiedLast7Days": 108, 
+      "testLast7Days": 21208, 
+      "sickCount": 464
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df \u05e2\u05d9\u05dc\u05d9\u05ea", 
+      "actualSick": 222, 
+      "verifiedLast7Days": 126, 
+      "testLast7Days": 9894, 
+      "sickCount": 666
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e8\u05d4\u05d8", 
       "actualSick": 217, 
-      "verifiedLast7Days": 27, 
-      "testLast7Days": 7447, 
-      "sickCount": 345
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": 213, 
-      "verifiedLast7Days": 117, 
-      "testLast7Days": 9720, 
-      "sickCount": 659
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e2\u05e8\u05e2\u05e8\u05d4-\u05d1\u05e0\u05d2\u05d1", 
-      "actualSick": 196, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 3814, 
-      "sickCount": 287
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e8\u05de\u05dc\u05d4", 
-      "actualSick": 195, 
-      "verifiedLast7Days": 99, 
-      "testLast7Days": 8824, 
-      "sickCount": 281
+      "verifiedLast7Days": 28, 
+      "testLast7Days": 7531, 
+      "sickCount": 347
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05dc\u05d5\u05d3", 
-      "actualSick": 194, 
-      "verifiedLast7Days": 88, 
-      "testLast7Days": 8139, 
-      "sickCount": 296
+      "actualSick": 209, 
+      "verifiedLast7Days": 104, 
+      "testLast7Days": 8259, 
+      "sickCount": 313
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e8\u05de\u05dc\u05d4", 
+      "actualSick": 208, 
+      "verifiedLast7Days": 112, 
+      "testLast7Days": 8979, 
+      "sickCount": 294
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e2\u05e8\u05e2\u05e8\u05d4-\u05d1\u05e0\u05d2\u05d1", 
+      "actualSick": 198, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 3816, 
+      "sickCount": 289
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e8\u05de\u05ea \u05d2\u05df", 
+      "actualSick": 196, 
+      "verifiedLast7Days": 99, 
+      "testLast7Days": 20375, 
+      "sickCount": 405
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d3\u05d9\u05de\u05d5\u05e0\u05d4", 
       "actualSick": 189, 
-      "verifiedLast7Days": 92, 
-      "testLast7Days": 20227, 
-      "sickCount": 399
+      "verifiedLast7Days": 87, 
+      "testLast7Days": 7649, 
+      "sickCount": 220
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d8\u05d1\u05e8\u05d9\u05d4", 
       "actualSick": 188, 
-      "verifiedLast7Days": 73, 
-      "testLast7Days": 8368, 
-      "sickCount": 375
+      "verifiedLast7Days": 75, 
+      "testLast7Days": 8493, 
+      "sickCount": 378
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d2\u05ea", 
-      "actualSick": 184, 
-      "verifiedLast7Days": 68, 
-      "testLast7Days": 6890, 
-      "sickCount": 252
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d3\u05d9\u05de\u05d5\u05e0\u05d4", 
-      "actualSick": 184, 
-      "verifiedLast7Days": 82, 
-      "testLast7Days": 7514, 
-      "sickCount": 215
+      "actualSick": 187, 
+      "verifiedLast7Days": 72, 
+      "testLast7Days": 6940, 
+      "sickCount": 253
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e8\u05d7\u05d5\u05d1\u05d5\u05ea", 
-      "actualSick": 171, 
-      "verifiedLast7Days": 93, 
-      "testLast7Days": 18022, 
-      "sickCount": 317
+      "actualSick": 175, 
+      "verifiedLast7Days": 96, 
+      "testLast7Days": 18191, 
+      "sickCount": 321
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d7\u05d9\u05e4\u05d4", 
-      "actualSick": 169, 
-      "verifiedLast7Days": 72, 
-      "testLast7Days": 27988, 
-      "sickCount": 389
+      "actualSick": 173, 
+      "verifiedLast7Days": 79, 
+      "testLast7Days": 28242, 
+      "sickCount": 396
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d0\u05dc\u05e2\u05d3", 
-      "actualSick": 155, 
-      "verifiedLast7Days": 63, 
-      "testLast7Days": 7533, 
-      "sickCount": 570
+      "actualSick": 156, 
+      "verifiedLast7Days": 65, 
+      "testLast7Days": 7583, 
+      "sickCount": 572
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d4\u05e8\u05e6\u05dc\u05d9\u05d4", 
-      "actualSick": 130, 
-      "verifiedLast7Days": 79, 
-      "testLast7Days": 11689, 
-      "sickCount": 258
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05db\u05e4\u05e8 \u05e7\u05d0\u05e1\u05dd", 
-      "actualSick": 117, 
-      "verifiedLast7Days": 46, 
-      "testLast7Days": 3247, 
-      "sickCount": 136
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d1\u05d0\u05e7\u05d4 \u05d0\u05dc-\u05d2\u05e8\u05d1\u05d9\u05d4", 
-      "actualSick": 117, 
-      "verifiedLast7Days": 36, 
-      "testLast7Days": 4045, 
-      "sickCount": 154
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05d5\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d4", 
-      "actualSick": 114, 
-      "verifiedLast7Days": 41, 
-      "testLast7Days": 5658, 
+      "actualSick": 135, 
+      "verifiedLast7Days": 86, 
+      "testLast7Days": 11912, 
       "sickCount": 265
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d0\u05d5\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d4", 
+      "actualSick": 122, 
+      "verifiedLast7Days": 49, 
+      "testLast7Days": 5744, 
+      "sickCount": 273
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d1\u05d0\u05e7\u05d4 \u05d0\u05dc-\u05d2\u05e8\u05d1\u05d9\u05d4", 
+      "actualSick": 122, 
+      "verifiedLast7Days": 41, 
+      "testLast7Days": 4111, 
+      "sickCount": 159
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05db\u05e4\u05e8 \u05e7\u05d0\u05e1\u05dd", 
+      "actualSick": 120, 
+      "verifiedLast7Days": 51, 
+      "testLast7Days": 3280, 
+      "sickCount": 139
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df-\u05de\u05db\u05d1\u05d9\u05dd-\u05e8\u05e2\u05d5\u05ea", 
-      "actualSick": 108, 
-      "verifiedLast7Days": 62, 
-      "testLast7Days": 10097, 
-      "sickCount": 232
+      "actualSick": 117, 
+      "verifiedLast7Days": 71, 
+      "testLast7Days": 10261, 
+      "sickCount": 241
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0", 
-      "actualSick": 92, 
-      "verifiedLast7Days": 41, 
-      "testLast7Days": 12029, 
-      "sickCount": 169
+      "actualSick": 93, 
+      "verifiedLast7Days": 44, 
+      "testLast7Days": 12105, 
+      "sickCount": 170
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d7\u05d3\u05e8\u05d4", 
-      "actualSick": 88, 
-      "verifiedLast7Days": 54, 
-      "testLast7Days": 14960, 
-      "sickCount": 160
+      "actualSick": 90, 
+      "verifiedLast7Days": 57, 
+      "testLast7Days": 15099, 
+      "sickCount": 163
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d1\u05d9\u05ea \u05e9\u05d0\u05df", 
-      "actualSick": 81, 
-      "verifiedLast7Days": 40, 
-      "testLast7Days": 2400, 
-      "sickCount": 83
+      "actualSick": 83, 
+      "verifiedLast7Days": 42, 
+      "testLast7Days": 2411, 
+      "sickCount": 85
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d0\u05e9\u05e7\u05dc\u05d5\u05df", 
+      "actualSick": 78, 
+      "verifiedLast7Days": 42, 
+      "testLast7Days": 16563, 
+      "sickCount": 364
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d9\u05d1\u05e0\u05d4", 
-      "actualSick": 74, 
-      "verifiedLast7Days": 34, 
-      "testLast7Days": 5544, 
-      "sickCount": 126
+      "actualSick": 75, 
+      "verifiedLast7Days": 35, 
+      "testLast7Days": 5610, 
+      "sickCount": 127
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd", 
       "actualSick": 74, 
-      "verifiedLast7Days": 41, 
-      "testLast7Days": 6869, 
-      "sickCount": 123
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e8\u05d0\u05e9 \u05d4\u05e2\u05d9\u05df", 
-      "actualSick": 71, 
-      "verifiedLast7Days": 43, 
-      "testLast7Days": 6637, 
-      "sickCount": 130
+      "verifiedLast7Days": 42, 
+      "testLast7Days": 6929, 
+      "sickCount": 124
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e0\u05d4\u05e8\u05d9\u05d4", 
-      "actualSick": 70, 
-      "verifiedLast7Days": 19, 
-      "testLast7Days": 8752, 
-      "sickCount": 117
+      "actualSick": 74, 
+      "verifiedLast7Days": 23, 
+      "testLast7Days": 8833, 
+      "sickCount": 120
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05e9\u05e7\u05dc\u05d5\u05df", 
-      "actualSick": 70, 
-      "verifiedLast7Days": 34, 
-      "testLast7Days": 16420, 
-      "sickCount": 356
+      "city": "\u05e8\u05d0\u05e9 \u05d4\u05e2\u05d9\u05df", 
+      "actualSick": 72, 
+      "verifiedLast7Days": 45, 
+      "testLast7Days": 6713, 
+      "sickCount": 132
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d0\u05d9\u05dc\u05ea", 
-      "actualSick": 64, 
+      "actualSick": 63, 
       "verifiedLast7Days": 19, 
-      "testLast7Days": 4283, 
-      "sickCount": 96
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d4\u05d5\u05d3 \u05d4\u05e9\u05e8\u05d5\u05df", 
-      "actualSick": 59, 
-      "verifiedLast7Days": 31, 
-      "testLast7Days": 6316, 
-      "sickCount": 108
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e0\u05ea\u05d9\u05d1\u05d5\u05ea", 
-      "actualSick": 56, 
-      "verifiedLast7Days": 21, 
-      "testLast7Days": 4183, 
-      "sickCount": 164
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05d5\u05dd \u05d0\u05dc-\u05e4\u05d7\u05dd", 
-      "actualSick": 56, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 4675, 
-      "sickCount": 142
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d8\u05d9\u05e8\u05d4", 
-      "actualSick": 53, 
-      "verifiedLast7Days": 22, 
-      "testLast7Days": 3049, 
-      "sickCount": 61
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05d5\u05e0\u05d5", 
-      "actualSick": 52, 
-      "verifiedLast7Days": 24, 
-      "testLast7Days": 4435, 
-      "sickCount": 105
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e8\u05db\u05e1\u05d9\u05dd", 
-      "actualSick": 46, 
-      "verifiedLast7Days": 23, 
-      "testLast7Days": 1731, 
+      "testLast7Days": 4317, 
       "sickCount": 95
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d0\u05d5\u05dd \u05d0\u05dc-\u05e4\u05d7\u05dd", 
+      "actualSick": 63, 
+      "verifiedLast7Days": 21, 
+      "testLast7Days": 4712, 
+      "sickCount": 149
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e0\u05ea\u05d9\u05d1\u05d5\u05ea", 
+      "actualSick": 59, 
+      "verifiedLast7Days": 24, 
+      "testLast7Days": 4242, 
+      "sickCount": 167
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d4\u05d5\u05d3 \u05d4\u05e9\u05e8\u05d5\u05df", 
+      "actualSick": 58, 
+      "verifiedLast7Days": 30, 
+      "testLast7Days": 6376, 
+      "sickCount": 107
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05d5\u05e0\u05d5", 
+      "actualSick": 55, 
+      "verifiedLast7Days": 26, 
+      "testLast7Days": 4474, 
+      "sickCount": 108
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d8\u05d9\u05e8\u05d4", 
+      "actualSick": 52, 
+      "verifiedLast7Days": 21, 
+      "testLast7Days": 3059, 
+      "sickCount": 60
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df", 
+      "actualSick": 51, 
+      "verifiedLast7Days": 39, 
+      "testLast7Days": 4918, 
+      "sickCount": 97
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d0\u05d5\u05e4\u05e7\u05d9\u05dd", 
+      "actualSick": 49, 
+      "verifiedLast7Days": 27, 
+      "testLast7Days": 3944, 
+      "sickCount": 99
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e8\u05db\u05e1\u05d9\u05dd", 
+      "actualSick": 48, 
+      "verifiedLast7Days": 25, 
+      "testLast7Days": 1767, 
+      "sickCount": 97
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05db\u05e1\u05d9\u05e4\u05d4", 
+      "actualSick": 47, 
+      "verifiedLast7Days": 30, 
+      "testLast7Days": 1161, 
+      "sickCount": 60
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05ea\u05d0", 
       "actualSick": 44, 
-      "verifiedLast7Days": 22, 
-      "testLast7Days": 3851, 
-      "sickCount": 94
+      "verifiedLast7Days": 27, 
+      "testLast7Days": 5625, 
+      "sickCount": 70
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d8\u05d9\u05d9\u05d1\u05d4", 
-      "actualSick": 42, 
-      "verifiedLast7Days": 25, 
-      "testLast7Days": 3943, 
-      "sickCount": 92
+      "actualSick": 43, 
+      "verifiedLast7Days": 26, 
+      "testLast7Days": 3982, 
+      "sickCount": 93
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d7\u05d5\u05e8\u05d4", 
       "actualSick": 42, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2251, 
-      "sickCount": 231
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05db\u05e1\u05d9\u05e4\u05d4", 
-      "actualSick": 41, 
-      "verifiedLast7Days": 24, 
-      "testLast7Days": 1144, 
-      "sickCount": 54
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05ea\u05d0", 
-      "actualSick": 40, 
-      "verifiedLast7Days": 23, 
-      "testLast7Days": 5535, 
-      "sickCount": 66
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e9\u05d3\u05e8\u05d5\u05ea", 
-      "actualSick": 38, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 4478, 
-      "sickCount": 95
+      "testLast7Days": 2257, 
+      "sickCount": 234
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e2\u05e4\u05d5\u05dc\u05d4", 
-      "actualSick": 38, 
-      "verifiedLast7Days": 15, 
-      "testLast7Days": 4873, 
-      "sickCount": 104
+      "actualSick": 39, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 4906, 
+      "sickCount": 105
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05de\u05e2\u05dc\u05d4 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
-      "actualSick": 35, 
-      "verifiedLast7Days": 25, 
-      "testLast7Days": 5753, 
-      "sickCount": 90
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e9\u05d5\u05d4\u05dd", 
-      "actualSick": 34, 
-      "verifiedLast7Days": 18, 
-      "testLast7Days": 2845, 
-      "sickCount": 69
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e4\u05e8\u05d3\u05e1 \u05d7\u05e0\u05d4-\u05db\u05e8\u05db\u05d5\u05e8", 
-      "actualSick": 34, 
-      "verifiedLast7Days": 23, 
-      "testLast7Days": 6122, 
-      "sickCount": 59
+      "city": "\u05e9\u05d3\u05e8\u05d5\u05ea", 
+      "actualSick": 39, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 4511, 
+      "sickCount": 96
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e2\u05e8\u05d3", 
-      "actualSick": 33, 
-      "verifiedLast7Days": 20, 
-      "testLast7Days": 2362, 
-      "sickCount": 53
+      "actualSick": 37, 
+      "verifiedLast7Days": 24, 
+      "testLast7Days": 2385, 
+      "sickCount": 57
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e0\u05e1 \u05e6\u05d9\u05d5\u05e0\u05d4", 
-      "actualSick": 32, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 4128, 
-      "sickCount": 58
+      "actualSick": 36, 
+      "verifiedLast7Days": 18, 
+      "testLast7Days": 4183, 
+      "sickCount": 62
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05de\u05e2\u05dc\u05d4 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
+      "actualSick": 36, 
+      "verifiedLast7Days": 26, 
+      "testLast7Days": 5811, 
+      "sickCount": 91
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e9\u05d5\u05d4\u05dd", 
+      "actualSick": 33, 
+      "verifiedLast7Days": 18, 
+      "testLast7Days": 2879, 
+      "sickCount": 69
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e0\u05e6\u05e8\u05ea", 
+      "actualSick": 33, 
+      "verifiedLast7Days": 25, 
+      "testLast7Days": 3110, 
+      "sickCount": 57
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e4\u05e8\u05d3\u05e1 \u05d7\u05e0\u05d4-\u05db\u05e8\u05db\u05d5\u05e8", 
+      "actualSick": 33, 
+      "verifiedLast7Days": 23, 
+      "testLast7Days": 6178, 
+      "sickCount": 59
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d1\u05d0\u05e8 \u05d9\u05e2\u05e7\u05d1", 
       "actualSick": 31, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2674, 
+      "testLast7Days": 2708, 
       "sickCount": 66
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e6\u05e4\u05ea", 
-      "actualSick": 30, 
+      "actualSick": 31, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 3981, 
+      "testLast7Days": 3991, 
       "sickCount": 137
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d2\u05df \u05d9\u05d1\u05e0\u05d4", 
-      "actualSick": 30, 
-      "verifiedLast7Days": 16, 
-      "testLast7Days": 2135, 
-      "sickCount": 56
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d2'\u05ea", 
-      "actualSick": 28, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1805, 
+      "actualSick": 31, 
+      "verifiedLast7Days": 17, 
+      "testLast7Days": 2161, 
       "sickCount": 57
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e2\u05db\u05d5", 
-      "actualSick": 28, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 5274, 
-      "sickCount": 59
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d9\u05d4\u05d5\u05d3", 
-      "actualSick": 28, 
-      "verifiedLast7Days": 19, 
-      "testLast7Days": 3137, 
-      "sickCount": 109
+      "actualSick": 30, 
+      "verifiedLast7Days": 21, 
+      "testLast7Days": 3171, 
+      "sickCount": 111
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e0\u05e6\u05e8\u05ea", 
-      "actualSick": 28, 
-      "verifiedLast7Days": 20, 
-      "testLast7Days": 3078, 
-      "sickCount": 52
+      "city": "\u05e2\u05db\u05d5", 
+      "actualSick": 30, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 5322, 
+      "sickCount": 61
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d2\u05d1\u05e2\u05ea \u05d6\u05d0\u05d1", 
+      "actualSick": 27, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 2579, 
+      "sickCount": 85
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e2\u05e8\u05e2\u05e8\u05d4", 
       "actualSick": 27, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2080, 
+      "testLast7Days": 2100, 
       "sickCount": 36
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d2\u05d1\u05e2\u05ea \u05d6\u05d0\u05d1", 
-      "actualSick": 26, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2562, 
-      "sickCount": 83
+      "city": "\u05d2\u05e0\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
+      "actualSick": 27, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 2653, 
+      "sickCount": 75
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d2\u05e0\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
-      "actualSick": 24, 
+      "city": "\u05d2'\u05ea", 
+      "actualSick": 27, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2628, 
-      "sickCount": 72
+      "testLast7Days": 1843, 
+      "sickCount": 57
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d2\u05d3\u05e8\u05d4", 
-      "actualSick": 23, 
-      "verifiedLast7Days": 15, 
-      "testLast7Days": 4484, 
-      "sickCount": 79
+      "actualSick": 24, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 4509, 
+      "sickCount": 80
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d2\u05d1\u05e2\u05ea \u05e9\u05de\u05d5\u05d0\u05dc", 
-      "actualSick": 21, 
+      "actualSick": 23, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2891, 
-      "sickCount": 67
+      "testLast7Days": 2910, 
+      "sickCount": 69
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05de\u05d6\u05db\u05e8\u05ea \u05d1\u05ea\u05d9\u05d4", 
       "actualSick": 21, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2171, 
+      "testLast7Days": 2180, 
       "sickCount": 36
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d8\u05de\u05e8\u05d4", 
+      "actualSick": 19, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 2424, 
+      "sickCount": 42
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05e7\u05d3\u05d9\u05de\u05d4-\u05e6\u05d5\u05e8\u05df", 
+      "actualSick": 18, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1606, 
+      "sickCount": 34
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d0\u05d5\u05e8 \u05e2\u05e7\u05d9\u05d1\u05d0", 
       "actualSick": 18, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1926, 
+      "testLast7Days": 1940, 
       "sickCount": 25
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05de\u05d1\u05e9\u05e8\u05ea \u05e6\u05d9\u05d5\u05df", 
+      "actualSick": 18, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 3990, 
+      "sickCount": 38
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05db\u05d5\u05db\u05d1 \u05d9\u05e2\u05e7\u05d1", 
+      "actualSick": 18, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 882, 
+      "sickCount": 77
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e9\u05e4\u05e8\u05e2\u05dd", 
       "actualSick": 17, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2882, 
-      "sickCount": 25
+      "testLast7Days": 2912, 
+      "sickCount": 26
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d8\u05de\u05e8\u05d4", 
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d9\u05e2\u05e8\u05d9\u05dd", 
       "actualSick": 17, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2344, 
-      "sickCount": 40
+      "testLast7Days": 1108, 
+      "sickCount": 59
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05d0\u05e8\u05d9\u05d0\u05dc", 
       "actualSick": 17, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1935, 
+      "testLast7Days": 1947, 
       "sickCount": 32
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05db\u05d5\u05db\u05d1 \u05d9\u05e2\u05e7\u05d1", 
+      "city": "\u05d2'\u05dc\u05d2'\u05d5\u05dc\u05d9\u05d4", 
       "actualSick": 17, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 877, 
-      "sickCount": 76
+      "testLast7Days": 989, 
+      "sickCount": 30
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d2'\u05dc\u05d2'\u05d5\u05dc\u05d9\u05d4", 
-      "actualSick": 16, 
+      "city": "\u05d0\u05dc\u05e4\u05d9 \u05de\u05e0\u05e9\u05d4", 
+      "actualSick": 17, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 946, 
-      "sickCount": 29
+      "testLast7Days": 1025, 
+      "sickCount": 22
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05de\u05d1\u05e9\u05e8\u05ea \u05e6\u05d9\u05d5\u05df", 
+      "city": "\u05d0\u05d6\u05d5\u05e8", 
       "actualSick": 16, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 3947, 
-      "sickCount": 36
+      "testLast7Days": 1486, 
+      "sickCount": 51
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05de\u05e2\u05dc\u05d4 \u05e2\u05d9\u05e8\u05d5\u05df", 
       "actualSick": 16, 
       "verifiedLast7Days": 0, 
-      "testLast7Days": 1215, 
+      "testLast7Days": 1218, 
       "sickCount": 26
     }, 
     {
@@ -6052,172 +6084,338 @@
       "city": "\u05e1\u05d0\u05d2'\u05d5\u05e8", 
       "actualSick": 16, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 644, 
+      "testLast7Days": 647, 
       "sickCount": 16
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05dc\u05e4\u05d9 \u05de\u05e0\u05e9\u05d4", 
-      "actualSick": 15, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1022, 
-      "sickCount": 20
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d1\u05d9\u05d0\u05dc\u05d9\u05e7", 
-      "actualSick": 15, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 3323, 
-      "sickCount": 32
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d9\u05d3 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
-      "actualSick": 15, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 736, 
-      "sickCount": 20
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e1\u05d1\u05d9\u05d5\u05df", 
       "actualSick": 15, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 644, 
+      "testLast7Days": 666, 
       "sickCount": 18
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d9\u05e2\u05e8\u05d9\u05dd", 
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d1\u05d9\u05d0\u05dc\u05d9\u05e7", 
       "actualSick": 15, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1099, 
-      "sickCount": 56
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05d6\u05d5\u05e8", 
-      "actualSick": 15, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1464, 
-      "sickCount": 50
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05de\u05d9\u05ea\u05e8", 
-      "actualSick": 15, 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1947, 
-      "sickCount": 28
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05ea\u05dc \u05e9\u05d1\u05e2", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 909, 
-      "sickCount": 15
-    }, 
-    {
-      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05db\u05e4\u05e8 \u05d1\u05e8\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 537, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
+      "testLast7Days": 3345, 
+      "sickCount": 32
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e7\u05dc\u05e0\u05e1\u05d5\u05d5\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "actualSick": 15, 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1931, 
-      "sickCount": 27
+      "testLast7Days": 1944, 
+      "sickCount": 28
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d9\u05d3 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
+      "actualSick": 15, 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 747, 
+      "sickCount": 20
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05de\u05d2'\u05d3 \u05d0\u05dc-\u05db\u05e8\u05d5\u05dd", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2408, 
+      "testLast7Days": 2415, 
       "sickCount": 34
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4", 
+      "city": "\u05d2'\u05e1\u05e8 \u05d0-\u05d6\u05e8\u05e7\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1592, 
-      "sickCount": 47
+      "testLast7Days": 3211, 
+      "sickCount": 52
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05d1\u05e2\u05e0\u05d4", 
+      "city": "\u05ea\u05dc \u05e9\u05d1\u05e2", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 2110, 
-      "sickCount": 44
+      "testLast7Days": 913, 
+      "sickCount": 15
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05e7\u05e8\u05d9\u05ea \u05de\u05d5\u05e6\u05e7\u05d9\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 5025, 
+      "testLast7Days": 5043, 
       "sickCount": 33
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05de\u05d2\u05d3\u05dc \u05d4\u05e2\u05de\u05e7", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 2643, 
+      "sickCount": 108
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d8\u05d9\u05e8\u05ea \u05db\u05e8\u05de\u05dc", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1636, 
+      "sickCount": 28
+    }, 
+    {
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05de\u05d9\u05ea\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1957, 
+      "sickCount": 28
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
       "city": "\u05dc\u05e7\u05d9\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1173, 
+      "testLast7Days": 1182, 
       "sickCount": 28
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05e9\u05de\u05d5\u05e0\u05d4", 
+      "city": "\u05db\u05e4\u05e8 \u05d1\u05e8\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1462, 
-      "sickCount": 27
+      "testLast7Days": 541, 
+      "sickCount": 15
     }, 
     {
       "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
-      "city": "\u05dc\u05d4\u05d1\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "testLast7Days": 1683, 
-      "sickCount": 26
-    }, 
-    {
-      "city": "\u05d0\u05dc\u05d5\u05df \u05e9\u05d1\u05d5\u05ea", 
+      "city": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 313
+      "testLast7Days": 1595, 
+      "sickCount": 46
     }, 
     {
-      "city": "\u05ea\u05e7\u05d5\u05e2", 
+      "status": "\u05e0\u05d3\u05e8\u05e9\u05ea \u05d4\u05d9\u05d3\u05d1\u05e8\u05d5\u05ea, \u05d4\u05e1\u05d1\u05e8\u05d4 \u05d5\u05d0\u05db\u05d9\u05e4\u05d4", 
+      "city": "\u05d1\u05e2\u05e0\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 462
-    }, 
-    {
-      "city": "\u05de\u05d1\u05d5\u05d0 \u05d7\u05d5\u05e8\u05d5\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 261
+      "testLast7Days": 2116, 
+      "sickCount": 44
     }, 
     {
       "city": "\u05e2\u05e8\u05d0\u05d1\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1242
+      "testLast7Days": 1251
+    }, 
+    {
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05e8\u05d1\u05e2", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 16, 
+      "testLast7Days": 627
+    }, 
+    {
+      "city": "\u05d7\u05e8\u05d9\u05e9", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 23, 
+      "testLast7Days": 1174
+    }, 
+    {
+      "city": "\u05e4\u05d5\u05e8\u05d9\u05d9\u05d3\u05d9\u05e1", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 17, 
+      "testLast7Days": 947
+    }, 
+    {
+      "city": "\u05e2\u05ea\u05dc\u05d9\u05ea", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 598
+    }, 
+    {
+      "city": "\u05d0\u05e4\u05e8\u05ea", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 65, 
+      "testLast7Days": 1616
+    }, 
+    {
+      "city": "\u05d0\u05e2\u05e6\u05dd (\u05e9\u05d1\u05d8)", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 188
+    }, 
+    {
+      "city": "\u05e4\u05d3\u05d5\u05d0\u05dc", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 163
+    }, 
+    {
+      "city": "\u05d2\u05df \u05e0\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 202
+    }, 
+    {
+      "city": "\u05e6\u05d5\u05e4\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 222
+    }, 
+    {
+      "city": "\u05d1\u05e1\u05de\"\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 807
+    }, 
+    {
+      "city": "\u05e6\u05d5\u05e8 \u05d4\u05d3\u05e1\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 15, 
+      "testLast7Days": 1710
+    }, 
+    {
+      "city": "\u05e4\u05e8\u05d3\u05e1\u05d9\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1141
+    }, 
+    {
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d8\u05d1\u05e2\u05d5\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1402
+    }, 
+    {
+      "city": "\u05e8\u05d0\u05de\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 759
+    }, 
+    {
+      "city": "\u05e9\u05e2\u05e8\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 535
+    }, 
+    {
+      "city": "\u05dc\u05e4\u05d9\u05d3", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 290
+    }, 
+    {
+      "city": "\u05ea\u05dc \u05de\u05d5\u05e0\u05d3", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 19, 
+      "testLast7Days": 1766
+    }, 
+    {
+      "city": "\u05d0\u05dc\u05e7\u05e0\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 435
+    }, 
+    {
+      "city": "\u05d0\u05dc\u05e2\u05d6\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 357
+    }, 
+    {
+      "city": "\u05de\u05d9\u05d9\u05e1\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 190
+    }, 
+    {
+      "city": "\u05d0\u05dc\u05d5\u05df \u05e9\u05d1\u05d5\u05ea", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 317
+    }, 
+    {
+      "city": "\u05d0\u05db\u05e1\u05d0\u05dc", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 772
+    }, 
+    {
+      "city": "\u05e9\u05d2\u05d1-\u05e9\u05dc\u05d5\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 390
+    }, 
+    {
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 35, 
+      "testLast7Days": 3451
+    }, 
+    {
+      "city": "\u05db\u05d0\u05d1\u05d5\u05dc", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1257
+    }, 
+    {
+      "city": "\u05de\u05e6\u05e4\u05d4 \u05e8\u05de\u05d5\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 30, 
+      "testLast7Days": 419
+    }, 
+    {
+      "city": "\u05e9\u05dc\u05d5\u05de\u05d9", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1227
+    }, 
+    {
+      "city": "\u05e9\u05e2\u05d1", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 1467
+    }, 
+    {
+      "city": "\u05de\u05ea\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 275
     }, 
     {
       "city": "\u05d1\u05d9\u05ea \u05d9\u05e6\u05d7\u05e7-\u05e9\u05e2\u05e8 \u05d7\u05e4\u05e8", 
@@ -6227,279 +6425,6 @@
       "testLast7Days": 181
     }, 
     {
-      "city": "\u05d1\u05e0\u05d9\u05de\u05d9\u05e0\u05d4-\u05d2\u05d1\u05e2\u05ea \u05e2\u05d3\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1276
-    }, 
-    {
-      "city": "\u05db\u05d0\u05d5\u05db\u05d1 \u05d0\u05d1\u05d5 \u05d0\u05dc-\u05d4\u05d9\u05d2'\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 412
-    }, 
-    {
-      "city": "\u05de\u05e6\u05e4\u05d4 \u05e8\u05de\u05d5\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 30, 
-      "testLast7Days": 417
-    }, 
-    {
-      "city": "\u05d9\u05e7\u05e0\u05e2\u05dd \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 21, 
-      "testLast7Days": 1659
-    }, 
-    {
-      "city": "\u05de\u05d2\u05d3\u05dc \u05d4\u05e2\u05de\u05e7", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 105, 
-      "testLast7Days": 2609
-    }, 
-    {
-      "city": "\u05de\u05d2'\u05d3\u05dc \u05e9\u05de\u05e1", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 646
-    }, 
-    {
-      "city": "\u05de\u05ea\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 272
-    }, 
-    {
-      "city": "\u05e2\u05ea\u05dc\u05d9\u05ea", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 594
-    }, 
-    {
-      "city": "\u05de\u05e1\u05e2\u05d5\u05d3\u05d9\u05df \u05d0\u05dc-\u05e2\u05d6\u05d0\u05d6\u05de\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 213
-    }, 
-    {
-      "city": "\u05de\u05e2\u05d9\u05dc\u05d9\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 331
-    }, 
-    {
-      "city": "\u05d0\u05db\u05e1\u05d0\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 771
-    }, 
-    {
-      "city": "\u05d9\u05d0\u05e0\u05d5\u05d7-\u05d2'\u05ea", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 401
-    }, 
-    {
-      "city": "\u05e4\u05d3\u05d5\u05d0\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 162
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05de\u05e0\u05d3\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 603
-    }, 
-    {
-      "city": "\u05d0\u05dc\u05e2\u05d6\u05e8", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 356
-    }, 
-    {
-      "city": "\u05d0\u05dc\u05e7\u05e0\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 430
-    }, 
-    {
-      "city": "\u05d0\u05e2\u05e6\u05dd (\u05e9\u05d1\u05d8)", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 187
-    }, 
-    {
-      "city": "\u05d0\u05e4\u05e8\u05ea", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 65, 
-      "testLast7Days": 1603
-    }, 
-    {
-      "city": "\u05de\u05e2\u05dc\u05d5\u05ea-\u05ea\u05e8\u05e9\u05d9\u05d7\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 17, 
-      "testLast7Days": 1938
-    }, 
-    {
-      "city": "\u05de\u05e6\u05e4\u05d4 \u05d9\u05e8\u05d9\u05d7\u05d5", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 205
-    }, 
-    {
-      "city": "\u05de\u05e8\u05db\u05d6 \u05e9\u05e4\u05d9\u05e8\u05d0", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 19, 
-      "testLast7Days": 271
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05d4\u05d0\u05d5\u05e8\u05e0\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 229
-    }, 
-    {
-      "city": "\u05e0\u05d5\u05e3 \u05d0\u05d9\u05d9\u05dc\u05d5\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 368
-    }, 
-    {
-      "city": "\u05e0\u05d5\u05e3 \u05d4\u05d2\u05dc\u05d9\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 37, 
-      "testLast7Days": 4101
-    }, 
-    {
-      "city": "\u05d1\u05e1\u05de\"\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 804
-    }, 
-    {
-      "city": "\u05e6\u05d5\u05e4\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 218
-    }, 
-    {
-      "city": "\u05e6\u05d5\u05e8 \u05d4\u05d3\u05e1\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 15, 
-      "testLast7Days": 1697
-    }, 
-    {
-      "city": "\u05d8\u05d9\u05e8\u05ea \u05db\u05e8\u05de\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 27, 
-      "testLast7Days": 1616
-    }, 
-    {
-      "city": "\u05d2\u05df \u05e0\u05e8", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 201
-    }, 
-    {
-      "city": "\u05e1\u05d7'\u05e0\u05d9\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 20, 
-      "testLast7Days": 2171
-    }, 
-    {
-      "city": "\u05e0\u05d5\u05e7\u05d3\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 198
-    }, 
-    {
-      "city": "\u05d6\u05de\u05e8", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 710
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 583
-    }, 
-    {
-      "city": "\u05e2\u05de\u05e0\u05d5\u05d0\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 20, 
-      "testLast7Days": 252
-    }, 
-    {
-      "city": "\u05e2\u05e5 \u05d0\u05e4\u05e8\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": 0, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 214
-    }, 
-    {
-      "city": "\u05d7\u05e8\u05d9\u05e9", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 23, 
-      "testLast7Days": 1167
-    }, 
-    {
-      "city": "\u05e4\u05d5\u05e8\u05d9\u05d9\u05d3\u05d9\u05e1", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 17, 
-      "testLast7Days": 943
-    }, 
-    {
-      "city": "\u05e4\u05e8\u05d3\u05e1\u05d9\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1125
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05d9\u05d5\u05e0\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "sickCount": 22, 
-      "testLast7Days": 1739
-    }, 
-    {
       "city": "\u05d8\u05dc\u05de\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
@@ -6507,16 +6432,93 @@
       "testLast7Days": 285
     }, 
     {
-      "city": "\u05db\u05e1\u05e8\u05d0-\u05e1\u05de\u05d9\u05e2", 
+      "city": "\u05e0\u05d5\u05e7\u05d3\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 200
+    }, 
+    {
+      "city": "\u05ea\u05e7\u05d5\u05e2", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "testLast7Days": 1160
+      "testLast7Days": 468
+    }, 
+    {
+      "city": "\u05d0\u05d1\u05d5 \u05d2\u05d5\u05e9", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 799
+    }, 
+    {
+      "city": "\u05d6\u05de\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 722
+    }, 
+    {
+      "city": "\u05dc\u05d4\u05d1\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": 26, 
+      "testLast7Days": 1697
+    }, 
+    {
+      "city": "\u05db\u05e4\u05e8 \u05db\u05e0\u05d0", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": 19, 
+      "testLast7Days": 1588
+    }, 
+    {
+      "city": "\u05d0\u05d1\u05d5 \u05e1\u05e0\u05d0\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": 0, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 739
+    }, 
+    {
+      "city": "\u05e7\u05d3\u05d5\u05de\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 451
+    }, 
+    {
+      "city": "\u05db\u05e4\u05e8 \u05d4\u05d0\u05d5\u05e8\u05e0\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 232
+    }, 
+    {
+      "city": "\u05e0\u05d9\u05e6\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 267
+    }, 
+    {
+      "city": "\u05e0\u05e9\u05e8", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 2485
+    }, 
+    {
+      "city": "\u05de\u05e2\u05d9\u05dc\u05d9\u05d0", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "testLast7Days": 331
     }
   ], 
   "updatedPatientsOverallStatus": [
     {
-      "amount": 107, 
+      "amount": 113, 
       "name": "hard"
     }, 
     {
@@ -6526,11 +6528,11 @@
   ], 
   "sickPerLocation": [
     {
-      "amount": 13707, 
+      "amount": 14111, 
       "name": "home"
     }, 
     {
-      "amount": 397, 
+      "amount": 405, 
       "name": "hospital"
     }
   ], 
@@ -6545,11 +6547,11 @@
     }, 
     {
       "date": "2020-07-04T00:00:00.000Z", 
-      "amount": 797
+      "amount": 799
     }, 
     {
       "date": "2020-07-05T00:00:00.000Z", 
-      "amount": 809
+      "amount": 808
     }, 
     {
       "date": "2020-07-06T00:00:00.000Z", 
@@ -6557,11 +6559,11 @@
     }, 
     {
       "date": "2020-07-07T00:00:00.000Z", 
-      "amount": 1288
+      "amount": 1317
     }, 
     {
       "date": "2020-07-08T00:00:00.000Z", 
-      "amount": 195
+      "amount": 622
     }
   ], 
   "recoveredPerDay": [
@@ -6875,7 +6877,7 @@
     }, 
     {
       "date": "2020-04-28T00:00:00.000Z", 
-      "amount": 499
+      "amount": 500
     }, 
     {
       "date": "2020-04-29T00:00:00.000Z", 
@@ -7031,11 +7033,11 @@
     }, 
     {
       "date": "2020-06-06T00:00:00.000Z", 
-      "amount": 42
+      "amount": 41
     }, 
     {
       "date": "2020-06-07T00:00:00.000Z", 
-      "amount": 58
+      "amount": 57
     }, 
     {
       "date": "2020-06-08T00:00:00.000Z", 
@@ -7079,7 +7081,7 @@
     }, 
     {
       "date": "2020-06-18T00:00:00.000Z", 
-      "amount": 74
+      "amount": 73
     }, 
     {
       "date": "2020-06-19T00:00:00.000Z", 
@@ -7107,7 +7109,7 @@
     }, 
     {
       "date": "2020-06-25T00:00:00.000Z", 
-      "amount": 119
+      "amount": 118
     }, 
     {
       "date": "2020-06-26T00:00:00.000Z", 
@@ -7127,7 +7129,7 @@
     }, 
     {
       "date": "2020-06-30T00:00:00.000Z", 
-      "amount": 115
+      "amount": 114
     }, 
     {
       "date": "2020-07-01T00:00:00.000Z", 
@@ -7143,7 +7145,7 @@
     }, 
     {
       "date": "2020-07-04T00:00:00.000Z", 
-      "amount": 133
+      "amount": 132
     }, 
     {
       "date": "2020-07-05T00:00:00.000Z", 
@@ -7155,11 +7157,11 @@
     }, 
     {
       "date": "2020-07-07T00:00:00.000Z", 
-      "amount": 133
+      "amount": 147
     }, 
     {
       "date": "2020-07-08T00:00:00.000Z", 
-      "amount": 18
+      "amount": 57
     }
   ]
 }
