@@ -7,58 +7,58 @@
     "isolated_Other_Sector": 937
   }, 
   "lastUpdate": {
-    "lastUpdate": "2020-10-15T15:01:48.260Z"
+    "lastUpdate": "2020-10-15T17:52:47.397Z"
   }, 
   "infectedByAgeAndGenderPublic": [
     {
       "section": 0, 
-      "male": 16175, 
-      "female": 15494
+      "male": 16190, 
+      "female": 15505
     }, 
     {
       "section": 10, 
-      "male": 37336, 
-      "female": 26348
+      "male": 37353, 
+      "female": 26372
     }, 
     {
       "section": 20, 
-      "male": 31221, 
-      "female": 28123
+      "male": 31228, 
+      "female": 28142
     }, 
     {
       "section": 30, 
-      "male": 20823, 
-      "female": 20365
+      "male": 20835, 
+      "female": 20374
     }, 
     {
       "section": 40, 
-      "male": 18169, 
-      "female": 19051
+      "male": 18178, 
+      "female": 19054
     }, 
     {
       "section": 50, 
-      "male": 14058, 
-      "female": 14381
+      "male": 14064, 
+      "female": 14394
     }, 
     {
       "section": 60, 
-      "male": 10179, 
-      "female": 8942
+      "male": 10183, 
+      "female": 8952
     }, 
     {
       "section": 70, 
-      "male": 4966, 
-      "female": 4478
+      "male": 4970, 
+      "female": 4476
     }, 
     {
       "section": 80, 
-      "male": 2124, 
-      "female": 2627
+      "male": 2123, 
+      "female": 2630
     }, 
     {
       "section": 90, 
-      "male": 492, 
-      "female": 1144
+      "male": 493, 
+      "female": 1143
     }
   ], 
   "patientsPerDate": [
@@ -499,7 +499,7 @@
       "Counthospitalized_without_release": 528, 
       "StandardOccupancy": 0.3066298342541436, 
       "CountMediumStatus": 89, 
-      "CountBreath": 50, 
+      "CountBreath": 51, 
       "num_visits": 4289, 
       "patients_home": 3308, 
       "CountHardStatus": 80, 
@@ -515,12 +515,12 @@
       "Counthospitalized_without_release": 584, 
       "StandardOccupancy": 0.3497237569060773, 
       "CountMediumStatus": 105, 
-      "CountBreath": 55, 
+      "CountBreath": 54, 
       "num_visits": 3886, 
       "patients_home": 3758, 
-      "CountHardStatus": 90, 
+      "CountHardStatus": 89, 
       "new_hospitalized": 121, 
-      "CountEasyStatus": 438, 
+      "CountEasyStatus": 439, 
       "patients_hotel": 0, 
       "date": "2020-03-30T00:00:00.000Z", 
       "CountDeath": 1, 
@@ -530,13 +530,13 @@
       "Counthospitalized": 683, 
       "Counthospitalized_without_release": 640, 
       "StandardOccupancy": 0.3773480662983426, 
-      "CountMediumStatus": 115, 
+      "CountMediumStatus": 116, 
       "CountBreath": 64, 
       "num_visits": 4005, 
       "patients_home": 4366, 
       "CountHardStatus": 98, 
       "new_hospitalized": 111, 
-      "CountEasyStatus": 470, 
+      "CountEasyStatus": 469, 
       "patients_hotel": 0, 
       "date": "2020-03-31T00:00:00.000Z", 
       "CountDeath": 4, 
@@ -790,9 +790,9 @@
       "CountBreath": 137, 
       "num_visits": 5388, 
       "patients_home": 7017, 
-      "CountHardStatus": 182, 
+      "CountHardStatus": 181, 
       "new_hospitalized": 51, 
-      "CountEasyStatus": 354, 
+      "CountEasyStatus": 355, 
       "patients_hotel": 1366, 
       "date": "2020-04-16T00:00:00.000Z", 
       "CountDeath": 7, 
@@ -853,7 +853,7 @@
       "CountMediumStatus": 135, 
       "CountBreath": 123, 
       "num_visits": 5097, 
-      "patients_home": 6237, 
+      "patients_home": 6236, 
       "CountHardStatus": 154, 
       "new_hospitalized": 49, 
       "CountEasyStatus": 309, 
@@ -1199,16 +1199,16 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 217, 
+      "Counthospitalized": 218, 
       "Counthospitalized_without_release": 200, 
-      "StandardOccupancy": 0.1198895027624309, 
+      "StandardOccupancy": 0.1204419889502763, 
       "CountMediumStatus": 52, 
       "CountBreath": 56, 
       "num_visits": 5597, 
       "patients_home": 1828, 
       "CountHardStatus": 65, 
       "new_hospitalized": 10, 
-      "CountEasyStatus": 100, 
+      "CountEasyStatus": 101, 
       "patients_hotel": 1054, 
       "date": "2020-05-12T00:00:00.000Z", 
       "CountDeath": 3, 
@@ -1317,7 +1317,7 @@
       "CountMediumStatus": 43, 
       "CountBreath": 40, 
       "num_visits": 6324, 
-      "patients_home": 1145, 
+      "patients_home": 1144, 
       "CountHardStatus": 51, 
       "new_hospitalized": 7, 
       "CountEasyStatus": 70, 
@@ -2095,14 +2095,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 465, 
+      "Counthospitalized": 464, 
       "Counthospitalized_without_release": 406, 
-      "StandardOccupancy": 0.2569060773480663, 
+      "StandardOccupancy": 0.256353591160221, 
       "CountMediumStatus": 95, 
       "CountBreath": 35, 
       "num_visits": 6440, 
       "patients_home": 11863, 
-      "CountHardStatus": 94, 
+      "CountHardStatus": 93, 
       "new_hospitalized": 106, 
       "CountEasyStatus": 276, 
       "patients_hotel": 1202, 
@@ -2207,14 +2207,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 638, 
+      "Counthospitalized": 639, 
       "Counthospitalized_without_release": 571, 
-      "StandardOccupancy": 0.3524861878453039, 
+      "StandardOccupancy": 0.3530386740331492, 
       "CountMediumStatus": 140, 
       "CountBreath": 55, 
       "num_visits": 6685, 
       "patients_home": 18652, 
-      "CountHardStatus": 189, 
+      "CountHardStatus": 190, 
       "new_hospitalized": 109, 
       "CountEasyStatus": 309, 
       "patients_hotel": 2483, 
@@ -2224,12 +2224,12 @@
     }, 
     {
       "Counthospitalized": 677, 
-      "Counthospitalized_without_release": 559, 
+      "Counthospitalized_without_release": 560, 
       "StandardOccupancy": 0.3740331491712707, 
       "CountMediumStatus": 121, 
       "CountBreath": 58, 
       "num_visits": 6558, 
-      "patients_home": 19897, 
+      "patients_home": 19896, 
       "CountHardStatus": 209, 
       "new_hospitalized": 108, 
       "CountEasyStatus": 347, 
@@ -2240,12 +2240,12 @@
     }, 
     {
       "Counthospitalized": 688, 
-      "Counthospitalized_without_release": 573, 
+      "Counthospitalized_without_release": 574, 
       "StandardOccupancy": 0.3801104972375691, 
       "CountMediumStatus": 133, 
       "CountBreath": 59, 
       "num_visits": 6787, 
-      "patients_home": 21106, 
+      "patients_home": 21105, 
       "CountHardStatus": 209, 
       "new_hospitalized": 134, 
       "CountEasyStatus": 346, 
@@ -2271,16 +2271,16 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 708, 
-      "Counthospitalized_without_release": 675, 
-      "StandardOccupancy": 0.3911602209944751, 
-      "CountMediumStatus": 149, 
+      "Counthospitalized": 709, 
+      "Counthospitalized_without_release": 676, 
+      "StandardOccupancy": 0.3917127071823204, 
+      "CountMediumStatus": 150, 
       "CountBreath": 57, 
       "num_visits": 4978, 
-      "patients_home": 22544, 
-      "CountHardStatus": 236, 
+      "patients_home": 22543, 
+      "CountHardStatus": 235, 
       "new_hospitalized": 103, 
-      "CountEasyStatus": 323, 
+      "CountEasyStatus": 324, 
       "patients_hotel": 3431, 
       "date": "2020-07-18T00:00:00.000Z", 
       "CountDeath": 8, 
@@ -2304,12 +2304,12 @@
     }, 
     {
       "Counthospitalized": 819, 
-      "Counthospitalized_without_release": 686, 
+      "Counthospitalized_without_release": 685, 
       "StandardOccupancy": 0.4524861878453039, 
       "CountMediumStatus": 148, 
       "CountBreath": 79, 
       "num_visits": 6654, 
-      "patients_home": 23949, 
+      "patients_home": 23950, 
       "CountHardStatus": 265, 
       "new_hospitalized": 143, 
       "CountEasyStatus": 406, 
@@ -2320,12 +2320,12 @@
     }, 
     {
       "Counthospitalized": 806, 
-      "Counthospitalized_without_release": 675, 
+      "Counthospitalized_without_release": 674, 
       "StandardOccupancy": 0.4453038674033149, 
       "CountMediumStatus": 142, 
       "CountBreath": 81, 
       "num_visits": 6578, 
-      "patients_home": 24871, 
+      "patients_home": 24872, 
       "CountHardStatus": 257, 
       "new_hospitalized": 126, 
       "CountEasyStatus": 407, 
@@ -2367,13 +2367,13 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 812, 
-      "Counthospitalized_without_release": 731, 
-      "StandardOccupancy": 0.4486187845303867, 
-      "CountMediumStatus": 153, 
+      "Counthospitalized": 811, 
+      "Counthospitalized_without_release": 730, 
+      "StandardOccupancy": 0.4480662983425414, 
+      "CountMediumStatus": 152, 
       "CountBreath": 87, 
       "num_visits": 5745, 
-      "patients_home": 19156, 
+      "patients_home": 19157, 
       "CountHardStatus": 329, 
       "new_hospitalized": 106, 
       "CountEasyStatus": 330, 
@@ -2387,12 +2387,12 @@
       "Counthospitalized_without_release": 779, 
       "StandardOccupancy": 0.4497237569060774, 
       "CountMediumStatus": 178, 
-      "CountBreath": 99, 
+      "CountBreath": 100, 
       "num_visits": 4973, 
       "patients_home": 19248, 
-      "CountHardStatus": 322, 
+      "CountHardStatus": 323, 
       "new_hospitalized": 90, 
-      "CountEasyStatus": 314, 
+      "CountEasyStatus": 313, 
       "patients_hotel": 3252, 
       "date": "2020-07-25T00:00:00.000Z", 
       "CountDeath": 7, 
@@ -2432,12 +2432,12 @@
     }, 
     {
       "Counthospitalized": 899, 
-      "Counthospitalized_without_release": 786, 
+      "Counthospitalized_without_release": 787, 
       "StandardOccupancy": 0.4966850828729282, 
       "CountMediumStatus": 185, 
       "CountBreath": 95, 
       "num_visits": 6596, 
-      "patients_home": 17693, 
+      "patients_home": 17692, 
       "CountHardStatus": 323, 
       "new_hospitalized": 122, 
       "CountEasyStatus": 391, 
@@ -2447,16 +2447,16 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 890, 
+      "Counthospitalized": 891, 
       "Counthospitalized_without_release": 780, 
-      "StandardOccupancy": 0.4917127071823205, 
+      "StandardOccupancy": 0.4922651933701657, 
       "CountMediumStatus": 173, 
       "CountBreath": 97, 
       "num_visits": 6307, 
       "patients_home": 18140, 
       "CountHardStatus": 336, 
       "new_hospitalized": 117, 
-      "CountEasyStatus": 381, 
+      "CountEasyStatus": 382, 
       "patients_hotel": 3263, 
       "date": "2020-07-29T00:00:00.000Z", 
       "CountDeath": 15, 
@@ -2512,12 +2512,12 @@
     }, 
     {
       "Counthospitalized": 941, 
-      "Counthospitalized_without_release": 824, 
+      "Counthospitalized_without_release": 823, 
       "StandardOccupancy": 0.519889502762431, 
       "CountMediumStatus": 171, 
       "CountBreath": 100, 
       "num_visits": 7335, 
-      "patients_home": 15717, 
+      "patients_home": 15718, 
       "CountHardStatus": 350, 
       "new_hospitalized": 140, 
       "CountEasyStatus": 420, 
@@ -2528,12 +2528,12 @@
     }, 
     {
       "Counthospitalized": 916, 
-      "Counthospitalized_without_release": 781, 
+      "Counthospitalized_without_release": 782, 
       "StandardOccupancy": 0.5060773480662983, 
       "CountMediumStatus": 147, 
       "CountBreath": 94, 
       "num_visits": 6687, 
-      "patients_home": 15826, 
+      "patients_home": 15825, 
       "CountHardStatus": 329, 
       "new_hospitalized": 108, 
       "CountEasyStatus": 440, 
@@ -2544,15 +2544,15 @@
     }, 
     {
       "Counthospitalized": 879, 
-      "Counthospitalized_without_release": 764, 
+      "Counthospitalized_without_release": 763, 
       "StandardOccupancy": 0.4856353591160221, 
-      "CountMediumStatus": 165, 
+      "CountMediumStatus": 164, 
       "CountBreath": 98, 
       "num_visits": 6778, 
-      "patients_home": 15831, 
+      "patients_home": 15832, 
       "CountHardStatus": 342, 
       "new_hospitalized": 109, 
-      "CountEasyStatus": 372, 
+      "CountEasyStatus": 373, 
       "patients_hotel": 3261, 
       "date": "2020-08-04T00:00:00.000Z", 
       "CountDeath": 11, 
@@ -2592,12 +2592,12 @@
     }, 
     {
       "Counthospitalized": 879, 
-      "Counthospitalized_without_release": 806, 
+      "Counthospitalized_without_release": 805, 
       "StandardOccupancy": 0.4856353591160221, 
       "CountMediumStatus": 159, 
       "CountBreath": 104, 
       "num_visits": 5478, 
-      "patients_home": 15717, 
+      "patients_home": 15718, 
       "CountHardStatus": 367, 
       "new_hospitalized": 117, 
       "CountEasyStatus": 353, 
@@ -2640,12 +2640,12 @@
     }, 
     {
       "Counthospitalized": 931, 
-      "Counthospitalized_without_release": 801, 
+      "Counthospitalized_without_release": 800, 
       "StandardOccupancy": 0.5143646408839779, 
       "CountMediumStatus": 183, 
       "CountBreath": 109, 
       "num_visits": 6492, 
-      "patients_home": 14917, 
+      "patients_home": 14918, 
       "CountHardStatus": 391, 
       "new_hospitalized": 105, 
       "CountEasyStatus": 357, 
@@ -2656,12 +2656,12 @@
     }, 
     {
       "Counthospitalized": 896, 
-      "Counthospitalized_without_release": 774, 
+      "Counthospitalized_without_release": 775, 
       "StandardOccupancy": 0.4950276243093923, 
       "CountMediumStatus": 191, 
       "CountBreath": 110, 
       "num_visits": 6830, 
-      "patients_home": 15775, 
+      "patients_home": 15774, 
       "CountHardStatus": 374, 
       "new_hospitalized": 99, 
       "CountEasyStatus": 331, 
@@ -2690,11 +2690,11 @@
       "Counthospitalized": 881, 
       "Counthospitalized_without_release": 774, 
       "StandardOccupancy": 0.4867403314917127, 
-      "CountMediumStatus": 178, 
+      "CountMediumStatus": 177, 
       "CountBreath": 108, 
       "num_visits": 6016, 
       "patients_home": 16320, 
-      "CountHardStatus": 371, 
+      "CountHardStatus": 372, 
       "new_hospitalized": 137, 
       "CountEasyStatus": 332, 
       "patients_hotel": 3387, 
@@ -2706,11 +2706,11 @@
       "Counthospitalized": 880, 
       "Counthospitalized_without_release": 795, 
       "StandardOccupancy": 0.4861878453038674, 
-      "CountMediumStatus": 178, 
+      "CountMediumStatus": 179, 
       "CountBreath": 103, 
       "num_visits": 5015, 
       "patients_home": 16674, 
-      "CountHardStatus": 370, 
+      "CountHardStatus": 369, 
       "new_hospitalized": 105, 
       "CountEasyStatus": 332, 
       "patients_hotel": 3350, 
@@ -2735,14 +2735,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 977, 
-      "Counthospitalized_without_release": 832, 
-      "StandardOccupancy": 0.5397790055248619, 
-      "CountMediumStatus": 196, 
+      "Counthospitalized": 978, 
+      "Counthospitalized_without_release": 831, 
+      "StandardOccupancy": 0.5403314917127072, 
+      "CountMediumStatus": 195, 
       "CountBreath": 107, 
       "num_visits": 6835, 
-      "patients_home": 15551, 
-      "CountHardStatus": 374, 
+      "patients_home": 15552, 
+      "CountHardStatus": 376, 
       "new_hospitalized": 124, 
       "CountEasyStatus": 407, 
       "patients_hotel": 3435, 
@@ -2767,14 +2767,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 944, 
-      "Counthospitalized_without_release": 694, 
-      "StandardOccupancy": 0.5215469613259669, 
+      "Counthospitalized": 945, 
+      "Counthospitalized_without_release": 693, 
+      "StandardOccupancy": 0.5220994475138122, 
       "CountMediumStatus": 185, 
       "CountBreath": 112, 
       "num_visits": 5872, 
-      "patients_home": 16762, 
-      "CountHardStatus": 397, 
+      "patients_home": 16763, 
+      "CountHardStatus": 398, 
       "new_hospitalized": 128, 
       "CountEasyStatus": 362, 
       "patients_hotel": 3115, 
@@ -2799,46 +2799,46 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 915, 
-      "Counthospitalized_without_release": 672, 
-      "StandardOccupancy": 0.505524861878453, 
-      "CountMediumStatus": 176, 
+      "Counthospitalized": 914, 
+      "Counthospitalized_without_release": 673, 
+      "StandardOccupancy": 0.5049723756906077, 
+      "CountMediumStatus": 178, 
       "CountBreath": 111, 
       "num_visits": 5895, 
-      "patients_home": 17112, 
+      "patients_home": 17111, 
       "CountHardStatus": 395, 
       "new_hospitalized": 102, 
-      "CountEasyStatus": 344, 
+      "CountEasyStatus": 341, 
       "patients_hotel": 2979, 
       "date": "2020-08-20T00:00:00.000Z", 
       "CountDeath": 12, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 908, 
+      "Counthospitalized": 909, 
       "Counthospitalized_without_release": 720, 
-      "StandardOccupancy": 0.5016574585635359, 
+      "StandardOccupancy": 0.5022099447513813, 
       "CountMediumStatus": 169, 
       "CountBreath": 111, 
       "num_visits": 5024, 
       "patients_home": 16990, 
       "CountHardStatus": 401, 
       "new_hospitalized": 113, 
-      "CountEasyStatus": 338, 
+      "CountEasyStatus": 339, 
       "patients_hotel": 2935, 
       "date": "2020-08-21T00:00:00.000Z", 
       "CountDeath": 13, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 922, 
+      "Counthospitalized": 921, 
       "Counthospitalized_without_release": 768, 
-      "StandardOccupancy": 0.5093922651933702, 
+      "StandardOccupancy": 0.5088397790055249, 
       "CountMediumStatus": 179, 
       "CountBreath": 113, 
       "num_visits": 4402, 
       "patients_home": 17050, 
-      "CountHardStatus": 403, 
+      "CountHardStatus": 402, 
       "new_hospitalized": 78, 
       "CountEasyStatus": 340, 
       "patients_hotel": 2835, 
@@ -2879,14 +2879,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 974, 
-      "Counthospitalized_without_release": 724, 
-      "StandardOccupancy": 0.538121546961326, 
+      "Counthospitalized": 975, 
+      "Counthospitalized_without_release": 725, 
+      "StandardOccupancy": 0.5386740331491713, 
       "CountMediumStatus": 180, 
       "CountBreath": 116, 
       "num_visits": 5845, 
-      "patients_home": 16426, 
-      "CountHardStatus": 428, 
+      "patients_home": 16425, 
+      "CountHardStatus": 429, 
       "new_hospitalized": 99, 
       "CountEasyStatus": 366, 
       "patients_hotel": 2202, 
@@ -2896,13 +2896,13 @@
     }, 
     {
       "Counthospitalized": 1000, 
-      "Counthospitalized_without_release": 745, 
+      "Counthospitalized_without_release": 744, 
       "StandardOccupancy": 0.5524861878453039, 
-      "CountMediumStatus": 192, 
+      "CountMediumStatus": 190, 
       "CountBreath": 116, 
       "num_visits": 5757, 
-      "patients_home": 15865, 
-      "CountHardStatus": 416, 
+      "patients_home": 15866, 
+      "CountHardStatus": 418, 
       "new_hospitalized": 127, 
       "CountEasyStatus": 392, 
       "patients_hotel": 2248, 
@@ -2912,25 +2912,25 @@
     }, 
     {
       "Counthospitalized": 999, 
-      "Counthospitalized_without_release": 741, 
+      "Counthospitalized_without_release": 740, 
       "StandardOccupancy": 0.5519337016574586, 
-      "CountMediumStatus": 193, 
+      "CountMediumStatus": 192, 
       "CountBreath": 115, 
       "num_visits": 5745, 
-      "patients_home": 16482, 
+      "patients_home": 16483, 
       "CountHardStatus": 421, 
       "new_hospitalized": 110, 
-      "CountEasyStatus": 385, 
+      "CountEasyStatus": 386, 
       "patients_hotel": 2184, 
       "date": "2020-08-27T00:00:00.000Z", 
       "CountDeath": 12, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 954, 
+      "Counthospitalized": 953, 
       "Counthospitalized_without_release": 741, 
-      "StandardOccupancy": 0.5270718232044199, 
-      "CountMediumStatus": 203, 
+      "StandardOccupancy": 0.5265193370165746, 
+      "CountMediumStatus": 202, 
       "CountBreath": 109, 
       "num_visits": 4938, 
       "patients_home": 16354, 
@@ -2960,13 +2960,13 @@
     }, 
     {
       "Counthospitalized": 1061, 
-      "Counthospitalized_without_release": 790, 
+      "Counthospitalized_without_release": 791, 
       "StandardOccupancy": 0.5861878453038674, 
-      "CountMediumStatus": 215, 
+      "CountMediumStatus": 213, 
       "CountBreath": 124, 
       "num_visits": 6672, 
-      "patients_home": 15205, 
-      "CountHardStatus": 453, 
+      "patients_home": 15204, 
+      "CountHardStatus": 455, 
       "new_hospitalized": 126, 
       "CountEasyStatus": 393, 
       "patients_hotel": 2241, 
@@ -2978,13 +2978,13 @@
       "Counthospitalized": 1061, 
       "Counthospitalized_without_release": 776, 
       "StandardOccupancy": 0.5861878453038674, 
-      "CountMediumStatus": 208, 
+      "CountMediumStatus": 209, 
       "CountBreath": 119, 
       "num_visits": 5999, 
       "patients_home": 16323, 
       "CountHardStatus": 436, 
       "new_hospitalized": 107, 
-      "CountEasyStatus": 417, 
+      "CountEasyStatus": 416, 
       "patients_hotel": 2012, 
       "date": "2020-08-31T00:00:00.000Z", 
       "CountDeath": 22, 
@@ -2992,45 +2992,45 @@
     }, 
     {
       "Counthospitalized": 1000, 
-      "Counthospitalized_without_release": 754, 
+      "Counthospitalized_without_release": 753, 
       "StandardOccupancy": 0.5524861878453039, 
       "CountMediumStatus": 199, 
       "CountBreath": 115, 
       "num_visits": 6662, 
-      "patients_home": 17547, 
-      "CountHardStatus": 415, 
+      "patients_home": 17548, 
+      "CountHardStatus": 416, 
       "new_hospitalized": 85, 
-      "CountEasyStatus": 386, 
+      "CountEasyStatus": 385, 
       "patients_hotel": 1948, 
       "date": "2020-09-01T00:00:00.000Z", 
       "CountDeath": 16, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 981, 
-      "Counthospitalized_without_release": 730, 
-      "StandardOccupancy": 0.541988950276243, 
+      "Counthospitalized": 980, 
+      "Counthospitalized_without_release": 729, 
+      "StandardOccupancy": 0.5414364640883977, 
       "CountMediumStatus": 172, 
       "CountBreath": 120, 
       "num_visits": 6168, 
-      "patients_home": 19180, 
-      "CountHardStatus": 415, 
+      "patients_home": 19181, 
+      "CountHardStatus": 413, 
       "new_hospitalized": 84, 
-      "CountEasyStatus": 394, 
+      "CountEasyStatus": 395, 
       "patients_hotel": 1999, 
       "date": "2020-09-02T00:00:00.000Z", 
       "CountDeath": 14, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 969, 
+      "Counthospitalized": 968, 
       "Counthospitalized_without_release": 724, 
-      "StandardOccupancy": 0.5353591160220994, 
+      "StandardOccupancy": 0.5348066298342542, 
       "CountMediumStatus": 157, 
       "CountBreath": 115, 
       "num_visits": 6137, 
       "patients_home": 19969, 
-      "CountHardStatus": 404, 
+      "CountHardStatus": 403, 
       "new_hospitalized": 108, 
       "CountEasyStatus": 408, 
       "patients_hotel": 2006, 
@@ -3042,11 +3042,11 @@
       "Counthospitalized": 962, 
       "Counthospitalized_without_release": 756, 
       "StandardOccupancy": 0.5314917127071823, 
-      "CountMediumStatus": 146, 
+      "CountMediumStatus": 145, 
       "CountBreath": 119, 
       "num_visits": 5040, 
       "patients_home": 21222, 
-      "CountHardStatus": 415, 
+      "CountHardStatus": 416, 
       "new_hospitalized": 84, 
       "CountEasyStatus": 401, 
       "patients_hotel": 2070, 
@@ -3055,14 +3055,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 979, 
-      "Counthospitalized_without_release": 809, 
-      "StandardOccupancy": 0.5408839779005525, 
-      "CountMediumStatus": 148, 
+      "Counthospitalized": 976, 
+      "Counthospitalized_without_release": 807, 
+      "StandardOccupancy": 0.5392265193370166, 
+      "CountMediumStatus": 146, 
       "CountBreath": 124, 
       "num_visits": 4572, 
-      "patients_home": 21665, 
-      "CountHardStatus": 440, 
+      "patients_home": 21667, 
+      "CountHardStatus": 439, 
       "new_hospitalized": 78, 
       "CountEasyStatus": 391, 
       "patients_hotel": 2257, 
@@ -3071,14 +3071,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1095, 
-      "Counthospitalized_without_release": 808, 
-      "StandardOccupancy": 0.6049723756906077, 
-      "CountMediumStatus": 182, 
-      "CountBreath": 131, 
+      "Counthospitalized": 1096, 
+      "Counthospitalized_without_release": 809, 
+      "StandardOccupancy": 0.605524861878453, 
+      "CountMediumStatus": 184, 
+      "CountBreath": 130, 
       "num_visits": 6856, 
-      "patients_home": 21525, 
-      "CountHardStatus": 457, 
+      "patients_home": 21524, 
+      "CountHardStatus": 456, 
       "new_hospitalized": 116, 
       "CountEasyStatus": 456, 
       "patients_hotel": 2180, 
@@ -3087,48 +3087,48 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1075, 
-      "Counthospitalized_without_release": 825, 
-      "StandardOccupancy": 0.5939226519337016, 
+      "Counthospitalized": 1076, 
+      "Counthospitalized_without_release": 823, 
+      "StandardOccupancy": 0.594475138121547, 
       "CountMediumStatus": 182, 
       "CountBreath": 132, 
       "num_visits": 6174, 
-      "patients_home": 23506, 
+      "patients_home": 23508, 
       "CountHardStatus": 456, 
       "new_hospitalized": 109, 
-      "CountEasyStatus": 437, 
+      "CountEasyStatus": 438, 
       "patients_hotel": 2035, 
       "date": "2020-09-07T00:00:00.000Z", 
       "CountDeath": 16, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1112, 
-      "Counthospitalized_without_release": 827, 
-      "StandardOccupancy": 0.6143646408839779, 
-      "CountMediumStatus": 188, 
+      "Counthospitalized": 1110, 
+      "Counthospitalized_without_release": 829, 
+      "StandardOccupancy": 0.6132596685082873, 
+      "CountMediumStatus": 187, 
       "CountBreath": 140, 
       "num_visits": 6058, 
-      "patients_home": 25523, 
+      "patients_home": 25521, 
       "CountHardStatus": 462, 
       "new_hospitalized": 100, 
-      "CountEasyStatus": 462, 
+      "CountEasyStatus": 461, 
       "patients_hotel": 2084, 
       "date": "2020-09-08T00:00:00.000Z", 
       "CountDeath": 21, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1122, 
-      "Counthospitalized_without_release": 851, 
-      "StandardOccupancy": 0.6198895027624309, 
-      "CountMediumStatus": 188, 
+      "Counthospitalized": 1121, 
+      "Counthospitalized_without_release": 848, 
+      "StandardOccupancy": 0.6193370165745856, 
+      "CountMediumStatus": 190, 
       "CountBreath": 138, 
       "num_visits": 6013, 
-      "patients_home": 27795, 
-      "CountHardStatus": 486, 
+      "patients_home": 27798, 
+      "CountHardStatus": 484, 
       "new_hospitalized": 105, 
-      "CountEasyStatus": 448, 
+      "CountEasyStatus": 447, 
       "patients_hotel": 2224, 
       "date": "2020-09-09T00:00:00.000Z", 
       "CountDeath": 16, 
@@ -3136,31 +3136,31 @@
     }, 
     {
       "Counthospitalized": 1154, 
-      "Counthospitalized_without_release": 874, 
+      "Counthospitalized_without_release": 873, 
       "StandardOccupancy": 0.6375690607734806, 
-      "CountMediumStatus": 202, 
+      "CountMediumStatus": 203, 
       "CountBreath": 137, 
       "num_visits": 5990, 
-      "patients_home": 29924, 
-      "CountHardStatus": 493, 
+      "patients_home": 29925, 
+      "CountHardStatus": 492, 
       "new_hospitalized": 101, 
       "CountEasyStatus": 459, 
       "patients_hotel": 2345, 
       "date": "2020-09-10T00:00:00.000Z", 
-      "CountDeath": 12, 
+      "CountDeath": 11, 
       "total_beds": 1810
     }, 
     {
       "Counthospitalized": 1161, 
-      "Counthospitalized_without_release": 897, 
+      "Counthospitalized_without_release": 895, 
       "StandardOccupancy": 0.6414364640883978, 
-      "CountMediumStatus": 207, 
+      "CountMediumStatus": 206, 
       "CountBreath": 133, 
       "num_visits": 5254, 
-      "patients_home": 31933, 
-      "CountHardStatus": 485, 
+      "patients_home": 31935, 
+      "CountHardStatus": 487, 
       "new_hospitalized": 75, 
-      "CountEasyStatus": 469, 
+      "CountEasyStatus": 468, 
       "patients_hotel": 2484, 
       "date": "2020-09-11T00:00:00.000Z", 
       "CountDeath": 22, 
@@ -3170,13 +3170,13 @@
       "Counthospitalized": 1160, 
       "Counthospitalized_without_release": 952, 
       "StandardOccupancy": 0.6408839779005525, 
-      "CountMediumStatus": 206, 
+      "CountMediumStatus": 205, 
       "CountBreath": 135, 
       "num_visits": 4693, 
       "patients_home": 33137, 
-      "CountHardStatus": 517, 
+      "CountHardStatus": 516, 
       "new_hospitalized": 100, 
-      "CountEasyStatus": 437, 
+      "CountEasyStatus": 439, 
       "patients_hotel": 2733, 
       "date": "2020-09-12T00:00:00.000Z", 
       "CountDeath": 15, 
@@ -3186,13 +3186,13 @@
       "Counthospitalized": 1289, 
       "Counthospitalized_without_release": 971, 
       "StandardOccupancy": 0.7121546961325966, 
-      "CountMediumStatus": 237, 
+      "CountMediumStatus": 236, 
       "CountBreath": 139, 
       "num_visits": 6971, 
       "patients_home": 33010, 
       "CountHardStatus": 517, 
       "new_hospitalized": 122, 
-      "CountEasyStatus": 535, 
+      "CountEasyStatus": 536, 
       "patients_hotel": 2751, 
       "date": "2020-09-13T00:00:00.000Z", 
       "CountDeath": 19, 
@@ -3200,13 +3200,13 @@
     }, 
     {
       "Counthospitalized": 1325, 
-      "Counthospitalized_without_release": 991, 
+      "Counthospitalized_without_release": 992, 
       "StandardOccupancy": 0.7320441988950276, 
-      "CountMediumStatus": 242, 
+      "CountMediumStatus": 241, 
       "CountBreath": 138, 
       "num_visits": 6113, 
-      "patients_home": 35597, 
-      "CountHardStatus": 521, 
+      "patients_home": 35596, 
+      "CountHardStatus": 522, 
       "new_hospitalized": 123, 
       "CountEasyStatus": 562, 
       "patients_hotel": 2602, 
@@ -3218,27 +3218,27 @@
       "Counthospitalized": 1290, 
       "Counthospitalized_without_release": 1000, 
       "StandardOccupancy": 0.712707182320442, 
-      "CountMediumStatus": 236, 
+      "CountMediumStatus": 238, 
       "CountBreath": 138, 
       "num_visits": 6107, 
       "patients_home": 38618, 
       "CountHardStatus": 514, 
       "new_hospitalized": 105, 
-      "CountEasyStatus": 540, 
+      "CountEasyStatus": 538, 
       "patients_hotel": 2758, 
       "date": "2020-09-15T00:00:00.000Z", 
       "CountDeath": 17, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1340, 
-      "Counthospitalized_without_release": 1035, 
-      "StandardOccupancy": 0.7403314917127072, 
-      "CountMediumStatus": 275, 
-      "CountBreath": 141, 
+      "Counthospitalized": 1341, 
+      "Counthospitalized_without_release": 1036, 
+      "StandardOccupancy": 0.7408839779005525, 
+      "CountMediumStatus": 273, 
+      "CountBreath": 140, 
       "num_visits": 6181, 
-      "patients_home": 40485, 
-      "CountHardStatus": 526, 
+      "patients_home": 40484, 
+      "CountHardStatus": 529, 
       "new_hospitalized": 121, 
       "CountEasyStatus": 539, 
       "patients_hotel": 2973, 
@@ -3247,14 +3247,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1359, 
+      "Counthospitalized": 1360, 
       "Counthospitalized_without_release": 1019, 
-      "StandardOccupancy": 0.7508287292817679, 
-      "CountMediumStatus": 255, 
+      "StandardOccupancy": 0.7513812154696132, 
+      "CountMediumStatus": 254, 
       "CountBreath": 150, 
       "num_visits": 6120, 
       "patients_home": 42021, 
-      "CountHardStatus": 565, 
+      "CountHardStatus": 567, 
       "new_hospitalized": 103, 
       "CountEasyStatus": 539, 
       "patients_hotel": 3130, 
@@ -3264,15 +3264,15 @@
     }, 
     {
       "Counthospitalized": 1350, 
-      "Counthospitalized_without_release": 1067, 
+      "Counthospitalized_without_release": 1068, 
       "StandardOccupancy": 0.7458563535911602, 
-      "CountMediumStatus": 257, 
+      "CountMediumStatus": 258, 
       "CountBreath": 152, 
       "num_visits": 5006, 
-      "patients_home": 44470, 
-      "CountHardStatus": 589, 
+      "patients_home": 44469, 
+      "CountHardStatus": 590, 
       "new_hospitalized": 105, 
-      "CountEasyStatus": 504, 
+      "CountEasyStatus": 502, 
       "patients_hotel": 3113, 
       "date": "2020-09-18T00:00:00.000Z", 
       "CountDeath": 20, 
@@ -3295,14 +3295,14 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1453, 
+      "Counthospitalized": 1454, 
       "Counthospitalized_without_release": 1178, 
-      "StandardOccupancy": 0.8027624309392265, 
+      "StandardOccupancy": 0.8033149171270718, 
       "CountMediumStatus": 242, 
       "CountBreath": 166, 
       "num_visits": 5132, 
       "patients_home": 46496, 
-      "CountHardStatus": 629, 
+      "CountHardStatus": 630, 
       "new_hospitalized": 102, 
       "CountEasyStatus": 582, 
       "patients_hotel": 3384, 
@@ -3311,16 +3311,16 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1524, 
+      "Counthospitalized": 1523, 
       "Counthospitalized_without_release": 1121, 
-      "StandardOccupancy": 0.8419889502762431, 
+      "StandardOccupancy": 0.8414364640883978, 
       "CountMediumStatus": 283, 
       "CountBreath": 166, 
       "num_visits": 6561, 
       "patients_home": 45880, 
-      "CountHardStatus": 653, 
+      "CountHardStatus": 649, 
       "new_hospitalized": 107, 
-      "CountEasyStatus": 588, 
+      "CountEasyStatus": 591, 
       "patients_hotel": 3302, 
       "date": "2020-09-21T00:00:00.000Z", 
       "CountDeath": 32, 
@@ -3334,41 +3334,41 @@
       "CountBreath": 164, 
       "num_visits": 5844, 
       "patients_home": 49383, 
-      "CountHardStatus": 636, 
+      "CountHardStatus": 634, 
       "new_hospitalized": 141, 
-      "CountEasyStatus": 582, 
+      "CountEasyStatus": 584, 
       "patients_hotel": 3300, 
       "date": "2020-09-22T00:00:00.000Z", 
       "CountDeath": 26, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1534, 
-      "Counthospitalized_without_release": 1182, 
-      "StandardOccupancy": 0.8475138121546961, 
-      "CountMediumStatus": 267, 
+      "Counthospitalized": 1535, 
+      "Counthospitalized_without_release": 1183, 
+      "StandardOccupancy": 0.8480662983425414, 
+      "CountMediumStatus": 266, 
       "CountBreath": 159, 
       "num_visits": 5655, 
-      "patients_home": 52538, 
-      "CountHardStatus": 671, 
+      "patients_home": 52537, 
+      "CountHardStatus": 675, 
       "new_hospitalized": 117, 
-      "CountEasyStatus": 596, 
+      "CountEasyStatus": 594, 
       "patients_hotel": 3419, 
       "date": "2020-09-23T00:00:00.000Z", 
       "CountDeath": 24, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1556, 
-      "Counthospitalized_without_release": 1155, 
-      "StandardOccupancy": 0.8596685082872928, 
+      "Counthospitalized": 1557, 
+      "Counthospitalized_without_release": 1156, 
+      "StandardOccupancy": 0.8602209944751381, 
       "CountMediumStatus": 280, 
       "CountBreath": 161, 
       "num_visits": 5807, 
-      "patients_home": 56162, 
+      "patients_home": 56161, 
       "CountHardStatus": 668, 
       "new_hospitalized": 119, 
-      "CountEasyStatus": 608, 
+      "CountEasyStatus": 609, 
       "patients_hotel": 3456, 
       "date": "2020-09-24T00:00:00.000Z", 
       "CountDeath": 31, 
@@ -3410,13 +3410,13 @@
       "Counthospitalized": 1723, 
       "Counthospitalized_without_release": 1312, 
       "StandardOccupancy": 0.9519337016574586, 
-      "CountMediumStatus": 291, 
+      "CountMediumStatus": 290, 
       "CountBreath": 203, 
       "num_visits": 5427, 
       "patients_home": 60927, 
-      "CountHardStatus": 741, 
+      "CountHardStatus": 738, 
       "new_hospitalized": 155, 
-      "CountEasyStatus": 691, 
+      "CountEasyStatus": 695, 
       "patients_hotel": 3818, 
       "date": "2020-09-27T00:00:00.000Z", 
       "CountDeath": 27, 
@@ -3424,31 +3424,31 @@
     }, 
     {
       "Counthospitalized": 1690, 
-      "Counthospitalized_without_release": 1387, 
+      "Counthospitalized_without_release": 1388, 
       "StandardOccupancy": 0.9337016574585635, 
       "CountMediumStatus": 304, 
       "CountBreath": 196, 
       "num_visits": 3945, 
-      "patients_home": 59602, 
-      "CountHardStatus": 764, 
+      "patients_home": 59601, 
+      "CountHardStatus": 765, 
       "new_hospitalized": 98, 
-      "CountEasyStatus": 622, 
+      "CountEasyStatus": 621, 
       "patients_hotel": 3965, 
       "date": "2020-09-28T00:00:00.000Z", 
       "CountDeath": 26, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1838, 
+      "Counthospitalized": 1837, 
       "Counthospitalized_without_release": 1297, 
-      "StandardOccupancy": 1.015469613259669, 
-      "CountMediumStatus": 316, 
+      "StandardOccupancy": 1.014917127071823, 
+      "CountMediumStatus": 317, 
       "CountBreath": 199, 
       "num_visits": 6739, 
       "patients_home": 59029, 
-      "CountHardStatus": 804, 
+      "CountHardStatus": 803, 
       "new_hospitalized": 142, 
-      "CountEasyStatus": 718, 
+      "CountEasyStatus": 717, 
       "patients_hotel": 3847, 
       "date": "2020-09-29T00:00:00.000Z", 
       "CountDeath": 39, 
@@ -3458,13 +3458,13 @@
       "Counthospitalized": 1755, 
       "Counthospitalized_without_release": 1270, 
       "StandardOccupancy": 0.9696132596685083, 
-      "CountMediumStatus": 290, 
+      "CountMediumStatus": 291, 
       "CountBreath": 205, 
       "num_visits": 5532, 
       "patients_home": 63765, 
       "CountHardStatus": 827, 
       "new_hospitalized": 133, 
-      "CountEasyStatus": 638, 
+      "CountEasyStatus": 637, 
       "patients_hotel": 3713, 
       "date": "2020-09-30T00:00:00.000Z", 
       "CountDeath": 36, 
@@ -3504,13 +3504,13 @@
     }, 
     {
       "Counthospitalized": 1723, 
-      "Counthospitalized_without_release": 1380, 
+      "Counthospitalized_without_release": 1379, 
       "StandardOccupancy": 0.9519337016574586, 
-      "CountMediumStatus": 335, 
+      "CountMediumStatus": 336, 
       "CountBreath": 215, 
       "num_visits": 4007, 
-      "patients_home": 64227, 
-      "CountHardStatus": 854, 
+      "patients_home": 64228, 
+      "CountHardStatus": 853, 
       "new_hospitalized": 86, 
       "CountEasyStatus": 534, 
       "patients_hotel": 4982, 
@@ -3554,11 +3554,11 @@
       "Counthospitalized": 1802, 
       "Counthospitalized_without_release": 1289, 
       "StandardOccupancy": 0.9955801104972376, 
-      "CountMediumStatus": 359, 
+      "CountMediumStatus": 360, 
       "CountBreath": 221, 
       "num_visits": 5313, 
       "patients_home": 56069, 
-      "CountHardStatus": 871, 
+      "CountHardStatus": 870, 
       "new_hospitalized": 108, 
       "CountEasyStatus": 572, 
       "patients_hotel": 4771, 
@@ -3583,80 +3583,80 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1733, 
+      "Counthospitalized": 1734, 
       "Counthospitalized_without_release": 1213, 
-      "StandardOccupancy": 0.9574585635359116, 
+      "StandardOccupancy": 0.958011049723757, 
       "CountMediumStatus": 340, 
       "CountBreath": 232, 
       "num_visits": 5513, 
       "patients_home": 53340, 
       "CountHardStatus": 864, 
       "new_hospitalized": 90, 
-      "CountEasyStatus": 529, 
+      "CountEasyStatus": 530, 
       "patients_hotel": 5365, 
       "date": "2020-10-08T00:00:00.000Z", 
       "CountDeath": 50, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1633, 
-      "Counthospitalized_without_release": 1232, 
-      "StandardOccupancy": 0.9022099447513812, 
+      "Counthospitalized": 1634, 
+      "Counthospitalized_without_release": 1233, 
+      "StandardOccupancy": 0.9027624309392265, 
       "CountMediumStatus": 301, 
-      "CountBreath": 231, 
+      "CountBreath": 230, 
       "num_visits": 5068, 
-      "patients_home": 50642, 
+      "patients_home": 50641, 
       "CountHardStatus": 854, 
       "new_hospitalized": 96, 
-      "CountEasyStatus": 478, 
+      "CountEasyStatus": 479, 
       "patients_hotel": 5669, 
       "date": "2020-10-09T00:00:00.000Z", 
       "CountDeath": 41, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1613, 
-      "Counthospitalized_without_release": 1268, 
-      "StandardOccupancy": 0.8911602209944751, 
+      "Counthospitalized": 1614, 
+      "Counthospitalized_without_release": 1269, 
+      "StandardOccupancy": 0.8917127071823204, 
       "CountMediumStatus": 305, 
       "CountBreath": 232, 
       "num_visits": 4435, 
-      "patients_home": 47764, 
+      "patients_home": 47763, 
       "CountHardStatus": 836, 
       "new_hospitalized": 80, 
-      "CountEasyStatus": 472, 
+      "CountEasyStatus": 473, 
       "patients_hotel": 5389, 
       "date": "2020-10-10T00:00:00.000Z", 
       "CountDeath": 33, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1745, 
-      "Counthospitalized_without_release": 1250, 
-      "StandardOccupancy": 0.9640883977900553, 
+      "Counthospitalized": 1746, 
+      "Counthospitalized_without_release": 1251, 
+      "StandardOccupancy": 0.9646408839779006, 
       "CountMediumStatus": 328, 
       "CountBreath": 233, 
       "num_visits": 6316, 
-      "patients_home": 45941, 
+      "patients_home": 45938, 
       "CountHardStatus": 840, 
       "new_hospitalized": 119, 
-      "CountEasyStatus": 577, 
+      "CountEasyStatus": 578, 
       "patients_hotel": 5007, 
       "date": "2020-10-11T00:00:00.000Z", 
-      "CountDeath": 46, 
+      "CountDeath": 47, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1691, 
-      "Counthospitalized_without_release": 1203, 
-      "StandardOccupancy": 0.9342541436464088, 
+      "Counthospitalized": 1692, 
+      "Counthospitalized_without_release": 1204, 
+      "StandardOccupancy": 0.9348066298342541, 
       "CountMediumStatus": 317, 
-      "CountBreath": 238, 
+      "CountBreath": 237, 
       "num_visits": 5327, 
-      "patients_home": 43991, 
+      "patients_home": 43989, 
       "CountHardStatus": 840, 
       "new_hospitalized": 102, 
-      "CountEasyStatus": 534, 
+      "CountEasyStatus": 535, 
       "patients_hotel": 4654, 
       "date": "2020-10-12T00:00:00.000Z", 
       "CountDeath": 32, 
@@ -3664,13 +3664,13 @@
     }, 
     {
       "Counthospitalized": 1583, 
-      "Counthospitalized_without_release": 1111, 
+      "Counthospitalized_without_release": 1112, 
       "StandardOccupancy": 0.874585635359116, 
-      "CountMediumStatus": 287, 
-      "CountBreath": 248, 
+      "CountMediumStatus": 288, 
+      "CountBreath": 247, 
       "num_visits": 4687, 
-      "patients_home": 40438, 
-      "CountHardStatus": 806, 
+      "patients_home": 40437, 
+      "CountHardStatus": 805, 
       "new_hospitalized": 72, 
       "CountEasyStatus": 490, 
       "patients_hotel": 4681, 
@@ -3679,35 +3679,35 @@
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1500, 
-      "Counthospitalized_without_release": 1047, 
-      "StandardOccupancy": 0.8287292817679558, 
+      "Counthospitalized": 1502, 
+      "Counthospitalized_without_release": 1046, 
+      "StandardOccupancy": 0.8298342541436464, 
       "CountMediumStatus": 264, 
-      "CountBreath": 244, 
+      "CountBreath": 243, 
       "num_visits": 4927, 
-      "patients_home": 37450, 
-      "CountHardStatus": 770, 
-      "new_hospitalized": 64, 
-      "CountEasyStatus": 466, 
+      "patients_home": 37184, 
+      "CountHardStatus": 767, 
+      "new_hospitalized": 65, 
+      "CountEasyStatus": 471, 
       "patients_hotel": 4323, 
       "date": "2020-10-14T00:00:00.000Z", 
-      "CountDeath": 31, 
+      "CountDeath": 33, 
       "total_beds": 1810
     }, 
     {
-      "Counthospitalized": 1314, 
-      "Counthospitalized_without_release": 1314, 
-      "StandardOccupancy": 0.7259668508287292, 
-      "CountMediumStatus": 234, 
-      "CountBreath": 248, 
+      "Counthospitalized": 1304, 
+      "Counthospitalized_without_release": 1304, 
+      "StandardOccupancy": 0.7204419889502762, 
+      "CountMediumStatus": 221, 
+      "CountBreath": 246, 
       "num_visits": 385, 
-      "patients_home": 35816, 
-      "CountHardStatus": 730, 
-      "new_hospitalized": 26, 
-      "CountEasyStatus": 314, 
+      "patients_home": 35474, 
+      "CountHardStatus": 742, 
+      "new_hospitalized": 27, 
+      "CountEasyStatus": 336, 
       "patients_hotel": 4073, 
       "date": "2020-10-15T00:00:00.000Z", 
-      "CountDeath": 10, 
+      "CountDeath": 14, 
       "total_beds": 1810
     }
   ], 
@@ -5233,32 +5233,32 @@
     {
       "date": "2020-10-11T00:00:00.000Z", 
       "amount": 23090, 
-      "positiveAmount": 1643, 
+      "positiveAmount": 1642, 
       "amountVirusDiagnosis": 21261
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
       "amount": 47302, 
-      "positiveAmount": 3137, 
+      "positiveAmount": 3138, 
       "amountVirusDiagnosis": 44263
     }, 
     {
       "date": "2020-10-13T00:00:00.000Z", 
       "amount": 45153, 
-      "positiveAmount": 2301, 
+      "positiveAmount": 2303, 
       "amountVirusDiagnosis": 42267
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "amount": 40513, 
-      "positiveAmount": 2009, 
-      "amountVirusDiagnosis": 38073
+      "amount": 40576, 
+      "positiveAmount": 2020, 
+      "amountVirusDiagnosis": 38136
     }, 
     {
       "date": "2020-10-15T00:00:00.000Z", 
-      "amount": 22536, 
-      "positiveAmount": 842, 
-      "amountVirusDiagnosis": 21436
+      "amount": 26472, 
+      "positiveAmount": 1019, 
+      "amountVirusDiagnosis": 25156
     }
   ], 
   "hospitalStatus": [
@@ -5787,12 +5787,12 @@
     {
       "date": "2020-04-20T00:00:00.000Z", 
       "amount": 299, 
-      "recovered": 546
+      "recovered": 547
     }, 
     {
       "date": "2020-04-21T00:00:00.000Z", 
       "amount": 282, 
-      "recovered": 462
+      "recovered": 461
     }, 
     {
       "date": "2020-04-22T00:00:00.000Z", 
@@ -5932,12 +5932,12 @@
     {
       "date": "2020-05-19T00:00:00.000Z", 
       "amount": 22, 
-      "recovered": 173
+      "recovered": 174
     }, 
     {
       "date": "2020-05-20T00:00:00.000Z", 
       "amount": 15, 
-      "recovered": 124
+      "recovered": 123
     }, 
     {
       "date": "2020-05-21T00:00:00.000Z", 
@@ -6656,28 +6656,28 @@
     }, 
     {
       "date": "2020-10-11T00:00:00.000Z", 
-      "amount": 1643, 
-      "recovered": 3820
+      "amount": 1642, 
+      "recovered": 3821
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
-      "amount": 3137, 
+      "amount": 3138, 
       "recovered": 5455
     }, 
     {
       "date": "2020-10-13T00:00:00.000Z", 
-      "amount": 2301, 
-      "recovered": 5885
+      "amount": 2303, 
+      "recovered": 5886
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "amount": 2009, 
-      "recovered": 5388
+      "amount": 2020, 
+      "recovered": 5667
     }, 
     {
       "date": "2020-10-15T00:00:00.000Z", 
-      "amount": 842, 
-      "recovered": 2449
+      "amount": 1019, 
+      "recovered": 2710
     }
   ], 
   "deadByAgeAndGenderPublic": [
@@ -6708,28 +6708,28 @@
     }, 
     {
       "section": 50, 
-      "male": 61, 
+      "male": 62, 
       "female": 33
     }, 
     {
       "section": 60, 
-      "male": 173, 
+      "male": 174, 
       "female": 81
     }, 
     {
       "section": 70, 
-      "male": 352, 
+      "male": 353, 
       "female": 180
     }, 
     {
       "section": 80, 
       "male": 405, 
-      "female": 330
+      "female": 331
     }, 
     {
       "section": 90, 
       "male": 188, 
-      "female": 279
+      "female": 281
     }
   ], 
   "doublingRate": [
@@ -7945,23 +7945,23 @@
     }, 
     {
       "date": "2020-10-11T00:00:00.000Z", 
-      "dailyDoublingRate": -5.1487823288705155, 
-      "numberOfDoublingDays": -13.11272480731075
+      "dailyDoublingRate": -5.152755154741562, 
+      "numberOfDoublingDays": -13.10234278021298
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
-      "dailyDoublingRate": -10.823036649214671, 
-      "numberOfDoublingDays": -6.051180119951164
+      "dailyDoublingRate": -10.81930133199296, 
+      "numberOfDoublingDays": -6.053393618537705
     }, 
     {
       "date": "2020-10-13T00:00:00.000Z", 
-      "dailyDoublingRate": -11.34282091024377, 
-      "numberOfDoublingDays": -5.757362776756832
+      "dailyDoublingRate": -11.33342726973839, 
+      "numberOfDoublingDays": -5.762433864310585
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "dailyDoublingRate": -11.41131595677051, 
-      "numberOfDoublingDays": -5.720638293123663
+      "dailyDoublingRate": -11.35183811844475, 
+      "numberOfDoublingDays": -5.752502788188282
     }
   ], 
   "otherHospitalizedStaff": [
@@ -8022,7 +8022,7 @@
     }, 
     {
       "section": 10, 
-      "male": 0, 
+      "male": 1, 
       "female": 1
     }, 
     {
@@ -8037,28 +8037,28 @@
     }, 
     {
       "section": 40, 
-      "male": 11, 
-      "female": 4
+      "male": 12, 
+      "female": 3
     }, 
     {
       "section": 50, 
-      "male": 31, 
-      "female": 9
-    }, 
-    {
-      "section": 60, 
-      "male": 65, 
+      "male": 30, 
       "female": 10
     }, 
     {
+      "section": 60, 
+      "male": 64, 
+      "female": 13
+    }, 
+    {
       "section": 70, 
-      "male": 50, 
+      "male": 47, 
       "female": 23
     }, 
     {
       "section": 80, 
-      "male": 20, 
-      "female": 9
+      "male": 19, 
+      "female": 8
     }, 
     {
       "section": 90, 
@@ -8068,12 +8068,12 @@
   ], 
   "sickPerDateTwoDays": [
     {
-      "date": "2020-10-14T17:12:59.578Z", 
-      "amount": 42820
+      "date": "2020-10-14T20:13:10.219Z", 
+      "amount": 42553
     }, 
     {
-      "date": "2020-10-15T17:12:59.578Z", 
-      "amount": -1617
+      "date": "2020-10-15T20:13:10.219Z", 
+      "amount": -1702
     }
   ], 
   "deadPatientsPerDate": [
@@ -8847,7 +8847,7 @@
     }, 
     {
       "date": "2020-09-10T00:00:00.000Z", 
-      "amount": 12
+      "amount": 11
     }, 
     {
       "date": "2020-09-11T00:00:00.000Z", 
@@ -8971,7 +8971,7 @@
     }, 
     {
       "date": "2020-10-11T00:00:00.000Z", 
-      "amount": 46
+      "amount": 47
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
@@ -8983,451 +8983,451 @@
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "amount": 31
+      "amount": 33
     }, 
     {
       "date": "2020-10-15T00:00:00.000Z", 
-      "amount": 10
+      "amount": 14
     }
   ], 
   "contagionDataPerCityPublic": [
     {
       "city": "\u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd", 
-      "actualSick": 4880, 
-      "verifiedLast7Days": 2107, 
-      "testLast7Days": 24012, 
+      "actualSick": 4825, 
+      "verifiedLast7Days": 2129, 
+      "testLast7Days": 24423, 
       "patientDiffPopulationForTenThousands": 52, 
-      "sickCount": 41866
+      "sickCount": 41888
     }, 
     {
       "city": "\u05d1\u05e0\u05d9 \u05d1\u05e8\u05e7", 
-      "actualSick": 3424, 
-      "verifiedLast7Days": 1460, 
-      "testLast7Days": 10448, 
-      "patientDiffPopulationForTenThousands": 171, 
-      "sickCount": 24624
+      "actualSick": 3364, 
+      "verifiedLast7Days": 1470, 
+      "testLast7Days": 10519, 
+      "patientDiffPopulationForTenThousands": 168, 
+      "sickCount": 24634
     }, 
     {
       "city": "\u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": 1678, 
-      "verifiedLast7Days": 704, 
-      "testLast7Days": 6629, 
-      "patientDiffPopulationForTenThousands": 218, 
-      "sickCount": 10510
+      "actualSick": 1647, 
+      "verifiedLast7Days": 710, 
+      "testLast7Days": 6698, 
+      "patientDiffPopulationForTenThousands": 214, 
+      "sickCount": 10516
     }, 
     {
       "city": "\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1 - \u05d9\u05e4\u05d5", 
-      "actualSick": 1489, 
-      "verifiedLast7Days": 398, 
-      "testLast7Days": 12171, 
-      "patientDiffPopulationForTenThousands": 33, 
-      "sickCount": 10255
+      "actualSick": 1481, 
+      "verifiedLast7Days": 407, 
+      "testLast7Days": 12333, 
+      "patientDiffPopulationForTenThousands": 32, 
+      "sickCount": 10264
     }, 
     {
       "city": "\u05d0\u05e9\u05d3\u05d5\u05d3", 
-      "actualSick": 1482, 
-      "verifiedLast7Days": 615, 
-      "testLast7Days": 9731, 
-      "patientDiffPopulationForTenThousands": 66, 
-      "sickCount": 12201
+      "actualSick": 1473, 
+      "verifiedLast7Days": 628, 
+      "testLast7Days": 10062, 
+      "patientDiffPopulationForTenThousands": 65, 
+      "sickCount": 12214
     }, 
     {
       "city": "\u05e0\u05ea\u05e0\u05d9\u05d4", 
-      "actualSick": 1189, 
-      "verifiedLast7Days": 352, 
-      "testLast7Days": 7572, 
-      "patientDiffPopulationForTenThousands": 55, 
-      "sickCount": 6761
+      "actualSick": 1180, 
+      "verifiedLast7Days": 354, 
+      "testLast7Days": 7636, 
+      "patientDiffPopulationForTenThousands": 54, 
+      "sickCount": 6763
     }, 
     {
       "city": "\u05e4\u05ea\u05d7 \u05ea\u05e7\u05d5\u05d5\u05d4", 
-      "actualSick": 1081, 
-      "verifiedLast7Days": 320, 
-      "testLast7Days": 7473, 
+      "actualSick": 1075, 
+      "verifiedLast7Days": 327, 
+      "testLast7Days": 7545, 
       "patientDiffPopulationForTenThousands": 44, 
-      "sickCount": 7529
-    }, 
-    {
-      "city": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2", 
-      "actualSick": 958, 
-      "verifiedLast7Days": 231, 
-      "testLast7Days": 6989, 
-      "patientDiffPopulationForTenThousands": 49, 
-      "sickCount": 5583
+      "sickCount": 7536
     }, 
     {
       "city": "\u05d1\u05d9\u05ea \u05e9\u05de\u05e9", 
-      "actualSick": 952, 
-      "verifiedLast7Days": 443, 
-      "testLast7Days": 3717, 
+      "actualSick": 949, 
+      "verifiedLast7Days": 451, 
+      "testLast7Days": 3763, 
       "patientDiffPopulationForTenThousands": 75, 
-      "sickCount": 7533
+      "sickCount": 7541
+    }, 
+    {
+      "city": "\u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2", 
+      "actualSick": 947, 
+      "verifiedLast7Days": 231, 
+      "testLast7Days": 7010, 
+      "patientDiffPopulationForTenThousands": 48, 
+      "sickCount": 5583
     }, 
     {
       "city": "\u05e8\u05d0\u05e9\u05d5\u05df \u05dc\u05e6\u05d9\u05d5\u05df", 
-      "actualSick": 809, 
-      "verifiedLast7Days": 187, 
-      "testLast7Days": 6790, 
+      "actualSick": 803, 
+      "verifiedLast7Days": 190, 
+      "testLast7Days": 6885, 
       "patientDiffPopulationForTenThousands": 33, 
-      "sickCount": 5295
+      "sickCount": 5298
     }, 
     {
       "city": "\u05d7\u05d5\u05dc\u05d5\u05df", 
-      "actualSick": 804, 
-      "verifiedLast7Days": 238, 
-      "testLast7Days": 5382, 
+      "actualSick": 795, 
+      "verifiedLast7Days": 239, 
+      "testLast7Days": 5431, 
       "patientDiffPopulationForTenThousands": 43, 
-      "sickCount": 5555
+      "sickCount": 5556
     }, 
     {
       "city": "\u05d7\u05d9\u05e4\u05d4", 
-      "actualSick": 708, 
-      "verifiedLast7Days": 207, 
-      "testLast7Days": 9403, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 5272
+      "actualSick": 693, 
+      "verifiedLast7Days": 208, 
+      "testLast7Days": 9489, 
+      "patientDiffPopulationForTenThousands": 25, 
+      "sickCount": 5273
     }, 
     {
       "city": "\u05d0\u05e9\u05e7\u05dc\u05d5\u05df", 
-      "actualSick": 677, 
+      "actualSick": 673, 
       "verifiedLast7Days": 167, 
-      "testLast7Days": 4176, 
-      "patientDiffPopulationForTenThousands": 48, 
+      "testLast7Days": 4231, 
+      "patientDiffPopulationForTenThousands": 47, 
       "sickCount": 4178
     }, 
     {
       "city": "\u05d0\u05dc\u05e2\u05d3", 
-      "actualSick": 673, 
+      "actualSick": 664, 
       "verifiedLast7Days": 288, 
-      "testLast7Days": 1746, 
-      "patientDiffPopulationForTenThousands": 142, 
+      "testLast7Days": 1752, 
+      "patientDiffPopulationForTenThousands": 140, 
       "sickCount": 5398
     }, 
     {
       "city": "\u05e8\u05d7\u05d5\u05d1\u05d5\u05ea", 
-      "actualSick": 664, 
+      "actualSick": 655, 
       "verifiedLast7Days": 224, 
-      "testLast7Days": 4194, 
-      "patientDiffPopulationForTenThousands": 48, 
+      "testLast7Days": 4347, 
+      "patientDiffPopulationForTenThousands": 47, 
       "sickCount": 4492
     }, 
     {
       "city": "\u05d1\u05ea \u05d9\u05dd", 
-      "actualSick": 656, 
+      "actualSick": 648, 
       "verifiedLast7Days": 180, 
-      "testLast7Days": 4209, 
-      "patientDiffPopulationForTenThousands": 51, 
+      "testLast7Days": 4247, 
+      "patientDiffPopulationForTenThousands": 50, 
       "sickCount": 3666
     }, 
     {
       "city": "\u05d7\u05d3\u05e8\u05d4", 
-      "actualSick": 635, 
-      "verifiedLast7Days": 203, 
-      "testLast7Days": 3454, 
-      "patientDiffPopulationForTenThousands": 67, 
-      "sickCount": 2920
+      "actualSick": 632, 
+      "verifiedLast7Days": 205, 
+      "testLast7Days": 3507, 
+      "patientDiffPopulationForTenThousands": 66, 
+      "sickCount": 2922
     }, 
     {
       "city": "\u05e8\u05de\u05dc\u05d4", 
-      "actualSick": 599, 
-      "verifiedLast7Days": 192, 
-      "testLast7Days": 2789, 
+      "actualSick": 596, 
+      "verifiedLast7Days": 199, 
+      "testLast7Days": 2848, 
       "patientDiffPopulationForTenThousands": 79, 
-      "sickCount": 3164
+      "sickCount": 3171
     }, 
     {
       "city": "\u05d1\u05d9\u05ea\u05e8 \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": 595, 
-      "verifiedLast7Days": 283, 
-      "testLast7Days": 1978, 
-      "patientDiffPopulationForTenThousands": 97, 
-      "sickCount": 5662
+      "actualSick": 587, 
+      "verifiedLast7Days": 286, 
+      "testLast7Days": 2019, 
+      "patientDiffPopulationForTenThousands": 95, 
+      "sickCount": 5665
     }, 
     {
       "city": "\u05dc\u05d5\u05d3", 
-      "actualSick": 409, 
-      "verifiedLast7Days": 131, 
-      "testLast7Days": 2349, 
-      "patientDiffPopulationForTenThousands": 54, 
-      "sickCount": 2927
+      "actualSick": 404, 
+      "verifiedLast7Days": 133, 
+      "testLast7Days": 2618, 
+      "patientDiffPopulationForTenThousands": 53, 
+      "sickCount": 2929
     }, 
     {
       "city": "\u05e8\u05de\u05ea \u05d2\u05df", 
-      "actualSick": 376, 
-      "verifiedLast7Days": 105, 
-      "testLast7Days": 3770, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 2797
+      "actualSick": 370, 
+      "verifiedLast7Days": 107, 
+      "testLast7Days": 3801, 
+      "patientDiffPopulationForTenThousands": 25, 
+      "sickCount": 2799
     }, 
     {
       "city": "\u05e8\u05d0\u05e9 \u05d4\u05e2\u05d9\u05df", 
-      "actualSick": 334, 
-      "verifiedLast7Days": 129, 
-      "testLast7Days": 1530, 
+      "actualSick": 332, 
+      "verifiedLast7Days": 130, 
+      "testLast7Days": 1549, 
       "patientDiffPopulationForTenThousands": 56, 
-      "sickCount": 1914
+      "sickCount": 1915
     }, 
     {
       "city": "\u05e2\u05db\u05d5", 
-      "actualSick": 301, 
+      "actualSick": 300, 
       "verifiedLast7Days": 117, 
-      "testLast7Days": 2013, 
+      "testLast7Days": 2020, 
       "patientDiffPopulationForTenThousands": 59, 
       "sickCount": 1301
     }, 
     {
       "city": "\u05e0\u05ea\u05d9\u05d1\u05d5\u05ea", 
-      "actualSick": 299, 
+      "actualSick": 296, 
       "verifiedLast7Days": 118, 
-      "testLast7Days": 1447, 
-      "patientDiffPopulationForTenThousands": 78, 
+      "testLast7Days": 1450, 
+      "patientDiffPopulationForTenThousands": 77, 
       "sickCount": 2719
     }, 
     {
       "city": "\u05d0\u05d5\u05e4\u05e7\u05d9\u05dd", 
       "actualSick": 284, 
       "verifiedLast7Days": 68, 
-      "testLast7Days": 1374, 
+      "testLast7Days": 1378, 
       "patientDiffPopulationForTenThousands": 89, 
       "sickCount": 1530
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d2\u05ea", 
-      "actualSick": 279, 
-      "verifiedLast7Days": 68, 
-      "testLast7Days": 1772, 
-      "patientDiffPopulationForTenThousands": 49, 
-      "sickCount": 2208
+      "actualSick": 278, 
+      "verifiedLast7Days": 71, 
+      "testLast7Days": 1802, 
+      "patientDiffPopulationForTenThousands": 48, 
+      "sickCount": 2211
     }, 
     {
       "city": "\u05e2\u05e4\u05d5\u05dc\u05d4", 
-      "actualSick": 270, 
+      "actualSick": 263, 
       "verifiedLast7Days": 49, 
-      "testLast7Days": 1568, 
-      "patientDiffPopulationForTenThousands": 51, 
+      "testLast7Days": 1584, 
+      "patientDiffPopulationForTenThousands": 49, 
       "sickCount": 1265
     }, 
     {
       "city": "\u05db\u05e4\u05e8 \u05e1\u05d1\u05d0", 
-      "actualSick": 260, 
+      "actualSick": 258, 
       "verifiedLast7Days": 66, 
-      "testLast7Days": 2404, 
-      "patientDiffPopulationForTenThousands": 27, 
+      "testLast7Days": 2440, 
+      "patientDiffPopulationForTenThousands": 26, 
       "sickCount": 1567
     }, 
     {
       "city": "\u05e0\u05e6\u05e8\u05ea", 
-      "actualSick": 257, 
+      "actualSick": 255, 
       "verifiedLast7Days": 68, 
-      "testLast7Days": 1188, 
-      "patientDiffPopulationForTenThousands": 33, 
+      "testLast7Days": 1197, 
+      "patientDiffPopulationForTenThousands": 32, 
       "sickCount": 1812
     }, 
     {
       "city": "\u05d8\u05d1\u05e8\u05d9\u05d4", 
-      "actualSick": 245, 
-      "verifiedLast7Days": 64, 
-      "testLast7Days": 1408, 
-      "patientDiffPopulationForTenThousands": 55, 
-      "sickCount": 1807
-    }, 
-    {
-      "city": "\u05d0\u05d5\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d4", 
-      "actualSick": 240, 
-      "verifiedLast7Days": 78, 
-      "testLast7Days": 1523, 
-      "patientDiffPopulationForTenThousands": 69, 
-      "sickCount": 1809
-    }, 
-    {
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05ea\u05d0", 
-      "actualSick": 240, 
+      "actualSick": 244, 
       "verifiedLast7Days": 65, 
-      "testLast7Days": 2025, 
-      "patientDiffPopulationForTenThousands": 42, 
-      "sickCount": 1276
+      "testLast7Days": 1436, 
+      "patientDiffPopulationForTenThousands": 54, 
+      "sickCount": 1808
     }, 
     {
       "city": "\u05d4\u05e8\u05e6\u05dc\u05d9\u05d4", 
-      "actualSick": 240, 
+      "actualSick": 239, 
       "verifiedLast7Days": 86, 
-      "testLast7Days": 2800, 
+      "testLast7Days": 2813, 
       "patientDiffPopulationForTenThousands": 26, 
       "sickCount": 1735
     }, 
     {
+      "city": "\u05d0\u05d5\u05e8 \u05d9\u05d4\u05d5\u05d3\u05d4", 
+      "actualSick": 238, 
+      "verifiedLast7Days": 80, 
+      "testLast7Days": 1538, 
+      "patientDiffPopulationForTenThousands": 68, 
+      "sickCount": 1811
+    }, 
+    {
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05ea\u05d0", 
+      "actualSick": 237, 
+      "verifiedLast7Days": 65, 
+      "testLast7Days": 2030, 
+      "patientDiffPopulationForTenThousands": 41, 
+      "sickCount": 1276
+    }, 
+    {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05de\u05dc\u05d0\u05db\u05d9", 
-      "actualSick": 222, 
-      "verifiedLast7Days": 78, 
-      "testLast7Days": 820, 
-      "patientDiffPopulationForTenThousands": 91, 
-      "sickCount": 1485
+      "actualSick": 226, 
+      "verifiedLast7Days": 85, 
+      "testLast7Days": 873, 
+      "patientDiffPopulationForTenThousands": 93, 
+      "sickCount": 1492
     }, 
     {
       "city": "\u05e8\u05db\u05e1\u05d9\u05dd", 
-      "actualSick": 207, 
+      "actualSick": 204, 
       "verifiedLast7Days": 74, 
       "testLast7Days": 1054, 
-      "patientDiffPopulationForTenThousands": 167, 
+      "patientDiffPopulationForTenThousands": 165, 
       "sickCount": 1368
     }, 
     {
       "city": "\u05d8\u05de\u05e8\u05d4", 
-      "actualSick": 196, 
+      "actualSick": 195, 
       "verifiedLast7Days": 66, 
-      "testLast7Days": 1042, 
+      "testLast7Days": 1045, 
       "patientDiffPopulationForTenThousands": 57, 
       "sickCount": 1115
     }, 
     {
       "city": "\u05d9\u05d1\u05e0\u05d4", 
       "actualSick": 194, 
-      "verifiedLast7Days": 68, 
-      "testLast7Days": 1032, 
+      "verifiedLast7Days": 70, 
+      "testLast7Days": 1058, 
       "patientDiffPopulationForTenThousands": 42, 
-      "sickCount": 1598
+      "sickCount": 1600
     }, 
     {
       "city": "\u05e8\u05e2\u05e0\u05e0\u05d4", 
-      "actualSick": 188, 
+      "actualSick": 186, 
       "verifiedLast7Days": 47, 
-      "testLast7Days": 1982, 
+      "testLast7Days": 2002, 
       "patientDiffPopulationForTenThousands": 25, 
       "sickCount": 1640
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d9\u05dd", 
-      "actualSick": 182, 
+      "actualSick": 181, 
       "verifiedLast7Days": 51, 
-      "testLast7Days": 1427, 
+      "testLast7Days": 1430, 
       "patientDiffPopulationForTenThousands": 46, 
       "sickCount": 698
     }, 
     {
+      "city": "\u05d1\u05d0\u05e8 \u05d9\u05e2\u05e7\u05d1", 
+      "actualSick": 179, 
+      "verifiedLast7Days": 46, 
+      "testLast7Days": 812, 
+      "patientDiffPopulationForTenThousands": 69, 
+      "sickCount": 944
+    }, 
+    {
       "city": "\u05d1\u05d9\u05ea \u05e9\u05d0\u05df", 
-      "actualSick": 181, 
+      "actualSick": 179, 
       "verifiedLast7Days": 64, 
-      "testLast7Days": 1040, 
-      "patientDiffPopulationForTenThousands": 94, 
+      "testLast7Days": 1060, 
+      "patientDiffPopulationForTenThousands": 93, 
       "sickCount": 668
     }, 
     {
-      "city": "\u05d1\u05d0\u05e8 \u05d9\u05e2\u05e7\u05d1", 
-      "actualSick": 179, 
-      "verifiedLast7Days": 44, 
-      "testLast7Days": 798, 
-      "patientDiffPopulationForTenThousands": 69, 
-      "sickCount": 942
-    }, 
-    {
       "city": "\u05e9\u05e4\u05e8\u05e2\u05dd", 
-      "actualSick": 171, 
+      "actualSick": 170, 
       "verifiedLast7Days": 65, 
-      "testLast7Days": 1131, 
+      "testLast7Days": 1133, 
       "patientDiffPopulationForTenThousands": 41, 
       "sickCount": 974
     }, 
     {
       "city": "\u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df-\u05de\u05db\u05d1\u05d9\u05dd-\u05e8\u05e2\u05d5\u05ea", 
-      "actualSick": 170, 
+      "actualSick": 169, 
       "verifiedLast7Days": 48, 
-      "testLast7Days": 2014, 
+      "testLast7Days": 2034, 
       "patientDiffPopulationForTenThousands": 19, 
       "sickCount": 1819
     }, 
     {
       "city": "\u05e0\u05d4\u05e8\u05d9\u05d4", 
-      "actualSick": 163, 
+      "actualSick": 161, 
       "verifiedLast7Days": 60, 
-      "testLast7Days": 1711, 
+      "testLast7Days": 1713, 
       "patientDiffPopulationForTenThousands": 27, 
       "sickCount": 1232
     }, 
     {
       "city": "\u05e4\u05e8\u05d3\u05e1 \u05d7\u05e0\u05d4-\u05db\u05e8\u05db\u05d5\u05e8", 
-      "actualSick": 162, 
-      "verifiedLast7Days": 44, 
-      "testLast7Days": 1268, 
+      "actualSick": 161, 
+      "verifiedLast7Days": 46, 
+      "testLast7Days": 1283, 
       "patientDiffPopulationForTenThousands": 39, 
-      "sickCount": 919
+      "sickCount": 921
     }, 
     {
       "city": "\u05e9\u05d3\u05e8\u05d5\u05ea", 
-      "actualSick": 148, 
+      "actualSick": 147, 
       "verifiedLast7Days": 39, 
-      "testLast7Days": 880, 
-      "patientDiffPopulationForTenThousands": 55, 
+      "testLast7Days": 883, 
+      "patientDiffPopulationForTenThousands": 54, 
       "sickCount": 946
     }, 
     {
-      "city": "\u05e0\u05e1 \u05e6\u05d9\u05d5\u05e0\u05d4", 
-      "actualSick": 144, 
-      "verifiedLast7Days": 48, 
-      "testLast7Days": 1153, 
-      "patientDiffPopulationForTenThousands": 31, 
-      "sickCount": 970
+      "city": "\u05d2\u05d3\u05e8\u05d4", 
+      "actualSick": 146, 
+      "verifiedLast7Days": 43, 
+      "testLast7Days": 773, 
+      "patientDiffPopulationForTenThousands": 59, 
+      "sickCount": 682
     }, 
     {
-      "city": "\u05d2\u05d3\u05e8\u05d4", 
-      "actualSick": 144, 
-      "verifiedLast7Days": 38, 
-      "testLast7Days": 748, 
-      "patientDiffPopulationForTenThousands": 58, 
-      "sickCount": 677
+      "city": "\u05e0\u05e1 \u05e6\u05d9\u05d5\u05e0\u05d4", 
+      "actualSick": 145, 
+      "verifiedLast7Days": 50, 
+      "testLast7Days": 1187, 
+      "patientDiffPopulationForTenThousands": 32, 
+      "sickCount": 972
     }, 
     {
       "city": "\u05d0\u05d5\u05e8 \u05e2\u05e7\u05d9\u05d1\u05d0", 
-      "actualSick": 141, 
-      "verifiedLast7Days": 38, 
-      "testLast7Days": 668, 
-      "patientDiffPopulationForTenThousands": 72, 
-      "sickCount": 615
+      "actualSick": 143, 
+      "verifiedLast7Days": 40, 
+      "testLast7Days": 687, 
+      "patientDiffPopulationForTenThousands": 73, 
+      "sickCount": 617
     }, 
     {
       "city": "\u05e0\u05d5\u05e3 \u05d4\u05d2\u05dc\u05d9\u05dc", 
       "actualSick": 141, 
       "verifiedLast7Days": 41, 
-      "testLast7Days": 1422, 
+      "testLast7Days": 1435, 
       "patientDiffPopulationForTenThousands": 32, 
       "sickCount": 669
     }, 
     {
-      "city": "\u05e6\u05e4\u05ea", 
+      "city": "\u05d2\u05d1\u05e2\u05ea \u05d6\u05d0\u05d1", 
       "actualSick": 140, 
+      "verifiedLast7Days": 78, 
+      "testLast7Days": 756, 
+      "patientDiffPopulationForTenThousands": 74, 
+      "sickCount": 1214
+    }, 
+    {
+      "city": "\u05e6\u05e4\u05ea", 
+      "actualSick": 138, 
       "verifiedLast7Days": 36, 
-      "testLast7Days": 837, 
-      "patientDiffPopulationForTenThousands": 39, 
+      "testLast7Days": 842, 
+      "patientDiffPopulationForTenThousands": 38, 
       "sickCount": 1081
     }, 
     {
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05de\u05d5\u05e6\u05e7\u05d9\u05df", 
-      "actualSick": 138, 
-      "verifiedLast7Days": 40, 
-      "testLast7Days": 1585, 
-      "patientDiffPopulationForTenThousands": 31, 
-      "sickCount": 625
-    }, 
-    {
       "city": "\u05de\u05d2'\u05d3 \u05d0\u05dc-\u05db\u05e8\u05d5\u05dd", 
-      "actualSick": 138, 
+      "actualSick": 134, 
       "verifiedLast7Days": 33, 
-      "testLast7Days": 386, 
-      "patientDiffPopulationForTenThousands": 89, 
+      "testLast7Days": 387, 
+      "patientDiffPopulationForTenThousands": 87, 
       "sickCount": 763
     }, 
     {
-      "city": "\u05d2\u05d1\u05e2\u05ea \u05d6\u05d0\u05d1", 
-      "actualSick": 133, 
-      "verifiedLast7Days": 71, 
-      "testLast7Days": 741, 
-      "patientDiffPopulationForTenThousands": 70, 
-      "sickCount": 1207
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05de\u05d5\u05e6\u05e7\u05d9\u05df", 
+      "actualSick": 134, 
+      "verifiedLast7Days": 40, 
+      "testLast7Days": 1585, 
+      "patientDiffPopulationForTenThousands": 30, 
+      "sickCount": 625
     }, 
     {
       "city": "\u05d1\u05d0\u05e7\u05d4 \u05d0\u05dc-\u05d2\u05e8\u05d1\u05d9\u05d4", 
-      "actualSick": 133, 
+      "actualSick": 132, 
       "verifiedLast7Days": 32, 
-      "testLast7Days": 480, 
+      "testLast7Days": 482, 
       "patientDiffPopulationForTenThousands": 45, 
       "sickCount": 1289
     }, 
@@ -9435,87 +9435,87 @@
       "city": "\u05e2\u05e8\u05d3", 
       "actualSick": 129, 
       "verifiedLast7Days": 63, 
-      "testLast7Days": 1294, 
+      "testLast7Days": 1303, 
       "patientDiffPopulationForTenThousands": 48, 
       "sickCount": 837
     }, 
     {
       "city": "\u05d9\u05d4\u05d5\u05d3", 
-      "actualSick": 127, 
+      "actualSick": 126, 
       "verifiedLast7Days": 30, 
-      "testLast7Days": 719, 
-      "patientDiffPopulationForTenThousands": 44, 
+      "testLast7Days": 737, 
+      "patientDiffPopulationForTenThousands": 43, 
       "sickCount": 813
-    }, 
-    {
-      "city": "\u05de\u05e2\u05dc\u05d4 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
-      "actualSick": 125, 
-      "verifiedLast7Days": 51, 
-      "testLast7Days": 1104, 
-      "patientDiffPopulationForTenThousands": 33, 
-      "sickCount": 1019
     }, 
     {
       "city": "\u05e8\u05d4\u05d8", 
       "actualSick": 124, 
       "verifiedLast7Days": 46, 
-      "testLast7Days": 940, 
+      "testLast7Days": 943, 
       "patientDiffPopulationForTenThousands": 19, 
       "sickCount": 1563
     }, 
     {
+      "city": "\u05de\u05e2\u05dc\u05d4 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
+      "actualSick": 122, 
+      "verifiedLast7Days": 51, 
+      "testLast7Days": 1140, 
+      "patientDiffPopulationForTenThousands": 33, 
+      "sickCount": 1019
+    }, 
+    {
       "city": "\u05de\u05d2\u05d3\u05dc \u05d4\u05e2\u05de\u05e7", 
-      "actualSick": 124, 
+      "actualSick": 122, 
       "verifiedLast7Days": 27, 
-      "testLast7Days": 566, 
-      "patientDiffPopulationForTenThousands": 48, 
+      "testLast7Days": 568, 
+      "patientDiffPopulationForTenThousands": 47, 
       "sickCount": 703
     }, 
     {
       "city": "\u05db\u05e8\u05de\u05d9\u05d0\u05dc", 
       "actualSick": 121, 
       "verifiedLast7Days": 31, 
-      "testLast7Days": 1145, 
+      "testLast7Days": 1146, 
       "patientDiffPopulationForTenThousands": 26, 
       "sickCount": 816
     }, 
     {
-      "city": "\u05d0\u05d5\u05dd \u05d0\u05dc-\u05e4\u05d7\u05dd", 
-      "actualSick": 121, 
-      "verifiedLast7Days": 32, 
-      "testLast7Days": 637, 
-      "patientDiffPopulationForTenThousands": 22, 
-      "sickCount": 2428
-    }, 
-    {
       "city": "\u05d9\u05e8\u05db\u05d0", 
       "actualSick": 119, 
-      "verifiedLast7Days": 45, 
-      "testLast7Days": 641, 
+      "verifiedLast7Days": 46, 
+      "testLast7Days": 643, 
       "patientDiffPopulationForTenThousands": 76, 
-      "sickCount": 1056
+      "sickCount": 1057
     }, 
     {
-      "city": "\u05d4\u05d5\u05d3 \u05d4\u05e9\u05e8\u05d5\u05df", 
-      "actualSick": 115, 
-      "verifiedLast7Days": 35, 
-      "testLast7Days": 1317, 
-      "patientDiffPopulationForTenThousands": 19, 
-      "sickCount": 944
+      "city": "\u05d0\u05d5\u05dd \u05d0\u05dc-\u05e4\u05d7\u05dd", 
+      "actualSick": 118, 
+      "verifiedLast7Days": 32, 
+      "testLast7Days": 658, 
+      "patientDiffPopulationForTenThousands": 21, 
+      "sickCount": 2428
     }, 
     {
       "city": "\u05db\u05e4\u05e8 \u05d9\u05d5\u05e0\u05d4", 
       "actualSick": 115, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 581, 
+      "testLast7Days": 588, 
       "patientDiffPopulationForTenThousands": 50, 
-      "sickCount": 517
+      "sickCount": 518
+    }, 
+    {
+      "city": "\u05d4\u05d5\u05d3 \u05d4\u05e9\u05e8\u05d5\u05df", 
+      "actualSick": 113, 
+      "verifiedLast7Days": 37, 
+      "testLast7Days": 1337, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 946
     }, 
     {
       "city": "\u05d3\u05d9\u05de\u05d5\u05e0\u05d4", 
       "actualSick": 99, 
       "verifiedLast7Days": 18, 
-      "testLast7Days": 1435, 
+      "testLast7Days": 1437, 
       "patientDiffPopulationForTenThousands": 28, 
       "sickCount": 829
     }, 
@@ -9523,7 +9523,7 @@
       "city": "\u05e7\u05e8\u05d9\u05ea \u05e9\u05de\u05d5\u05e0\u05d4", 
       "actualSick": 98, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 325, 
+      "testLast7Days": 329, 
       "patientDiffPopulationForTenThousands": 44, 
       "sickCount": 545
     }, 
@@ -9531,71 +9531,71 @@
       "city": "\u05d2'\u05d3\u05d9\u05d9\u05d3\u05d4-\u05de\u05db\u05e8", 
       "actualSick": 96, 
       "verifiedLast7Days": 27, 
-      "testLast7Days": 617, 
+      "testLast7Days": 628, 
       "patientDiffPopulationForTenThousands": 46, 
       "sickCount": 715
-    }, 
-    {
-      "city": "\u05d6\u05db\u05e8\u05d5\u05df \u05d9\u05e2\u05e7\u05d1", 
-      "actualSick": 95, 
-      "verifiedLast7Days": 44, 
-      "testLast7Days": 548, 
-      "patientDiffPopulationForTenThousands": 43, 
-      "sickCount": 467
     }, 
     {
       "city": "\u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd", 
       "actualSick": 95, 
       "verifiedLast7Days": 21, 
-      "testLast7Days": 1102, 
+      "testLast7Days": 1114, 
       "patientDiffPopulationForTenThousands": 17, 
       "sickCount": 792
     }, 
     {
-      "city": "\u05d8\u05d9\u05d9\u05d1\u05d4", 
-      "actualSick": 91, 
-      "verifiedLast7Days": 22, 
-      "testLast7Days": 854, 
-      "patientDiffPopulationForTenThousands": 21, 
-      "sickCount": 1769
+      "city": "\u05d6\u05db\u05e8\u05d5\u05df \u05d9\u05e2\u05e7\u05d1", 
+      "actualSick": 92, 
+      "verifiedLast7Days": 44, 
+      "testLast7Days": 556, 
+      "patientDiffPopulationForTenThousands": 41, 
+      "sickCount": 467
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05d5\u05e0\u05d5", 
       "actualSick": 89, 
       "verifiedLast7Days": 22, 
-      "testLast7Days": 866, 
+      "testLast7Days": 880, 
       "patientDiffPopulationForTenThousands": 24, 
       "sickCount": 623
     }, 
     {
-      "city": "\u05d8\u05d9\u05e8\u05ea \u05db\u05e8\u05de\u05dc", 
+      "city": "\u05d8\u05d9\u05d9\u05d1\u05d4", 
       "actualSick": 88, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 425, 
-      "patientDiffPopulationForTenThousands": 38, 
-      "sickCount": 398
+      "verifiedLast7Days": 23, 
+      "testLast7Days": 864, 
+      "patientDiffPopulationForTenThousands": 20, 
+      "sickCount": 1770
     }, 
     {
       "city": "\u05d8\u05d9\u05e8\u05d4", 
       "actualSick": 87, 
-      "verifiedLast7Days": 29, 
-      "testLast7Days": 491, 
+      "verifiedLast7Days": 30, 
+      "testLast7Days": 498, 
       "patientDiffPopulationForTenThousands": 33, 
-      "sickCount": 1589
+      "sickCount": 1590
     }, 
     {
       "city": "\u05d3\u05d9\u05d9\u05e8 \u05d0\u05dc-\u05d0\u05e1\u05d3", 
       "actualSick": 86, 
       "verifiedLast7Days": 15, 
-      "testLast7Days": 221, 
+      "testLast7Days": 224, 
       "patientDiffPopulationForTenThousands": 68, 
       "sickCount": 758
+    }, 
+    {
+      "city": "\u05d8\u05d9\u05e8\u05ea \u05db\u05e8\u05de\u05dc", 
+      "actualSick": 86, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 426, 
+      "patientDiffPopulationForTenThousands": 37, 
+      "sickCount": 398
     }, 
     {
       "city": "\u05d0\u05d9\u05dc\u05ea", 
       "actualSick": 84, 
       "verifiedLast7Days": 21, 
-      "testLast7Days": 838, 
+      "testLast7Days": 855, 
       "patientDiffPopulationForTenThousands": 15, 
       "sickCount": 891
     }, 
@@ -9603,7 +9603,7 @@
       "city": "\u05d2\u05df \u05d9\u05d1\u05e0\u05d4", 
       "actualSick": 83, 
       "verifiedLast7Days": 23, 
-      "testLast7Days": 516, 
+      "testLast7Days": 526, 
       "patientDiffPopulationForTenThousands": 37, 
       "sickCount": 733
     }, 
@@ -9611,23 +9611,23 @@
       "city": "\u05d3\u05d1\u05d5\u05e8\u05d9\u05d4", 
       "actualSick": 82, 
       "verifiedLast7Days": 19, 
-      "testLast7Days": 374, 
+      "testLast7Days": 376, 
       "patientDiffPopulationForTenThousands": 78, 
       "sickCount": 474
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d1\u05d9\u05d0\u05dc\u05d9\u05e7", 
-      "actualSick": 81, 
+      "actualSick": 80, 
       "verifiedLast7Days": 26, 
-      "testLast7Days": 1110, 
-      "patientDiffPopulationForTenThousands": 21, 
+      "testLast7Days": 1112, 
+      "patientDiffPopulationForTenThousands": 20, 
       "sickCount": 701
     }, 
     {
       "city": "\u05d7\u05e8\u05d9\u05e9", 
       "actualSick": 80, 
       "verifiedLast7Days": 27, 
-      "testLast7Days": 370, 
+      "testLast7Days": 377, 
       "patientDiffPopulationForTenThousands": 56, 
       "sickCount": 423
     }, 
@@ -9635,127 +9635,127 @@
       "city": "\u05e8\u05de\u05ea \u05d4\u05e9\u05e8\u05d5\u05df", 
       "actualSick": 80, 
       "verifiedLast7Days": 24, 
-      "testLast7Days": 1138, 
+      "testLast7Days": 1150, 
       "patientDiffPopulationForTenThousands": 18, 
       "sickCount": 772
     }, 
     {
+      "city": "\u05e2\u05e8\u05e2\u05e8\u05d4", 
+      "actualSick": 76, 
+      "verifiedLast7Days": 33, 
+      "testLast7Days": 491, 
+      "patientDiffPopulationForTenThousands": 38, 
+      "sickCount": 783
+    }, 
+    {
       "city": "\u05e7\u05dc\u05e0\u05e1\u05d5\u05d5\u05d4", 
-      "actualSick": 78, 
+      "actualSick": 75, 
       "verifiedLast7Days": 34, 
-      "testLast7Days": 531, 
-      "patientDiffPopulationForTenThousands": 34, 
+      "testLast7Days": 532, 
+      "patientDiffPopulationForTenThousands": 32, 
       "sickCount": 1470
     }, 
     {
-      "city": "\u05e2\u05e8\u05e2\u05e8\u05d4", 
-      "actualSick": 75, 
-      "verifiedLast7Days": 32, 
-      "testLast7Days": 484, 
-      "patientDiffPopulationForTenThousands": 38, 
-      "sickCount": 782
-    }, 
-    {
       "city": "\u05de\u05d1\u05e9\u05e8\u05ea \u05e6\u05d9\u05d5\u05df", 
-      "actualSick": 74, 
-      "verifiedLast7Days": 24, 
-      "testLast7Days": 685, 
+      "actualSick": 73, 
+      "verifiedLast7Days": 25, 
+      "testLast7Days": 697, 
       "patientDiffPopulationForTenThousands": 32, 
-      "sickCount": 486
+      "sickCount": 487
     }, 
     {
       "city": "\u05d9\u05e8\u05d5\u05d7\u05dd", 
       "actualSick": 73, 
       "verifiedLast7Days": 35, 
-      "testLast7Days": 612, 
+      "testLast7Days": 613, 
       "patientDiffPopulationForTenThousands": 70, 
       "sickCount": 327
     }, 
     {
       "city": "\u05d7\u05e6\u05d5\u05e8 \u05d4\u05d2\u05dc\u05d9\u05dc\u05d9\u05ea", 
       "actualSick": 70, 
-      "verifiedLast7Days": 16, 
-      "testLast7Days": 257, 
+      "verifiedLast7Days": 19, 
+      "testLast7Days": 272, 
       "patientDiffPopulationForTenThousands": 71, 
-      "sickCount": 361
+      "sickCount": 364
+    }, 
+    {
+      "city": "\u05db\u05e4\u05e8 \u05e7\u05e8\u05e2", 
+      "actualSick": 69, 
+      "verifiedLast7Days": 33, 
+      "testLast7Days": 503, 
+      "patientDiffPopulationForTenThousands": 36, 
+      "sickCount": 811
     }, 
     {
       "city": "\u05db\u05e4\u05e8 \u05de\u05e0\u05d3\u05d0", 
       "actualSick": 69, 
       "verifiedLast7Days": 17, 
-      "testLast7Days": 166, 
+      "testLast7Days": 169, 
       "patientDiffPopulationForTenThousands": 34, 
       "sickCount": 666
     }, 
     {
-      "city": "\u05db\u05e4\u05e8 \u05e7\u05e8\u05e2", 
-      "actualSick": 67, 
-      "verifiedLast7Days": 31, 
-      "testLast7Days": 498, 
-      "patientDiffPopulationForTenThousands": 35, 
-      "sickCount": 809
-    }, 
-    {
-      "city": "\u05d0\u05d6\u05d5\u05e8", 
-      "actualSick": 67, 
-      "verifiedLast7Days": 24, 
-      "testLast7Days": 616, 
-      "patientDiffPopulationForTenThousands": 56, 
-      "sickCount": 408
-    }, 
-    {
       "city": "\u05d1\u05e2\u05e0\u05d4", 
-      "actualSick": 65, 
-      "verifiedLast7Days": 19, 
-      "testLast7Days": 195, 
-      "patientDiffPopulationForTenThousands": 77, 
-      "sickCount": 478
+      "actualSick": 66, 
+      "verifiedLast7Days": 20, 
+      "testLast7Days": 197, 
+      "patientDiffPopulationForTenThousands": 78, 
+      "sickCount": 479
     }, 
     {
-      "city": "\u05d2\u05d1\u05e2\u05ea \u05e9\u05de\u05d5\u05d0\u05dc", 
+      "city": "\u05de\u05e2\u05dc\u05d4 \u05e2\u05d9\u05e8\u05d5\u05df", 
       "actualSick": 64, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 522, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 641
+      "verifiedLast7Days": 23, 
+      "testLast7Days": 225, 
+      "patientDiffPopulationForTenThousands": 42, 
+      "sickCount": 710
     }, 
     {
       "city": "\u05d2'\u05e1\u05e8 \u05d0-\u05d6\u05e8\u05e7\u05d0", 
       "actualSick": 63, 
       "verifiedLast7Days": 18, 
-      "testLast7Days": 714, 
+      "testLast7Days": 715, 
       "patientDiffPopulationForTenThousands": 42, 
       "sickCount": 435
     }, 
     {
-      "city": "\u05de\u05e2\u05dc\u05d4 \u05e2\u05d9\u05e8\u05d5\u05df", 
+      "city": "\u05d0\u05d6\u05d5\u05e8", 
       "actualSick": 63, 
-      "verifiedLast7Days": 22, 
-      "testLast7Days": 222, 
-      "patientDiffPopulationForTenThousands": 42, 
-      "sickCount": 709
+      "verifiedLast7Days": 24, 
+      "testLast7Days": 618, 
+      "patientDiffPopulationForTenThousands": 53, 
+      "sickCount": 408
     }, 
     {
       "city": "\u05e1\u05d7'\u05e0\u05d9\u05df", 
       "actualSick": 63, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 629, 
+      "testLast7Days": 632, 
       "patientDiffPopulationForTenThousands": 19, 
       "sickCount": 1323
     }, 
     {
+      "city": "\u05d2\u05d1\u05e2\u05ea \u05e9\u05de\u05d5\u05d0\u05dc", 
+      "actualSick": 62, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 528, 
+      "patientDiffPopulationForTenThousands": 25, 
+      "sickCount": 641
+    }, 
+    {
       "city": "\u05d2\u05e0\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
-      "actualSick": 60, 
-      "verifiedLast7Days": 26, 
-      "testLast7Days": 477, 
-      "patientDiffPopulationForTenThousands": 30, 
-      "sickCount": 427
+      "actualSick": 61, 
+      "verifiedLast7Days": 27, 
+      "testLast7Days": 485, 
+      "patientDiffPopulationForTenThousands": 31, 
+      "sickCount": 428
     }, 
     {
       "city": "\u05de\u05d2\u05d0\u05e8", 
       "actualSick": 59, 
       "verifiedLast7Days": 15, 
-      "testLast7Days": 369, 
+      "testLast7Days": 373, 
       "patientDiffPopulationForTenThousands": 26, 
       "sickCount": 342
     }, 
@@ -9771,71 +9771,55 @@
       "city": "\u05e2\u05e8\u05d0\u05d1\u05d4", 
       "actualSick": 54, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 411, 
+      "testLast7Days": 414, 
       "patientDiffPopulationForTenThousands": 21, 
       "sickCount": 508
     }, 
     {
       "city": "\u05d0\u05d1\u05d5 \u05e1\u05e0\u05d0\u05df", 
-      "actualSick": 54, 
+      "actualSick": 53, 
       "verifiedLast7Days": 20, 
-      "testLast7Days": 325, 
-      "patientDiffPopulationForTenThousands": 41, 
+      "testLast7Days": 338, 
+      "patientDiffPopulationForTenThousands": 40, 
       "sickCount": 539
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05d7\u05d1\"\u05d3", 
-      "actualSick": 54, 
-      "verifiedLast7Days": 26, 
-      "testLast7Days": 259, 
-      "patientDiffPopulationForTenThousands": 79, 
-      "sickCount": 485
-    }, 
-    {
-      "city": "\u05e8\u05d9\u05d9\u05e0\u05d4", 
-      "actualSick": 53, 
-      "verifiedLast7Days": 15, 
-      "testLast7Days": 234, 
-      "patientDiffPopulationForTenThousands": 32, 
-      "sickCount": 421
-    }, 
-    {
-      "city": "\u05d2'\u05d5\u05dc\u05e1", 
-      "actualSick": 53, 
-      "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 178, 
-      "patientDiffPopulationForTenThousands": 85, 
-      "sickCount": 351
     }, 
     {
       "city": "\u05e7\u05d3\u05d9\u05de\u05d4-\u05e6\u05d5\u05e8\u05df", 
       "actualSick": 53, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 380, 
+      "testLast7Days": 389, 
       "patientDiffPopulationForTenThousands": 25, 
       "sickCount": 303
     }, 
     {
-      "city": "\u05db\u05e1\u05e8\u05d0-\u05e1\u05de\u05d9\u05e2", 
-      "actualSick": 51, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 242, 
-      "patientDiffPopulationForTenThousands": 59, 
-      "sickCount": 362
+      "city": "\u05e8\u05d9\u05d9\u05e0\u05d4", 
+      "actualSick": 53, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 236, 
+      "patientDiffPopulationForTenThousands": 32, 
+      "sickCount": 422
     }, 
     {
-      "city": "\u05e4\u05d5\u05e8\u05d9\u05d9\u05d3\u05d9\u05e1", 
+      "city": "\u05db\u05e4\u05e8 \u05d7\u05d1\"\u05d3", 
+      "actualSick": 51, 
+      "verifiedLast7Days": 26, 
+      "testLast7Days": 259, 
+      "patientDiffPopulationForTenThousands": 74, 
+      "sickCount": 485
+    }, 
+    {
+      "city": "\u05d2'\u05d5\u05dc\u05e1", 
       "actualSick": 51, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 202, 
-      "patientDiffPopulationForTenThousands": 38, 
-      "sickCount": 623
+      "testLast7Days": 178, 
+      "patientDiffPopulationForTenThousands": 82, 
+      "sickCount": 351
     }, 
     {
       "city": "\u05de\u05e2\u05dc\u05d5\u05ea-\u05ea\u05e8\u05e9\u05d9\u05d7\u05d0", 
       "actualSick": 50, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 858, 
+      "testLast7Days": 863, 
       "patientDiffPopulationForTenThousands": 22, 
       "sickCount": 333
     }, 
@@ -9843,9 +9827,17 @@
       "city": "\u05d2'\u05ea", 
       "actualSick": 50, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 278, 
+      "testLast7Days": 281, 
       "patientDiffPopulationForTenThousands": 41, 
       "sickCount": 598
+    }, 
+    {
+      "city": "\u05e4\u05d5\u05e8\u05d9\u05d9\u05d3\u05d9\u05e1", 
+      "actualSick": 50, 
+      "verifiedLast7Days": " 11-14 ", 
+      "testLast7Days": 204, 
+      "patientDiffPopulationForTenThousands": 38, 
+      "sickCount": 623
     }, 
     {
       "city": "\u05e9\u05dc\u05d5\u05de\u05d9", 
@@ -9856,74 +9848,74 @@
       "sickCount": 174
     }, 
     {
-      "city": "\u05d9\u05e4\u05d9\u05e2", 
+      "city": "\u05db\u05e1\u05e8\u05d0-\u05e1\u05de\u05d9\u05e2", 
       "actualSick": 48, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 213, 
-      "patientDiffPopulationForTenThousands": 25, 
-      "sickCount": 465
+      "testLast7Days": 243, 
+      "patientDiffPopulationForTenThousands": 55, 
+      "sickCount": 362
     }, 
     {
-      "city": "\u05e4\u05e7\u05d9\u05e2\u05d9\u05df (\u05d1\u05d5\u05e7\u05d9\u05d9\u05e2\u05d4)", 
+      "city": "\u05d9\u05e4\u05d9\u05e2", 
       "actualSick": 47, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 303, 
-      "patientDiffPopulationForTenThousands": 80, 
-      "sickCount": 260
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05e7\u05d0\u05e1\u05dd", 
-      "actualSick": 47, 
-      "verifiedLast7Days": 17, 
-      "testLast7Days": 330, 
-      "patientDiffPopulationForTenThousands": 20, 
-      "sickCount": 1418
-    }, 
-    {
-      "city": "\u05d9\u05e7\u05e0\u05e2\u05dd \u05e2\u05d9\u05dc\u05d9\u05ea", 
-      "actualSick": 46, 
-      "verifiedLast7Days": 22, 
-      "testLast7Days": 484, 
-      "patientDiffPopulationForTenThousands": 20, 
-      "sickCount": 342
+      "testLast7Days": 215, 
+      "patientDiffPopulationForTenThousands": 24, 
+      "sickCount": 465
     }, 
     {
       "city": "\u05db\u05e4\u05e8 \u05db\u05e0\u05d0", 
       "actualSick": 46, 
       "verifiedLast7Days": 17, 
-      "testLast7Days": 278, 
+      "testLast7Days": 281, 
       "patientDiffPopulationForTenThousands": 20, 
       "sickCount": 533
+    }, 
+    {
+      "city": "\u05e4\u05e7\u05d9\u05e2\u05d9\u05df (\u05d1\u05d5\u05e7\u05d9\u05d9\u05e2\u05d4)", 
+      "actualSick": 46, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 303, 
+      "patientDiffPopulationForTenThousands": 78, 
+      "sickCount": 260
+    }, 
+    {
+      "city": "\u05db\u05e4\u05e8 \u05e7\u05d0\u05e1\u05dd", 
+      "actualSick": 45, 
+      "verifiedLast7Days": 17, 
+      "testLast7Days": 337, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 1418
+    }, 
+    {
+      "city": "\u05d9\u05e7\u05e0\u05e2\u05dd \u05e2\u05d9\u05dc\u05d9\u05ea", 
+      "actualSick": 45, 
+      "verifiedLast7Days": 22, 
+      "testLast7Days": 486, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 342
     }, 
     {
       "city": "\u05d9\u05d0\u05e0\u05d5\u05d7-\u05d2'\u05ea", 
       "actualSick": 45, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 330, 
+      "testLast7Days": 331, 
       "patientDiffPopulationForTenThousands": 69, 
       "sickCount": 222
-    }, 
-    {
-      "city": "\u05d0\u05db\u05e1\u05d0\u05dc", 
-      "actualSick": 44, 
-      "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 215, 
-      "patientDiffPopulationForTenThousands": 30, 
-      "sickCount": 399
     }, 
     {
       "city": "\u05d1\u05e0\u05d9\u05de\u05d9\u05e0\u05d4-\u05d2\u05d1\u05e2\u05ea \u05e2\u05d3\u05d4", 
       "actualSick": 44, 
       "verifiedLast7Days": 23, 
-      "testLast7Days": 445, 
+      "testLast7Days": 450, 
       "patientDiffPopulationForTenThousands": 30, 
       "sickCount": 206
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05e2\u05e7\u05e8\u05d5\u05df", 
-      "actualSick": 43, 
+      "actualSick": 42, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 306, 
+      "testLast7Days": 318, 
       "patientDiffPopulationForTenThousands": 40, 
       "sickCount": 209
     }, 
@@ -9931,49 +9923,65 @@
       "city": "\u05d3\u05d9\u05d9\u05e8 \u05d7\u05e0\u05d0", 
       "actualSick": 42, 
       "verifiedLast7Days": 20, 
-      "testLast7Days": 319, 
+      "testLast7Days": 322, 
       "patientDiffPopulationForTenThousands": 39, 
       "sickCount": 252
     }, 
     {
-      "city": "\u05e9\u05d1\u05dc\u05d9 - \u05d0\u05d5\u05dd \u05d0\u05dc-\u05d2\u05e0\u05dd", 
+      "city": "\u05d0\u05db\u05e1\u05d0\u05dc", 
+      "actualSick": 42, 
+      "verifiedLast7Days": " 11-14 ", 
+      "testLast7Days": 219, 
+      "patientDiffPopulationForTenThousands": 28, 
+      "sickCount": 399
+    }, 
+    {
+      "city": "\u05de\u05d2'\u05d3\u05dc \u05e9\u05de\u05e1", 
       "actualSick": 41, 
+      "verifiedLast7Days": 15, 
+      "testLast7Days": 134, 
+      "patientDiffPopulationForTenThousands": 37, 
+      "sickCount": 199
+    }, 
+    {
+      "city": "\u05e9\u05d1\u05dc\u05d9 - \u05d0\u05d5\u05dd \u05d0\u05dc-\u05d2\u05e0\u05dd", 
+      "actualSick": 40, 
       "verifiedLast7Days": "  6-10  ", 
       "testLast7Days": 151, 
-      "patientDiffPopulationForTenThousands": 64, 
+      "patientDiffPopulationForTenThousands": 62, 
       "sickCount": 227
     }, 
     {
       "city": "\u05ea\u05e4\u05e8\u05d7", 
-      "actualSick": 39, 
+      "actualSick": 38, 
       "verifiedLast7Days": "  6-10  ", 
       "testLast7Days": 133, 
-      "patientDiffPopulationForTenThousands": 180, 
+      "patientDiffPopulationForTenThousands": 175, 
       "sickCount": 298
     }, 
     {
       "city": "\u05e9\u05d5\u05d4\u05dd", 
-      "actualSick": 39, 
+      "actualSick": 38, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 430, 
+      "testLast7Days": 432, 
       "patientDiffPopulationForTenThousands": 19, 
       "sickCount": 425
     }, 
     {
-      "city": "\u05de\u05d6\u05db\u05e8\u05ea \u05d1\u05ea\u05d9\u05d4", 
-      "actualSick": 39, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 389, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 306
+      "city": "\u05d0\u05e8\u05d9\u05d0\u05dc", 
+      "actualSick": 37, 
+      "verifiedLast7Days": " 11-14 ", 
+      "testLast7Days": 687, 
+      "patientDiffPopulationForTenThousands": 20, 
+      "sickCount": 302
     }, 
     {
-      "city": "\u05de\u05d2'\u05d3\u05dc \u05e9\u05de\u05e1", 
-      "actualSick": 38, 
+      "city": "\u05de\u05d6\u05db\u05e8\u05ea \u05d1\u05ea\u05d9\u05d4", 
+      "actualSick": 37, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 122, 
-      "patientDiffPopulationForTenThousands": 34, 
-      "sickCount": 196
+      "testLast7Days": 398, 
+      "patientDiffPopulationForTenThousands": 25, 
+      "sickCount": 307
     }, 
     {
       "city": "\u05e8\u05d0\u05de\u05d4", 
@@ -9984,74 +9992,66 @@
       "sickCount": 206
     }, 
     {
+      "city": "\u05e2\u05d9\u05df \u05de\u05d0\u05d4\u05dc", 
+      "actualSick": 36, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 123, 
+      "patientDiffPopulationForTenThousands": 26, 
+      "sickCount": 555
+    }, 
+    {
       "city": "\u05d0\u05e2\u05d1\u05dc\u05d9\u05df", 
       "actualSick": 36, 
-      "verifiedLast7Days": 18, 
-      "testLast7Days": 303, 
+      "verifiedLast7Days": 19, 
+      "testLast7Days": 306, 
       "patientDiffPopulationForTenThousands": 27, 
-      "sickCount": 286
+      "sickCount": 287
     }, 
     {
       "city": "\u05d1\u05d9\u05ea \u05d3\u05d2\u05df", 
       "actualSick": 36, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 158, 
+      "testLast7Days": 159, 
       "patientDiffPopulationForTenThousands": 55, 
-      "sickCount": 168
-    }, 
-    {
-      "city": "\u05d0\u05e8\u05d9\u05d0\u05dc", 
-      "actualSick": 36, 
-      "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 683, 
-      "patientDiffPopulationForTenThousands": 20, 
-      "sickCount": 301
-    }, 
-    {
-      "city": "\u05e2\u05d9\u05df \u05de\u05d0\u05d4\u05dc", 
-      "actualSick": 36, 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 121, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 555
+      "sickCount": 169
     }, 
     {
       "city": "\u05db\u05d5\u05db\u05d1 \u05d9\u05e2\u05e7\u05d1", 
-      "actualSick": 34, 
-      "verifiedLast7Days": 15, 
-      "testLast7Days": 199, 
-      "patientDiffPopulationForTenThousands": 38, 
-      "sickCount": 455
-    }, 
-    {
-      "city": "\u05e0\u05e9\u05e8", 
-      "actualSick": 34, 
-      "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 917, 
-      "patientDiffPopulationForTenThousands": 15, 
-      "sickCount": 320
+      "actualSick": 35, 
+      "verifiedLast7Days": 16, 
+      "testLast7Days": 205, 
+      "patientDiffPopulationForTenThousands": 39, 
+      "sickCount": 456
     }, 
     {
       "city": "\u05db\u05d0\u05d1\u05d5\u05dc", 
       "actualSick": 33, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 229, 
+      "testLast7Days": 234, 
       "patientDiffPopulationForTenThousands": 27, 
       "sickCount": 295
     }, 
     {
+      "city": "\u05e0\u05e9\u05e8", 
+      "actualSick": 33, 
+      "verifiedLast7Days": " 11-14 ", 
+      "testLast7Days": 920, 
+      "patientDiffPopulationForTenThousands": 15, 
+      "sickCount": 320
+    }, 
+    {
       "city": "\u05e0\u05d7\u05e3", 
-      "actualSick": 32, 
+      "actualSick": 31, 
       "verifiedLast7Days": 17, 
-      "testLast7Days": 189, 
-      "patientDiffPopulationForTenThousands": 24, 
+      "testLast7Days": 193, 
+      "patientDiffPopulationForTenThousands": 23, 
       "sickCount": 331
     }, 
     {
       "city": "\u05d8\u05d5\u05e8\u05e2\u05d0\u05df", 
       "actualSick": 31, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 195, 
+      "testLast7Days": 196, 
       "patientDiffPopulationForTenThousands": 21, 
       "sickCount": 336
     }, 
@@ -10059,7 +10059,7 @@
       "city": "\u05d3\u05d0\u05dc\u05d9\u05ea \u05d0\u05dc-\u05db\u05e8\u05de\u05dc", 
       "actualSick": 31, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 318, 
+      "testLast7Days": 321, 
       "patientDiffPopulationForTenThousands": 18, 
       "sickCount": 487
     }, 
@@ -10067,7 +10067,7 @@
       "city": "\u05ea\u05dc \u05de\u05d5\u05e0\u05d3", 
       "actualSick": 31, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 313, 
+      "testLast7Days": 315, 
       "patientDiffPopulationForTenThousands": 24, 
       "sickCount": 193
     }, 
@@ -10083,7 +10083,7 @@
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d8\u05d1\u05e2\u05d5\u05df", 
       "actualSick": 30, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 417, 
+      "testLast7Days": 423, 
       "patientDiffPopulationForTenThousands": 19, 
       "sickCount": 166
     }, 
@@ -10091,7 +10091,7 @@
       "city": "\u05d0\u05d1\u05df \u05d9\u05d4\u05d5\u05d3\u05d4", 
       "actualSick": 30, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 375, 
+      "testLast7Days": 379, 
       "patientDiffPopulationForTenThousands": 23, 
       "sickCount": 252
     }, 
@@ -10107,23 +10107,15 @@
       "city": "\u05d7\u05e9\u05de\u05d5\u05e0\u05d0\u05d9\u05dd", 
       "actualSick": 29, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 114, 
+      "testLast7Days": 115, 
       "patientDiffPopulationForTenThousands": 96, 
       "sickCount": 209
-    }, 
-    {
-      "city": "\u05d9\u05d3 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
-      "actualSick": 28, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 98, 
-      "patientDiffPopulationForTenThousands": 65, 
-      "sickCount": 194
     }, 
     {
       "city": "\u05e7\u05e8\u05d9\u05ea \u05d9\u05e2\u05e8\u05d9\u05dd", 
       "actualSick": 28, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 280, 
+      "testLast7Days": 281, 
       "patientDiffPopulationForTenThousands": 45, 
       "sickCount": 392
     }, 
@@ -10131,15 +10123,23 @@
       "city": "\u05db\u05e4\u05e8 \u05d9\u05d0\u05e1\u05d9\u05e3", 
       "actualSick": 27, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 300, 
+      "testLast7Days": 304, 
       "patientDiffPopulationForTenThousands": 25, 
       "sickCount": 262
+    }, 
+    {
+      "city": "\u05d9\u05d3 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
+      "actualSick": 27, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 98, 
+      "patientDiffPopulationForTenThousands": 63, 
+      "sickCount": 194
     }, 
     {
       "city": "\u05d6\u05de\u05e8", 
       "actualSick": 25, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 113, 
+      "testLast7Days": 115, 
       "patientDiffPopulationForTenThousands": 35, 
       "sickCount": 254
     }, 
@@ -10161,83 +10161,83 @@
     }, 
     {
       "city": "\u05d0\u05e4\u05e8\u05ea", 
-      "actualSick": 24, 
+      "actualSick": 23, 
       "verifiedLast7Days": " 11-14 ", 
-      "testLast7Days": 269, 
-      "patientDiffPopulationForTenThousands": 21, 
+      "testLast7Days": 272, 
+      "patientDiffPopulationForTenThousands": 20, 
       "sickCount": 280
     }, 
     {
       "city": "\u05d1\u05e1\u05de\"\u05d4", 
-      "actualSick": 24, 
+      "actualSick": 23, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 148, 
-      "patientDiffPopulationForTenThousands": 22, 
+      "testLast7Days": 151, 
+      "patientDiffPopulationForTenThousands": 21, 
       "sickCount": 287
     }, 
     {
       "city": "\u05de\u05d9\u05ea\u05e8", 
       "actualSick": 23, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 224, 
+      "testLast7Days": 225, 
       "patientDiffPopulationForTenThousands": 23, 
       "sickCount": 137
-    }, 
-    {
-      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05e8\u05d1\u05e2", 
-      "actualSick": 22, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 219, 
-      "patientDiffPopulationForTenThousands": 30, 
-      "sickCount": 172
     }, 
     {
       "city": "\u05de\u05e9\u05d4\u05d3", 
       "actualSick": 22, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 65, 
+      "testLast7Days": 67, 
       "patientDiffPopulationForTenThousands": 25, 
       "sickCount": 115
     }, 
     {
-      "city": "\u05e2\u05e1\u05e4\u05d9\u05d0", 
-      "actualSick": 21, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 188, 
-      "patientDiffPopulationForTenThousands": 17, 
-      "sickCount": 281
-    }, 
-    {
-      "city": "\u05d1\u05ea \u05d7\u05e4\u05e8", 
-      "actualSick": 21, 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 253, 
-      "patientDiffPopulationForTenThousands": 41, 
-      "sickCount": 119
-    }, 
-    {
       "city": "\u05d0\u05dc\u05d9\u05db\u05d9\u05df", 
-      "actualSick": 21, 
+      "actualSick": 22, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 105, 
-      "patientDiffPopulationForTenThousands": 61, 
-      "sickCount": 74
+      "testLast7Days": 110, 
+      "patientDiffPopulationForTenThousands": 64, 
+      "sickCount": 75
+    }, 
+    {
+      "city": "\u05e7\u05e8\u05d9\u05ea \u05d0\u05e8\u05d1\u05e2", 
+      "actualSick": 22, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 221, 
+      "patientDiffPopulationForTenThousands": 30, 
+      "sickCount": 172
     }, 
     {
       "city": "\u05d2'\u05dc\u05d2'\u05d5\u05dc\u05d9\u05d4", 
       "actualSick": 20, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 147, 
+      "testLast7Days": 149, 
       "patientDiffPopulationForTenThousands": 20, 
       "sickCount": 376
+    }, 
+    {
+      "city": "\u05e2\u05e1\u05e4\u05d9\u05d0", 
+      "actualSick": 20, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 188, 
+      "patientDiffPopulationForTenThousands": 16, 
+      "sickCount": 281
     }, 
     {
       "city": "\u05e2\u05d9\u05d9\u05dc\u05d1\u05d5\u05df", 
       "actualSick": 19, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 103, 
+      "testLast7Days": 106, 
       "patientDiffPopulationForTenThousands": 33, 
       "sickCount": 138
+    }, 
+    {
+      "city": "\u05d1\u05ea \u05d7\u05e4\u05e8", 
+      "actualSick": 19, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 257, 
+      "patientDiffPopulationForTenThousands": 37, 
+      "sickCount": 119
     }, 
     {
       "city": "\u05e9\u05e2\u05d1", 
@@ -10251,15 +10251,23 @@
       "city": "\u05de\u05e8\u05db\u05d6 \u05e9\u05e4\u05d9\u05e8\u05d0", 
       "actualSick": 19, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 83, 
+      "testLast7Days": 84, 
       "patientDiffPopulationForTenThousands": 91, 
       "sickCount": 104
+    }, 
+    {
+      "city": "\u05d1\u05e0\u05d9 \u05e2\u05d9\"\u05e9", 
+      "actualSick": 18, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 200, 
+      "patientDiffPopulationForTenThousands": 27, 
+      "sickCount": 127
     }, 
     {
       "city": "\u05e0\u05d5\u05d5\u05d4 \u05d3\u05e0\u05d9\u05d0\u05dc", 
       "actualSick": 18, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 157, 
+      "testLast7Days": 158, 
       "patientDiffPopulationForTenThousands": 73, 
       "sickCount": 59
     }, 
@@ -10267,17 +10275,9 @@
       "city": "\u05e0\u05d9\u05e6\u05df", 
       "actualSick": 18, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 63, 
+      "testLast7Days": 64, 
       "patientDiffPopulationForTenThousands": 78, 
       "sickCount": 100
-    }, 
-    {
-      "city": "\u05d1\u05e0\u05d9 \u05e2\u05d9\"\u05e9", 
-      "actualSick": 18, 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 199, 
-      "patientDiffPopulationForTenThousands": 27, 
-      "sickCount": 127
     }, 
     {
       "city": "\u05e2\u05ea\u05dc\u05d9\u05ea", 
@@ -10291,7 +10291,7 @@
       "city": "\u05de\u05d1\u05d5\u05d0 \u05d7\u05d5\u05e8\u05d5\u05df", 
       "actualSick": 17, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 70, 
+      "testLast7Days": 71, 
       "patientDiffPopulationForTenThousands": 67, 
       "sickCount": 121
     }, 
@@ -10307,49 +10307,57 @@
       "city": "\u05d0\u05dc\u05e4\u05d9 \u05de\u05e0\u05e9\u05d4", 
       "actualSick": 16, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 151, 
+      "testLast7Days": 153, 
       "patientDiffPopulationForTenThousands": 20, 
       "sickCount": 115
-    }, 
-    {
-      "city": "\u05e9\u05e2\u05e8\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
-      "actualSick": 16, 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 93, 
-      "patientDiffPopulationForTenThousands": 29, 
-      "sickCount": 140
-    }, 
-    {
-      "city": "\u05e7\u05e8\u05e0\u05d9 \u05e9\u05d5\u05de\u05e8\u05d5\u05df", 
-      "actualSick": 16, 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 139, 
-      "patientDiffPopulationForTenThousands": 19, 
-      "sickCount": 190
-    }, 
-    {
-      "city": "\u05db\u05d5\u05db\u05d1 \u05d9\u05d0\u05d9\u05e8", 
-      "actualSick": 16, 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 162, 
-      "patientDiffPopulationForTenThousands": 18, 
-      "sickCount": 127
     }, 
     {
       "city": "\u05e4\u05e8\u05d3\u05e1\u05d9\u05d4", 
       "actualSick": 16, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 158, 
+      "testLast7Days": 159, 
       "patientDiffPopulationForTenThousands": 26, 
       "sickCount": 131
     }, 
     {
-      "city": "\u05e4\u05e1\u05d5\u05d8\u05d4", 
+      "city": "\u05e7\u05e8\u05e0\u05d9 \u05e9\u05d5\u05de\u05e8\u05d5\u05df", 
+      "actualSick": 16, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 141, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 190
+    }, 
+    {
+      "city": "\u05e9\u05e2\u05e8\u05d9 \u05ea\u05e7\u05d5\u05d5\u05d4", 
+      "actualSick": 16, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 94, 
+      "patientDiffPopulationForTenThousands": 29, 
+      "sickCount": 140
+    }, 
+    {
+      "city": "\u05db\u05d5\u05db\u05d1 \u05d9\u05d0\u05d9\u05e8", 
+      "actualSick": 16, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 165, 
+      "patientDiffPopulationForTenThousands": 18, 
+      "sickCount": 127
+    }, 
+    {
+      "city": "\u05d2\u05d1\u05e2 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
       "actualSick": 15, 
       "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 281, 
-      "patientDiffPopulationForTenThousands": 44, 
-      "sickCount": 41
+      "testLast7Days": 97, 
+      "patientDiffPopulationForTenThousands": 28, 
+      "sickCount": 167
+    }, 
+    {
+      "city": "\u05d1\u05d5\u05e7\u05e2\u05d0\u05ea\u05d0", 
+      "actualSick": 15, 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 38, 
+      "patientDiffPopulationForTenThousands": 23, 
+      "sickCount": 250
     }, 
     {
       "city": "\u05e8\u05d1\u05d1\u05d4", 
@@ -10360,12 +10368,20 @@
       "sickCount": 127
     }, 
     {
-      "city": "\u05d1\u05d5\u05e7\u05e2\u05d0\u05ea\u05d0", 
+      "city": "\u05e4\u05e1\u05d5\u05d8\u05d4", 
+      "actualSick": 15, 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 281, 
+      "patientDiffPopulationForTenThousands": 44, 
+      "sickCount": 41
+    }, 
+    {
+      "city": "\u05d8\u05d5\u05d1\u05d0-\u05d6\u05e0\u05d2\u05e8\u05d9\u05d4", 
       "actualSick": 15, 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 37, 
-      "patientDiffPopulationForTenThousands": 23, 
-      "sickCount": 250
+      "testLast7Days": 98, 
+      "patientDiffPopulationForTenThousands": 22, 
+      "sickCount": 63
     }, 
     {
       "city": "\u05e8\u05de\u05ea \u05d9\u05e9\u05d9", 
@@ -10376,26 +10392,10 @@
       "sickCount": 57
     }, 
     {
-      "city": "\u05de\u05e6\u05e4\u05d4 \u05e8\u05de\u05d5\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 44, 
-      "patientDiffPopulationForTenThousands": 6, 
-      "sickCount": 62
-    }, 
-    {
-      "city": "\u05d9\u05d1\u05e0\u05d0\u05dc", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 69, 
-      "patientDiffPopulationForTenThousands": 31, 
-      "sickCount": 165
-    }, 
-    {
       "city": "\u05d0\u05d1\u05d5 \u05d2'\u05d5\u05d5\u05d9\u05d9\u05e2\u05d3 (\u05e9\u05d1\u05d8)", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 11, 
+      "testLast7Days": 12, 
       "patientDiffPopulationForTenThousands": 4, 
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
@@ -10408,12 +10408,20 @@
       "sickCount": 117
     }, 
     {
-      "city": "\u05e9\u05d2\u05d1-\u05e9\u05dc\u05d5\u05dd", 
+      "city": "\u05d9\u05d1\u05e0\u05d0\u05dc", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 69, 
+      "patientDiffPopulationForTenThousands": 31, 
+      "sickCount": 165
+    }, 
+    {
+      "city": "\u05d2'\u05e9 (\u05d2\u05d5\u05e9 \u05d7\u05dc\u05d1)", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 89, 
-      "patientDiffPopulationForTenThousands": 6, 
-      "sickCount": 42
+      "testLast7Days": 50, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 45
     }, 
     {
       "city": "\u05e8\u05d0\u05e9 \u05e4\u05d9\u05e0\u05d4", 
@@ -10422,14 +10430,6 @@
       "testLast7Days": 60, 
       "patientDiffPopulationForTenThousands": 29, 
       "sickCount": 39
-    }, 
-    {
-      "city": "\u05db\u05e4\u05e8 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 113, 
-      "patientDiffPopulationForTenThousands": 14, 
-      "sickCount": 78
     }, 
     {
       "city": "\u05e2\u05dc\u05d9", 
@@ -10443,41 +10443,25 @@
       "city": "\u05d8\u05dc\u05de\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 82, 
+      "testLast7Days": 83, 
       "patientDiffPopulationForTenThousands": 14, 
       "sickCount": 88
     }, 
     {
-      "city": "\u05d1\u05d9\u05ea \u05d7\u05e9\u05de\u05d5\u05e0\u05d0\u05d9", 
+      "city": "\u05db\u05e4\u05e8 \u05de\u05e6\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
       "testLast7Days": 29, 
-      "patientDiffPopulationForTenThousands": 9, 
-      "sickCount": 36
+      "patientDiffPopulationForTenThousands": 18, 
+      "sickCount": 74
     }, 
     {
       "city": "\u05e2\u05d9\u05df \u05e7\u05e0\u05d9\u05d9\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 11, 
+      "testLast7Days": 12, 
       "patientDiffPopulationForTenThousands": 8, 
       "sickCount": 66
-    }, 
-    {
-      "city": "\u05d0\u05d1\u05d8\u05d9\u05df", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 46, 
-      "patientDiffPopulationForTenThousands": 4, 
-      "sickCount": 48
-    }, 
-    {
-      "city": "\u05d2'\u05e9 (\u05d2\u05d5\u05e9 \u05d7\u05dc\u05d1)", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 50, 
-      "patientDiffPopulationForTenThousands": 19, 
-      "sickCount": 45
     }, 
     {
       "city": "\u05e4\u05d3\u05d5\u05d0\u05dc", 
@@ -10488,12 +10472,28 @@
       "sickCount": 53
     }, 
     {
+      "city": "\u05d0\u05d1\u05d8\u05d9\u05df", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 48, 
+      "patientDiffPopulationForTenThousands": 4, 
+      "sickCount": 48
+    }, 
+    {
       "city": "\u05ea\u05dc \u05e9\u05d1\u05e2", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 177, 
+      "testLast7Days": 180, 
       "patientDiffPopulationForTenThousands": 3, 
       "sickCount": 102
+    }, 
+    {
+      "city": "\u05e2\u05e5 \u05d0\u05e4\u05e8\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 38, 
+      "patientDiffPopulationForTenThousands": 41, 
+      "sickCount": 63
     }, 
     {
       "city": "\u05d0\u05dc\u05e2\u05d6\u05e8", 
@@ -10512,12 +10512,12 @@
       "sickCount": 62
     }, 
     {
-      "city": "\u05db\u05e4\u05e8 \u05d1\u05e8\u05d0", 
+      "city": "\u05d0\u05d1\u05d5 \u05e8\u05d5\u05d1\u05d9\u05d9\u05e2\u05d4 (\u05e9\u05d1\u05d8)", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 37, 
-      "patientDiffPopulationForTenThousands": 11, 
-      "sickCount": 234
+      "testLast7Days": 19, 
+      "patientDiffPopulationForTenThousands": 3, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
       "city": "\u05ea\u05e7\u05d5\u05e2", 
@@ -10531,17 +10531,17 @@
       "city": "\u05d0\u05dc\u05e7\u05e0\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 80, 
+      "testLast7Days": 81, 
       "patientDiffPopulationForTenThousands": 13, 
       "sickCount": 86
     }, 
     {
-      "city": "\u05d8\u05d5\u05d1\u05d0-\u05d6\u05e0\u05d2\u05e8\u05d9\u05d4", 
+      "city": "\u05d1\u05d9\u05e8 \u05d0\u05dc-\u05de\u05db\u05e1\u05d5\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 97, 
-      "patientDiffPopulationForTenThousands": 21, 
-      "sickCount": 62
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 124, 
+      "patientDiffPopulationForTenThousands": 9, 
+      "sickCount": 81
     }, 
     {
       "city": "\u05e7\u05d3\u05d5\u05de\u05d9\u05dd", 
@@ -10552,34 +10552,34 @@
       "sickCount": 66
     }, 
     {
-      "city": "\u05d0\u05d1\u05d5 \u05e8\u05d5\u05d1\u05d9\u05d9\u05e2\u05d4 (\u05e9\u05d1\u05d8)", 
+      "city": "\u05db\u05e4\u05e8 \u05d1\u05e8\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 18, 
-      "patientDiffPopulationForTenThousands": 3, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
+      "testLast7Days": 37, 
+      "patientDiffPopulationForTenThousands": 11, 
+      "sickCount": 234
     }, 
     {
       "city": "\u05e6\u05d5\u05e4\u05d9\u05dd", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 52, 
-      "patientDiffPopulationForTenThousands": 38, 
-      "sickCount": 52
+      "verifiedLast7Days": "  6-10  ", 
+      "testLast7Days": 53, 
+      "patientDiffPopulationForTenThousands": 42, 
+      "sickCount": 53
     }, 
     {
-      "city": "\u05d1\u05d9\u05e8 \u05d0\u05dc-\u05de\u05db\u05e1\u05d5\u05e8", 
+      "city": "\u05db\u05e2\u05d1\u05d9\u05d4-\u05d8\u05d1\u05d0\u05e9-\u05d7\u05d2'\u05d0\u05d2'\u05e8\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 123, 
-      "patientDiffPopulationForTenThousands": 9, 
-      "sickCount": 81
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 68, 
+      "patientDiffPopulationForTenThousands": 22, 
+      "sickCount": 80
     }, 
     {
       "city": "\u05e6\u05d5\u05e8 \u05d9\u05e6\u05d7\u05e7", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 86, 
+      "testLast7Days": 89, 
       "patientDiffPopulationForTenThousands": 11, 
       "sickCount": 65
     }, 
@@ -10600,12 +10600,12 @@
       "sickCount": 57
     }, 
     {
-      "city": "\u05e2\u05d5\u05d6\u05d9\u05d9\u05e8", 
+      "city": "\u05db\u05d0\u05d5\u05db\u05d1 \u05d0\u05d1\u05d5 \u05d0\u05dc-\u05d4\u05d9\u05d2'\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 27, 
-      "patientDiffPopulationForTenThousands": 9, 
-      "sickCount": 57
+      "verifiedLast7Days": "  0  ", 
+      "testLast7Days": 46, 
+      "patientDiffPopulationForTenThousands": 10, 
+      "sickCount": 59
     }, 
     {
       "city": "\u05e2\u05e8\u05e2\u05e8\u05d4-\u05d1\u05e0\u05d2\u05d1", 
@@ -10619,7 +10619,7 @@
       "city": "\u05e6\u05d5\u05e8 \u05d4\u05d3\u05e1\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 236, 
+      "testLast7Days": 240, 
       "patientDiffPopulationForTenThousands": 15, 
       "sickCount": 134
     }, 
@@ -10632,19 +10632,19 @@
       "sickCount": 154
     }, 
     {
-      "city": "\u05d2\u05e0\u05d9 \u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df", 
+      "city": "\u05e2\u05d5\u05d6\u05d9\u05d9\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 37, 
-      "patientDiffPopulationForTenThousands": 37, 
-      "sickCount": 113
+      "testLast7Days": 27, 
+      "patientDiffPopulationForTenThousands": 9, 
+      "sickCount": 57
     }, 
     {
       "city": "\u05d0\u05d1\u05d5 \u05d2\u05d5\u05e9", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 219, 
-      "patientDiffPopulationForTenThousands": 6, 
+      "testLast7Days": 221, 
+      "patientDiffPopulationForTenThousands": 5, 
       "sickCount": 211
     }, 
     {
@@ -10656,12 +10656,12 @@
       "sickCount": 65
     }, 
     {
-      "city": "\u05d2\u05d1\u05e2 \u05d1\u05e0\u05d9\u05de\u05d9\u05df", 
+      "city": "\u05db\u05d5\u05db\u05d1 \u05d4\u05e9\u05d7\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  6-10  ", 
-      "testLast7Days": 92, 
-      "patientDiffPopulationForTenThousands": 26, 
-      "sickCount": 166
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 33, 
+      "patientDiffPopulationForTenThousands": 12, 
+      "sickCount": 43
     }, 
     {
       "city": "\u05d1\u05e8\u05db\u05d4", 
@@ -10688,18 +10688,18 @@
       "sickCount": 63
     }, 
     {
-      "city": "\u05db\u05e4\u05e8 \u05de\u05e6\u05e8", 
+      "city": "\u05d0\u05dc\u05d5\u05df \u05e9\u05d1\u05d5\u05ea", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 29, 
-      "patientDiffPopulationForTenThousands": 18, 
-      "sickCount": 74
+      "testLast7Days": 168, 
+      "patientDiffPopulationForTenThousands": 25, 
+      "sickCount": 60
     }, 
     {
       "city": "\u05dc\u05d4\u05d1\u05d9\u05dd", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 154, 
+      "testLast7Days": 156, 
       "patientDiffPopulationForTenThousands": 21, 
       "sickCount": 123
     }, 
@@ -10712,20 +10712,20 @@
       "sickCount": 36
     }, 
     {
-      "city": "\u05db\u05d5\u05db\u05d1 \u05d4\u05e9\u05d7\u05e8", 
+      "city": "\u05de\u05e1\u05e2\u05d5\u05d3\u05d9\u05df \u05d0\u05dc-\u05e2\u05d6\u05d0\u05d6\u05de\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 33, 
-      "patientDiffPopulationForTenThousands": 12, 
-      "sickCount": 43
+      "testLast7Days": 48, 
+      "patientDiffPopulationForTenThousands": 2, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
-      "city": "\u05d0\u05dc\u05d5\u05df \u05e9\u05d1\u05d5\u05ea", 
+      "city": "\u05e2\u05d9\u05dc\u05d5\u05d8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 166, 
-      "patientDiffPopulationForTenThousands": 25, 
-      "sickCount": 60
+      "testLast7Days": 47, 
+      "patientDiffPopulationForTenThousands": 11, 
+      "sickCount": 329
     }, 
     {
       "city": "\u05dc\u05e4\u05d9\u05d3", 
@@ -10736,12 +10736,12 @@
       "sickCount": 53
     }, 
     {
-      "city": "\u05db\u05d0\u05d5\u05db\u05d1 \u05d0\u05d1\u05d5 \u05d0\u05dc-\u05d4\u05d9\u05d2'\u05d0", 
+      "city": "\u05de\u05e6\u05e4\u05d4 \u05d9\u05e8\u05d9\u05d7\u05d5", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 46, 
-      "patientDiffPopulationForTenThousands": 10, 
-      "sickCount": 59
+      "testLast7Days": 35, 
+      "patientDiffPopulationForTenThousands": 21, 
+      "sickCount": 50
     }, 
     {
       "city": "\u05e7\u05e6\u05e8 \u05d0-\u05e1\u05e8", 
@@ -10760,12 +10760,12 @@
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
-      "city": "\u05e2\u05d9\u05dc\u05d5\u05d8", 
+      "city": "\u05d1\u05d9\u05ea \u05d0\u05e8\u05d9\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 46, 
-      "patientDiffPopulationForTenThousands": 11, 
-      "sickCount": 329
+      "testLast7Days": 83, 
+      "patientDiffPopulationForTenThousands": 12, 
+      "sickCount": 74
     }, 
     {
       "city": "\u05db\u05e4\u05e8 \u05ea\u05d1\u05d5\u05e8", 
@@ -10776,12 +10776,12 @@
       "sickCount": 69
     }, 
     {
-      "city": "\u05de\u05e1\u05e2\u05d5\u05d3\u05d9\u05df \u05d0\u05dc-\u05e2\u05d6\u05d0\u05d6\u05de\u05d4", 
+      "city": "\u05de\u05d6\u05e8\u05e2\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 46, 
-      "patientDiffPopulationForTenThousands": 2, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
+      "testLast7Days": 87, 
+      "patientDiffPopulationForTenThousands": 10, 
+      "sickCount": 97
     }, 
     {
       "city": "\u05e6\u05d5\u05e8 \u05de\u05e9\u05d4", 
@@ -10795,7 +10795,7 @@
       "city": "\u05d0\u05d5\u05e8\u05e0\u05d9\u05ea", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 191, 
+      "testLast7Days": 193, 
       "patientDiffPopulationForTenThousands": 11, 
       "sickCount": 153
     }, 
@@ -10808,20 +10808,20 @@
       "sickCount": 28
     }, 
     {
-      "city": "\u05de\u05d6\u05e8\u05e2\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 86, 
-      "patientDiffPopulationForTenThousands": 10, 
-      "sickCount": 97
-    }, 
-    {
       "city": "\u05db\u05e4\u05e8 \u05db\u05de\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
       "testLast7Days": 48, 
       "patientDiffPopulationForTenThousands": 27, 
       "sickCount": 60
+    }, 
+    {
+      "city": "\u05db\u05e4\u05e8 \u05d0\u05d3\u05d5\u05de\u05d9\u05dd", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 115, 
+      "patientDiffPopulationForTenThousands": 14, 
+      "sickCount": 78
     }, 
     {
       "city": "\u05de\u05e1\u05e2\u05d3\u05d4", 
@@ -10840,18 +10840,18 @@
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
-      "city": "\u05e2\u05e5 \u05d0\u05e4\u05e8\u05d9\u05dd", 
+      "city": "\u05d2\u05e0\u05d9 \u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 38, 
-      "patientDiffPopulationForTenThousands": 45, 
-      "sickCount": 63
+      "testLast7Days": 37, 
+      "patientDiffPopulationForTenThousands": 37, 
+      "sickCount": 113
     }, 
     {
       "city": "\u05d1\u05e1\u05de\u05ea \u05d8\u05d1\u05e2\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 146, 
+      "testLast7Days": 147, 
       "patientDiffPopulationForTenThousands": 8, 
       "sickCount": 59
     }, 
@@ -10867,7 +10867,7 @@
       "city": "\u05e2\u05d5\u05de\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 178, 
+      "testLast7Days": 179, 
       "patientDiffPopulationForTenThousands": 15, 
       "sickCount": 169
     }, 
@@ -10875,7 +10875,7 @@
       "city": "\u05de\u05d9\u05d9\u05e1\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 67, 
+      "testLast7Days": 68, 
       "patientDiffPopulationForTenThousands": 69, 
       "sickCount": 80
     }, 
@@ -10883,15 +10883,15 @@
       "city": "\u05de\u05d5\u05e7\u05d9\u05d9\u05d1\u05dc\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 44, 
-      "patientDiffPopulationForTenThousands": 26, 
+      "testLast7Days": 46, 
+      "patientDiffPopulationForTenThousands": 24, 
       "sickCount": 171
     }, 
     {
       "city": "\u05e9\u05d9\u05d9\u05d7' \u05d3\u05e0\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 58, 
+      "testLast7Days": 61, 
       "patientDiffPopulationForTenThousands": 17, 
       "sickCount": 81
     }, 
@@ -10899,7 +10899,7 @@
       "city": "\u05d2\u05df \u05e0\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 114, 
+      "testLast7Days": 117, 
       "patientDiffPopulationForTenThousands": 34, 
       "sickCount": 32
     }, 
@@ -10907,7 +10907,7 @@
       "city": "\u05e1\u05d1\u05d9\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 107, 
+      "testLast7Days": 108, 
       "patientDiffPopulationForTenThousands": 14, 
       "sickCount": 104
     }, 
@@ -10920,18 +10920,18 @@
       "sickCount": 99
     }, 
     {
-      "city": "\u05d0\u05d7\u05d5\u05d6\u05ea \u05d1\u05e8\u05e7", 
+      "city": "\u05d1\u05d9\u05ea \u05d9\u05e6\u05d7\u05e7-\u05e9\u05e2\u05e8 \u05d7\u05e4\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 51, 
-      "patientDiffPopulationForTenThousands": 47, 
-      "sickCount": 46
+      "testLast7Days": 49, 
+      "patientDiffPopulationForTenThousands": 10, 
+      "sickCount": 35
     }, 
     {
       "city": "\u05d1\u05d5\u05e2\u05d9\u05d9\u05e0\u05d4-\u05e0\u05d5\u05d2'\u05d9\u05d3\u05d0\u05ea", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 153, 
+      "testLast7Days": 156, 
       "patientDiffPopulationForTenThousands": 10, 
       "sickCount": 81
     }, 
@@ -10952,18 +10952,18 @@
       "sickCount": 89
     }, 
     {
-      "city": "\u05d1\u05d9\u05ea \u05d0\u05e8\u05d9\u05d4", 
+      "city": "\u05d0\u05d7\u05d5\u05d6\u05ea \u05d1\u05e8\u05e7", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 82, 
-      "patientDiffPopulationForTenThousands": 12, 
-      "sickCount": 74
+      "verifiedLast7Days": "  0  ", 
+      "testLast7Days": 51, 
+      "patientDiffPopulationForTenThousands": 47, 
+      "sickCount": 46
     }, 
     {
       "city": "\u05db\u05e1\u05d9\u05e4\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 108, 
+      "testLast7Days": 111, 
       "patientDiffPopulationForTenThousands": 7, 
       "sickCount": 250
     }, 
@@ -10971,41 +10971,17 @@
       "city": "\u05dc\u05e7\u05d9\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 149, 
+      "testLast7Days": 151, 
       "patientDiffPopulationForTenThousands": 2, 
       "sickCount": 323
     }, 
     {
-      "city": "\u05d1\u05d9\u05ea \u05d9\u05e6\u05d7\u05e7-\u05e9\u05e2\u05e8 \u05d7\u05e4\u05e8", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 48, 
-      "patientDiffPopulationForTenThousands": 10, 
-      "sickCount": 35
-    }, 
-    {
-      "city": "\u05db\u05e2\u05d1\u05d9\u05d4-\u05d8\u05d1\u05d0\u05e9-\u05d7\u05d2'\u05d0\u05d2'\u05e8\u05d4", 
+      "city": "\u05e9\u05d2\u05d1-\u05e9\u05dc\u05d5\u05dd", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 68, 
-      "patientDiffPopulationForTenThousands": 22, 
-      "sickCount": 80
-    }, 
-    {
-      "city": "\u05e7\u05d9\u05e1\u05e8\u05d9\u05d4", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 206, 
-      "patientDiffPopulationForTenThousands": 24, 
-      "sickCount": 90
-    }, 
-    {
-      "city": "\u05d2\u05d1\u05e2\u05ea \u05d1\u05e8\u05e0\u05e8", 
-      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
-      "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 43, 
-      "patientDiffPopulationForTenThousands": 9, 
-      "sickCount": 37
+      "testLast7Days": 89, 
+      "patientDiffPopulationForTenThousands": 6, 
+      "sickCount": 42
     }, 
     {
       "city": "\u05d0\u05d1\u05d5 \u05e8\u05d5\u05e7\u05d9\u05d9\u05e7 (\u05e9\u05d1\u05d8)", 
@@ -11016,10 +10992,34 @@
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
+      "city": "\u05e7\u05d9\u05e1\u05e8\u05d9\u05d4", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 208, 
+      "patientDiffPopulationForTenThousands": 26, 
+      "sickCount": 91
+    }, 
+    {
+      "city": "\u05d0\u05d1\u05d5 \u05e7\u05d5\u05e8\u05d9\u05e0\u05d0\u05ea (\u05e9\u05d1\u05d8)", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 23, 
+      "patientDiffPopulationForTenThousands": 2, 
+      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
+    }, 
+    {
+      "city": "\u05e2\u05dc\u05d9 \u05d6\u05d4\u05d1", 
+      "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
+      "verifiedLast7Days": "  1-5  ", 
+      "testLast7Days": 51, 
+      "patientDiffPopulationForTenThousands": 19, 
+      "sickCount": 76
+    }, 
+    {
       "city": "\u05d7\u05d5\u05e8\u05d4", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 143, 
+      "testLast7Days": 144, 
       "patientDiffPopulationForTenThousands": 5, 
       "sickCount": 323
     }, 
@@ -11032,12 +11032,12 @@
       "sickCount": 46
     }, 
     {
-      "city": "\u05d0\u05d1\u05d5 \u05e7\u05d5\u05e8\u05d9\u05e0\u05d0\u05ea (\u05e9\u05d1\u05d8)", 
+      "city": "\u05d1\u05d9\u05ea \u05d7\u05e9\u05de\u05d5\u05e0\u05d0\u05d9", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 23, 
-      "patientDiffPopulationForTenThousands": 2, 
-      "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
+      "testLast7Days": 30, 
+      "patientDiffPopulationForTenThousands": 9, 
+      "sickCount": 36
     }, 
     {
       "city": "\u05e0\u05d5\u05e3 \u05d0\u05d9\u05d9\u05dc\u05d5\u05df", 
@@ -11051,7 +11051,7 @@
       "city": "\u05e9\u05de\u05e9\u05d9\u05ea", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 38, 
+      "testLast7Days": 40, 
       "patientDiffPopulationForTenThousands": 17, 
       "sickCount": 45
     }, 
@@ -11072,26 +11072,26 @@
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
     {
-      "city": "\u05e2\u05dc\u05d9 \u05d6\u05d4\u05d1", 
+      "city": "\u05d2\u05d1\u05e2\u05ea \u05d1\u05e8\u05e0\u05e8", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 51, 
-      "patientDiffPopulationForTenThousands": 19, 
-      "sickCount": 76
+      "testLast7Days": 47, 
+      "patientDiffPopulationForTenThousands": 9, 
+      "sickCount": 37
     }, 
     {
-      "city": "\u05de\u05e6\u05e4\u05d4 \u05d9\u05e8\u05d9\u05d7\u05d5", 
+      "city": "\u05de\u05e6\u05e4\u05d4 \u05e8\u05de\u05d5\u05df", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 34, 
-      "patientDiffPopulationForTenThousands": 21, 
-      "sickCount": 50
+      "testLast7Days": 47, 
+      "patientDiffPopulationForTenThousands": 6, 
+      "sickCount": 62
     }, 
     {
       "city": "\u05de\u05e2\u05d9\u05dc\u05d9\u05d0", 
       "actualSick": " \u05e7\u05d8\u05df \u05de-15 ", 
       "verifiedLast7Days": "  1-5  ", 
-      "testLast7Days": 119, 
+      "testLast7Days": 120, 
       "patientDiffPopulationForTenThousands": 35, 
       "sickCount": 82
     }, 
@@ -11107,7 +11107,7 @@
       "city": "\u05d0\u05dc \u05e1\u05d9\u05d9\u05d3", 
       "actualSick": 0, 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 8, 
+      "testLast7Days": 9, 
       "patientDiffPopulationForTenThousands": 0, 
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
@@ -11131,7 +11131,7 @@
       "city": "\u05e1\u05d9\u05d9\u05d3 (\u05e9\u05d1\u05d8)", 
       "actualSick": 0, 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 7, 
+      "testLast7Days": 8, 
       "patientDiffPopulationForTenThousands": 0, 
       "sickCount": " \u05e7\u05d8\u05df \u05de-15 "
     }, 
@@ -11147,7 +11147,7 @@
       "city": "\u05db\u05e4\u05e8 \u05d4\u05d0\u05d5\u05e8\u05e0\u05d9\u05dd", 
       "actualSick": 0, 
       "verifiedLast7Days": "  0  ", 
-      "testLast7Days": 57, 
+      "testLast7Days": 59, 
       "patientDiffPopulationForTenThousands": 0, 
       "sickCount": 70
     }, 
@@ -11162,11 +11162,11 @@
   ], 
   "updatedPatientsOverallStatus": [
     {
-      "amount": 730, 
+      "amount": 742, 
       "name": "hard"
     }, 
     {
-      "amount": 234, 
+      "amount": 221, 
       "name": "moderate"
     }
   ], 
@@ -11178,7 +11178,7 @@
     }, 
     {
       "section": 10, 
-      "male": 0, 
+      "male": 1, 
       "female": 1
     }, 
     {
@@ -11188,47 +11188,47 @@
     }, 
     {
       "section": 30, 
-      "male": 12, 
-      "female": 6
+      "male": 11, 
+      "female": 8
     }, 
     {
       "section": 40, 
       "male": 29, 
-      "female": 10
+      "female": 11
     }, 
     {
       "section": 50, 
-      "male": 65, 
-      "female": 37
+      "male": 66, 
+      "female": 38
     }, 
     {
       "section": 60, 
-      "male": 146, 
-      "female": 37
+      "male": 149, 
+      "female": 36
     }, 
     {
       "section": 70, 
-      "male": 139, 
-      "female": 57
+      "male": 137, 
+      "female": 59
     }, 
     {
       "section": 80, 
-      "male": 81, 
+      "male": 85, 
       "female": 53
     }, 
     {
       "section": 90, 
-      "male": 14, 
+      "male": 15, 
       "female": 32
     }
   ], 
   "sickPerLocation": [
     {
-      "amount": 39889, 
+      "amount": 39547, 
       "name": "home"
     }, 
     {
-      "amount": 1314, 
+      "amount": 1304, 
       "name": "hospital"
     }
   ], 
@@ -11247,19 +11247,19 @@
     }, 
     {
       "date": "2020-10-11T00:00:00.000Z", 
-      "amount": 1206
+      "amount": 1205
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
-      "amount": 2472
+      "amount": 2473
     }, 
     {
       "date": "2020-10-13T00:00:00.000Z", 
-      "amount": 1796
+      "amount": 1798
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "amount": 1528
+      "amount": 1537
     }
   ], 
   "recoveredPerDay": [
@@ -11541,11 +11541,11 @@
     }, 
     {
       "date": "2020-04-20T00:00:00.000Z", 
-      "amount": 546
+      "amount": 547
     }, 
     {
       "date": "2020-04-21T00:00:00.000Z", 
-      "amount": 462
+      "amount": 461
     }, 
     {
       "date": "2020-04-22T00:00:00.000Z", 
@@ -11657,11 +11657,11 @@
     }, 
     {
       "date": "2020-05-19T00:00:00.000Z", 
-      "amount": 173
+      "amount": 174
     }, 
     {
       "date": "2020-05-20T00:00:00.000Z", 
-      "amount": 124
+      "amount": 123
     }, 
     {
       "date": "2020-05-21T00:00:00.000Z", 
@@ -12237,7 +12237,7 @@
     }, 
     {
       "date": "2020-10-11T00:00:00.000Z", 
-      "amount": 3820
+      "amount": 3821
     }, 
     {
       "date": "2020-10-12T00:00:00.000Z", 
@@ -12245,15 +12245,15 @@
     }, 
     {
       "date": "2020-10-13T00:00:00.000Z", 
-      "amount": 5885
+      "amount": 5886
     }, 
     {
       "date": "2020-10-14T00:00:00.000Z", 
-      "amount": 5388
+      "amount": 5667
     }, 
     {
       "date": "2020-10-15T00:00:00.000Z", 
-      "amount": 2449
+      "amount": 2710
     }
   ]
 }
