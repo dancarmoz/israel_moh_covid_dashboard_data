@@ -1,4 +1,144 @@
 {
+  "vaccinated": [
+    {
+      "Day_Date": "2020-12-19T00:00:00.000Z", 
+      "vaccinated": 38, 
+      "vaccinated_cum": 87, 
+      "vaccinated_population_perc": 0
+    }, 
+    {
+      "Day_Date": "2020-12-20T00:00:00.000Z", 
+      "vaccinated": 6501, 
+      "vaccinated_cum": 6588, 
+      "vaccinated_population_perc": 0.1
+    }, 
+    {
+      "Day_Date": "2020-12-21T00:00:00.000Z", 
+      "vaccinated": 23460, 
+      "vaccinated_cum": 30048, 
+      "vaccinated_population_perc": 0.3
+    }, 
+    {
+      "Day_Date": "2020-12-22T00:00:00.000Z", 
+      "vaccinated": 43189, 
+      "vaccinated_cum": 73237, 
+      "vaccinated_population_perc": 0.8
+    }, 
+    {
+      "Day_Date": "2020-12-23T00:00:00.000Z", 
+      "vaccinated": 60801, 
+      "vaccinated_cum": 134038, 
+      "vaccinated_population_perc": 1.5
+    }, 
+    {
+      "Day_Date": "2020-12-24T00:00:00.000Z", 
+      "vaccinated": 70873, 
+      "vaccinated_cum": 204911, 
+      "vaccinated_population_perc": 2.3
+    }, 
+    {
+      "Day_Date": "2020-12-25T00:00:00.000Z", 
+      "vaccinated": 37057, 
+      "vaccinated_cum": 241968, 
+      "vaccinated_population_perc": 2.7
+    }, 
+    {
+      "Day_Date": "2020-12-26T00:00:00.000Z", 
+      "vaccinated": 31288, 
+      "vaccinated_cum": 273256, 
+      "vaccinated_population_perc": 3.1
+    }, 
+    {
+      "Day_Date": "2020-12-27T00:00:00.000Z", 
+      "vaccinated": 100285, 
+      "vaccinated_cum": 373541, 
+      "vaccinated_population_perc": 4.2
+    }, 
+    {
+      "Day_Date": "2020-12-28T00:00:00.000Z", 
+      "vaccinated": 125059, 
+      "vaccinated_cum": 498600, 
+      "vaccinated_population_perc": 5.6
+    }, 
+    {
+      "Day_Date": "2020-12-29T00:00:00.000Z", 
+      "vaccinated": 147158, 
+      "vaccinated_cum": 645758, 
+      "vaccinated_population_perc": 7.3
+    }, 
+    {
+      "Day_Date": "2020-12-30T00:00:00.000Z", 
+      "vaccinated": 145696, 
+      "vaccinated_cum": 791454, 
+      "vaccinated_population_perc": 8.9
+    }, 
+    {
+      "Day_Date": "2020-12-31T00:00:00.000Z", 
+      "vaccinated": 150834, 
+      "vaccinated_cum": 942288, 
+      "vaccinated_population_perc": 10.6
+    }, 
+    {
+      "Day_Date": "2021-01-01T00:00:00.000Z", 
+      "vaccinated": 69363, 
+      "vaccinated_cum": 1011651, 
+      "vaccinated_population_perc": 11.4
+    }, 
+    {
+      "Day_Date": "2021-01-02T00:00:00.000Z", 
+      "vaccinated": 69803, 
+      "vaccinated_cum": 1081454, 
+      "vaccinated_population_perc": 12.2
+    }, 
+    {
+      "Day_Date": "2021-01-03T00:00:00.000Z", 
+      "vaccinated": 140389, 
+      "vaccinated_cum": 1221843, 
+      "vaccinated_population_perc": 13.7
+    }, 
+    {
+      "Day_Date": "2021-01-04T00:00:00.000Z", 
+      "vaccinated": 132453, 
+      "vaccinated_cum": 1354296, 
+      "vaccinated_population_perc": 15.2
+    }, 
+    {
+      "Day_Date": "2021-01-05T00:00:00.000Z", 
+      "vaccinated": 116837, 
+      "vaccinated_cum": 1471133, 
+      "vaccinated_population_perc": 16.6
+    }, 
+    {
+      "Day_Date": "2021-01-06T00:00:00.000Z", 
+      "vaccinated": 94689, 
+      "vaccinated_cum": 1565822, 
+      "vaccinated_population_perc": 17.6
+    }, 
+    {
+      "Day_Date": "2021-01-07T00:00:00.000Z", 
+      "vaccinated": 108806, 
+      "vaccinated_cum": 1674628, 
+      "vaccinated_population_perc": 18.8
+    }, 
+    {
+      "Day_Date": "2021-01-08T00:00:00.000Z", 
+      "vaccinated": 63686, 
+      "vaccinated_cum": 1738314, 
+      "vaccinated_population_perc": 19.6
+    }, 
+    {
+      "Day_Date": "2021-01-09T00:00:00.000Z", 
+      "vaccinated": 42518, 
+      "vaccinated_cum": 1780832, 
+      "vaccinated_population_perc": 20
+    }, 
+    {
+      "Day_Date": "2021-01-10T00:00:00.000Z", 
+      "vaccinated": 31053, 
+      "vaccinated_cum": 1811885, 
+      "vaccinated_population_perc": 20.4
+    }
+  ], 
   "infectedByAgeAndGenderPublic": [
     {
       "section": 0, 
@@ -12092,11 +12232,11 @@
   ], 
   "sickPerDateTwoDays": [
     {
-      "date": "2021-01-09T21:54:52.283Z", 
+      "date": "2021-01-09T22:35:39.531Z", 
       "amount": 69972
     }, 
     {
-      "date": "2021-01-10T21:54:52.283Z", 
+      "date": "2021-01-10T22:35:39.531Z", 
       "amount": -2231
     }
   ], 
