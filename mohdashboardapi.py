@@ -14,7 +14,7 @@ api_query = {'requests': [
      'single': False,
      'parameters': {'ageSections': [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]}},
     {'id': '5', 'queryName': 'hospitalStatus', 'single': False, 'parameters': {}},
-    {'id': '6', 'queryName': 'isolatedDoctorsAndNurses', 'single': True, 'parameters': {}},
+    {'id': '6', 'queryName': 'isolatedDoctorsAndNurses', 'single': False, 'parameters': {}},
     {'id': '7', 'queryName': 'otherHospitalizedStaff', 'single': False, 'parameters': {}},
     {'id': '8', 'queryName': 'infectedPerDate', 'single': False, 'parameters': {}},
     {'id': '9', 'queryName': 'updatedPatientsOverallStatus', 'single': False, 'parameters': {}},
@@ -35,7 +35,15 @@ api_query = {'requests': [
     {'id': '18',
      'queryName': 'severeByAgeAndGenderPublic',
      'single': False,
-     'parameters': {'ageSections': [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]}}
+     'parameters': {'ageSections': [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]}},
+    {'id': '19', 'queryName': 'spotlightLastupdate', 'single': False, 'parameters': {}},
+    {'id': '20', 'queryName': 'patientsStatus', 'single': False, 'parameters': {}},
+    {'id': '21', 'queryName': 'cumSeriusAndBreath', 'single': False, 'parameters': {}},
+    {'id': '22', 'queryName': 'LastWeekLabResults', 'single': False, 'parameters': {}},
+    {'id': '23', 'queryName': 'verifiedDoctorsAndNurses', 'single': False, 'parameters': {}},
+    {'id': '24', 'queryName': 'isolatedVerifiedDoctorsAndNurses', 'single': False, 'parameters': {}},
+    {'id': '25', 'queryName': 'spotlightPublic', 'single': False, 'parameters': {}},
+    {'id': '26', 'queryName': 'vaccinated', 'single': False, 'parameters': {'days': 0}},
     ]}
 api_address = 'https://datadashboardapi.health.gov.il/api/queries/_batch'
 def get_api_data():
@@ -51,6 +59,7 @@ AGES_FNAME = 'ages_dists.csv'
 ALL_AGES_FNAMES = {'infected':'ages_dists.csv', 'dead':'deaths_ages_dists.csv',
                    'severe':'severe_ages_dists.csv', 'breathe':'ventilated_ages_dists.csv'}
 HOSP_FNAME = 'hospitalized_and_infected.csv'
+VAC_FNAME = 'vaccinated.csv'
 HOSPITALS_FNAME = 'hospital_occupancy.csv'
 HOSP_HEB_FIELD_NAMES = [
     '\xd7\xaa\xd7\xa4\xd7\x95\xd7\xa1\xd7\x94 \xd7\x9b\xd7\x9c\xd7\x9c\xd7\x99\xd7\xaa',
@@ -58,11 +67,16 @@ HOSP_HEB_FIELD_NAMES = [
     '\xd7\xa6\xd7\x95\xd7\x95\xd7\xaa \xd7\x91\xd7\x91\xd7\x99\xd7\x93\xd7\x95\xd7\x93']
 ISOLATED_FNAME = 'isolated_staff.csv'
 
+names_trans = {
+    'doctors' : u'\u05e8\u05d5\u05e4\u05d0\u05d9\u05dd/\u05d5\u05ea',
+    'nurses' : u'\u05d0\u05d7\u05d9\u05dd/\u05d5\u05ea',
+    'others' : u'\u05de\u05e7\u05e6\u05d5\u05e2\u05d5\u05ea\n\u05d0\u05d7\u05e8\u05d9\u05dd'}
+
 def update_git(new_date):
     assert os.system('git add '+DATA_FNAME) == 0
     assert os.system('git commit -m "Update to %s"'%(new_date)) == 0
     assert os.system('git push') == 0
-    print('git committed and pushed successfully')
+    print 'git committed and pushed successfully'
 
 def update_git_history(new_date):
     history = json.load(file(COMMIT_HIST_FNAME,'r'))
@@ -70,7 +84,7 @@ def update_git_history(new_date):
     history.append((new_date, curr_commit_hash))
     json.dump(history, file(COMMIT_HIST_FNAME,'w'), indent = 2)
     assert os.system('git add '+COMMIT_HIST_FNAME) == 0
-    print('updated git history file')
+    print 'updated git history file'
     
 
 def safe_int(x):
@@ -107,9 +121,11 @@ def update_all_ages_csvs(data):
 
 def patients_to_csv_line(pat):
     keys = ['Counthospitalized', 'Counthospitalized_without_release',
-            'CountEasyStatus', 'CountMediumStatus',
-            'CountHardStatus', 'CountBreath', 'CountDeath',
-            'new_hospitalized', 'patients_hotel', 'patients_home']
+            'CountEasyStatus', 'CountMediumStatus', 'CountHardStatus',
+            'CountCriticalStatus' ,'CountBreath', 'CountDeath',
+            'CountSeriousCriticalCum', 'CountBreathCum', 'CountDeathCum',
+            'new_hospitalized', 'patients_hotel', 'patients_home',
+            ]
     return ','.join([pat['date'][:10]]+[str(pat[key]) for key in keys])
 
 
@@ -126,17 +142,32 @@ def create_patients_csv(data):
     tests = [t for t in data['testResultsPerDate'] if t['positiveAmount']!=-1][-N:]
     assert tests[0]['date'] == start_date
     epi_lines = [','.join(map(str, [t['positiveAmount'],r['amount'],t['amount'],
-                                    t['amountVirusDiagnosis']])) for \
+                                    t['amountVirusDiagnosis'],t['amountMagen']])) for \
                  r, t in zip(recs, tests)]
     
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
-                           'Easy', 'Medium', 'Hard', 'Ventilated', 'New deaths',
+                           'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated', 'New deaths',
+                           'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
                            'New hosptialized', 'In hotels', 'At home',
                            'New infected', 'New receovered', 'Total tests',
-                           'Tests for idenitifaction'])
+                           'Tests for idenitifaction', 'Tests for Magen'])
     csv_data = '\n'.join([title_line] + [p+','+e for p,e in zip(pat_lines, epi_lines)])
     file(HOSP_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+HOSP_FNAME) == 0    
+
+
+def create_vaccinated_csv(data):
+    vac = data['vaccinated']
+    title_line = ','.join([
+        'Date', 'Vaccinated (daily)','Vaccinated (cumu)','Vaccinated population percentage',
+        'Second dose (daily)','Second dose (cumu)','Second dose population precentage'])
+    data_lines = [','.join([d['Day_Date'][:10]]+map(str, [
+        d['vaccinated'], d['vaccinated_cum'], d['vaccinated_population_perc'],
+        d['vaccinated_seconde_dose'], d['vaccinated_seconde_dose_cum'],
+        d['vaccinated_seconde_dose_population_perc']])) for d in vac]
+    csv_data = '\n'.join([title_line]+data_lines)
+    file(VAC_FNAME, 'w').write(csv_data+'\n')
+    assert os.system('git add '+VAC_FNAME) == 0
 
 
 def extend_hospital_csv(data):
@@ -171,11 +202,17 @@ def extend_hospital_csv(data):
     file(HOSPITALS_FNAME, 'w').write('\n'.join(csv_prev_lines))
     assert os.system('git add '+HOSPITALS_FNAME) == 0    
 
-
+# TODO: update with verified other staff backlog!
 def update_isolated_csv(data):
     csv_lines = file(ISOLATED_FNAME).read().splitlines()
-    new_line = [data['lastUpdate']['lastUpdate']] + [str(data['isolatedDoctorsAndNurses'][k]) for k in
-                 ['Verified_Doctors', 'Verified_Nurses', 'isolated_Doctors', 'isolated_Nurses', 'isolated_Other_Sector']]
+    isols = {item['name'] : item['amount'] for item in data['isolatedDoctorsAndNurses']}
+    veris = {item['name'] : item['amount'] for item in data['verifiedDoctorsAndNurses']}
+    new_line = [data['lastUpdate']['lastUpdate']] + [str(dic[names_trans[k]]) for dic,k in
+                 [(veris, 'doctors'), (veris, 'nurses'),
+                  (isols, 'doctors'), (isols, 'nurses'),
+                  (isols, 'others')]]
+##    new_line = [data['lastUpdate']['lastUpdate']] + [str(data['isolatedDoctorsAndNurses'][k]) for k in
+##                 ['Verified_Doctors', 'Verified_Nurses', 'isolated_Doctors', 'isolated_Nurses', 'isolated_Other_Sector']]
     if new_line[1:] == csv_lines[-1].split(',')[1:]: return
     file(ISOLATED_FNAME, 'w').write('\n'.join(csv_lines + [','.join(new_line)]))
     assert os.system('git add '+ISOLATED_FNAME) == 0    
@@ -185,13 +222,17 @@ def update_json():
     new_data = get_api_data()
     new_date = new_data['lastUpdate']['lastUpdate']
     if new_date == prev_date:
-        print(time.ctime()+': ', 'No update since', prev_date)
+        print time.ctime()+': ', 'No update since', prev_date
         return
     
-    print(time.ctime()+': ', 'Data updated! New time:', new_date)
+    print time.ctime()+': ', 'Data updated! New time:', new_date
     # update_ages_csv(new_data) # Obsolete
     update_all_ages_csvs(new_data)
     create_patients_csv(new_data)
+    try:
+        create_vaccinated_csv(new_data)
+    except:
+        print 'Exception in vaccination csv'
     # extend_hospital_csv(new_data)
     update_isolated_csv(new_data)
     
@@ -206,8 +247,8 @@ def update_json_loop():
         try:
             update_json()
             time.sleep(60*60 - 4)
-        except requests.ConnectionError, e:
-            print(e)
+        except Exception, e:
+            print e
             time.sleep(10*60 - 4)
             
 
