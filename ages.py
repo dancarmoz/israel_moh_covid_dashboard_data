@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 
-SPLIT = 7
+AGES = 60  # +
+SPLIT = AGES // 10 + 1
 
 
 def str_to_datetime(s):
@@ -14,12 +15,12 @@ def str_to_datetime(s):
 
 
 def row_to_values(row):
-    # values = row[1:SPLIT] + [sum(map(int, row[SPLIT:11]))]
-    values = [sum(map(int, row[2:SPLIT]))] + [sum(map(int, row[SPLIT:11]))]
+    values = row[1:SPLIT] + [sum(map(int, row[SPLIT:11]))]
+    # values = [sum(map(int, row[2:SPLIT]))] + [sum(map(int, row[SPLIT:11]))]
     return [int(v) for v in values]
 
 
-def get_population_factors():
+def population_factors():
     population = [
         1735653,  # 0-9
         1442260,  # 10-19
@@ -32,39 +33,37 @@ def get_population_factors():
         243500,   # 80+
     ]
 
-    # population = [
-    #     0.48,  # 0-9
-    #     0.21,  # 10-19
-    #     0.25,  # 20-29
-    #     0.35,  # 30-39
-    #     0.38,  # 40-49
-    #     0.49,   # 50-59
-    #     0.70,   # 60-69
-    #     0.9,   # 70-79
-    #     1.2,   # 80+
-    # ]
-
-    return [1, 5.8]
-
-    # population = population[0:SPLIT] + [sum(population[SPLIT:])]
-    population = [sum(population[0:SPLIT])] + [sum(population[SPLIT:])]
-    return [1 / p for p in population]
+    population = population[0:SPLIT-1] + [sum(population[SPLIT-1:])]
+    return [10**7 / p for p in population]
 
 
-def read_ages(start_date, normalize, only_diff):
+def second_wave_factors():
+    return [
+        0.47,  # 0-9
+        0.22,  # 10-19
+        0.25,  # 20-29
+        0.34,  # 30-39
+        0.38,  # 40-49
+        0.49,  # 50-59
+        0.39,   # 0.70,  # 60-69
+        1.4,   # 70-79
+        1.7,   # 80+
+    ]
+
+
+def no_factors():
+    return [1] * 10
+
+
+def read_ages(start_date, factors, only_diff):
     reader = csv.reader(open('ages_dists.csv'))
     next(reader)  # Skip gender titles
-    #titles = next(reader)[1:SPLIT] + [f'{SPLIT-1}0+']
-    next(reader)  # Skip titles
-    titles = [f'10-{SPLIT * 10 - 11}'] + [f'{SPLIT * 10 - 10}+']
+    titles = next(reader)[1:SPLIT] + [f'{SPLIT-1}0+']
+    # next(reader)  # Skip titles
+    # titles = [f'10-{SPLIT * 10 - 11}'] + [f'{SPLIT * 10 - 10}+']
     dates = []
     value_lists = [[] for _ in range(len(titles))]
     first = []
-
-    if normalize:
-        factors = get_population_factors()
-    else:
-        factors = [1] * len(titles)
 
     # Aggregate
     prev_values = None
@@ -148,7 +147,7 @@ def main():
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
-        normalize=True,
+        factors=second_wave_factors(),
         only_diff=True
     )
 
@@ -164,7 +163,7 @@ def main():
         line, = ax.plot(dates, value_list, 'o--', alpha=alpha)
         ax.text(
             dates[-1] + 1,
-            value_list[-1] if i != 0 else value_list[-1] + 35,
+            value_list[-1] if i != 0 else value_list[-1],
             titles[i],
             fontsize=11,
             color=line.get_color())
@@ -187,5 +186,5 @@ def main():
 
 
 if __name__ == '__main__':
-    with plt.xkcd():
-        main()
+    # plt.xkcd()
+    main()
