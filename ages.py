@@ -14,9 +14,11 @@ def str_to_datetime(s):
     return datetime.fromisoformat(iso_datetime)
 
 
-def row_to_values(row):
-    values = row[1:SPLIT] + [sum(map(int, row[SPLIT:11]))]
-    # values = [sum(map(int, row[2:SPLIT]))] + [sum(map(int, row[SPLIT:11]))]
+def row_to_values(row, aggregate):
+    if aggregate:
+        values = [sum(map(int, row[2:SPLIT]))] + [sum(map(int, row[SPLIT:11]))]
+    else:
+        values = row[1:SPLIT] + [sum(map(int, row[SPLIT:11]))]
     return [int(v) for v in values]
 
 
@@ -39,7 +41,7 @@ def population_factors():
 
 def second_wave_factors():
     return [
-        0.47,  # 0-9
+        0.46,  # 0-9
         0.22,  # 10-19
         0.25,  # 20-29
         0.34,  # 30-39
@@ -55,12 +57,14 @@ def no_factors():
     return [1] * 10
 
 
-def read_ages(start_date, factors, only_diff):
+def read_ages(start_date, factors, only_diff, aggregate):
     reader = csv.reader(open('ages_dists.csv'))
     next(reader)  # Skip gender titles
-    titles = next(reader)[1:SPLIT] + [f'{SPLIT-1}0+']
-    # next(reader)  # Skip titles
-    # titles = [f'10-{SPLIT * 10 - 11}'] + [f'{SPLIT * 10 - 10}+']
+    if aggregate:
+        next(reader)  # Skip titles
+        titles = [f'10-{SPLIT * 10 - 11}'] + [f'{SPLIT * 10 - 10}+']
+    else:
+        titles = next(reader)[1:SPLIT] + [f'{SPLIT - 1}0+']
     dates = []
     value_lists = [[] for _ in range(len(titles))]
     first = []
@@ -74,11 +78,11 @@ def read_ages(start_date, factors, only_diff):
             continue
 
         if len(first) == 0:
-            first = [v for v in row_to_values(row)]
+            first = [v for v in row_to_values(row, aggregate)]
 
         if prev_date and prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
             # This is an update within the same-day - add to the previous value
-            for i, value in enumerate(row_to_values(row)):
+            for i, value in enumerate(row_to_values(row, aggregate)):
                 if only_diff:
                     value_lists[i][-1] += (value - prev_values[i]) * factors[i]
                 else:
@@ -87,7 +91,7 @@ def read_ages(start_date, factors, only_diff):
             # This is a new day update
             dates.append(mdates.date2num(date))
 
-            for i, value in enumerate(row_to_values(row)):
+            for i, value in enumerate(row_to_values(row, aggregate)):
                 if only_diff:
                     if prev_values is None:
                         value_lists[i].append(0)
@@ -96,7 +100,7 @@ def read_ages(start_date, factors, only_diff):
                 else:
                     value_lists[i].append((value - first[i]) * factors[i])
 
-        prev_values = [v for v in row_to_values(row)]
+        prev_values = [v for v in row_to_values(row, aggregate)]
         prev_date = date
 
     return dates, titles, value_lists
@@ -148,7 +152,8 @@ def main():
     dates, titles, value_lists = read_ages(
         start_date=start_date,
         factors=second_wave_factors(),
-        only_diff=True
+        only_diff=True,
+        aggregate=False
     )
 
     avg_window = 7
