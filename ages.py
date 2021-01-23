@@ -22,7 +22,7 @@ def row_to_values(row, aggregate):
     return [int(v) for v in values]
 
 
-def population_factors():
+def population_factors(aggregate):
     population = [
         1735653,  # 0-9
         1442260,  # 10-19
@@ -35,7 +35,7 @@ def population_factors():
         243500,   # 80+
     ]
 
-    population = population[0:SPLIT-1] + [sum(population[SPLIT-1:])]
+    population = population[1 if aggregate else 0:SPLIT-1] + [sum(population[SPLIT-1:])]
     return [10**7 / p for p in population]
 
 
@@ -151,9 +151,10 @@ def main():
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
-        factors=second_wave_factors(),
+        factors=[1, 6],
+        # factors=second_wave_factors(),
         only_diff=True,
-        aggregate=False
+        aggregate=True
     )
 
     avg_window = 7
