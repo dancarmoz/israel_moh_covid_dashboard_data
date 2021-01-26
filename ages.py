@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 
-AGES = 80  # +
+AGES = 60  # +
 SPLIT = AGES // 10 + 1
 
 
@@ -114,7 +114,7 @@ def vertical_span(plt, date, date_end, color):
 def vertical_line(plt, date, text, color):
     plt.axvline(x=date, color=color, alpha=0.5)
     bottom, top = plt.ylim()
-    plt.text(date, (bottom + top) / 100, text, rotation=90)
+    plt.text(date, bottom + top / 50, text, rotation=90)
 
 
 def draw_events(plt, start_date):
@@ -139,8 +139,8 @@ def draw_events(plt, start_date):
 
 def main():
 
-    # start_date = datetime(2020, 3, 15)
-    start_date = datetime(2020, 9, 10)
+    start_date = datetime(2020, 6, 20)
+    # start_date = datetime(2020, 9, 10)
     # start_date = datetime(2020, 12, 20)
 
     dates, titles, value_lists = read_ages(
