@@ -37,7 +37,8 @@ def population_factors(aggregate):
     ]
 
     population = population[1 if aggregate else 0:SPLIT-1] + [sum(population[SPLIT-1:])]
-    return [10**7 / p for p in population]
+    # return [10**7 / p for p in population]
+    return [700 / p for p in population]
 
 
 def second_wave_factors():
@@ -58,7 +59,7 @@ def no_factors():
     return [1] * 10
 
 
-def read_ages(start_date, factors, only_diff, aggregate):
+def read_ages(start_date, factors, aggregate):
     reader = csv.reader(open('ages_dists.csv'))
     next(reader)  # Skip gender titles
     if aggregate:
@@ -68,7 +69,6 @@ def read_ages(start_date, factors, only_diff, aggregate):
         titles = next(reader)[1:SPLIT] + [f'{SPLIT - 1}0+']
     dates = []
     value_lists = [[] for _ in range(len(titles))]
-    first = []
 
     # Aggregate
     prev_values = None
@@ -78,28 +78,19 @@ def read_ages(start_date, factors, only_diff, aggregate):
         if date < start_date:
             continue
 
-        if len(first) == 0:
-            first = [v for v in row_to_values(row, aggregate)]
-
         if prev_date and prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
             # This is an update within the same-day - add to the previous value
             for i, value in enumerate(row_to_values(row, aggregate)):
-                if only_diff:
-                    value_lists[i][-1] += (value - prev_values[i]) * factors[i]
-                else:
-                    value_lists[i][-1] += (value - first[i]) * factors[i]
+                value_lists[i][-1] += (value - prev_values[i]) * factors[i]
         else:
             # This is a new day update
             dates.append(mdates.date2num(date))
 
             for i, value in enumerate(row_to_values(row, aggregate)):
-                if only_diff:
-                    if prev_values is None:
-                        value_lists[i].append(0)
-                    else:
-                        value_lists[i].append((value - prev_values[i]) * factors[i])
+                if prev_values is None:
+                    value_lists[i].append(0)
                 else:
-                    value_lists[i].append((value - first[i]) * factors[i])
+                    value_lists[i].append((value - prev_values[i]) * factors[i])
 
         prev_values = [v for v in row_to_values(row, aggregate)]
         prev_date = date
@@ -126,7 +117,7 @@ def vertical_line(plt, date, text, color):
     plt.text(date, 350, text, rotation=90)
 
 
-def draw_events(plt):
+def draw_events(plt, start_date):
     vacc1_date = datetime(2021, 1, 1)
     vertical_line(plt, vacc1_date, 'Vaccine #1 (1 million)', 'g')
     vertical_line(plt, vacc1_date + timedelta(days=21), 'Vaccine #2', 'g')
@@ -136,29 +127,32 @@ def draw_events(plt):
     full_lockdown = '#f08888'
 
     # Second lockdown
-    vertical_span(plt, datetime(2020, 9, 18), datetime(2020, 9, 25), partial_lockdown)
-    vertical_span(plt, datetime(2020, 9, 25), datetime(2020, 10, 13), full_lockdown)
-    vertical_span(plt, datetime(2020, 10, 13), datetime(2020, 10, 17), partial_lockdown)
+    if start_date < datetime(2020, 9, 18):
+        vertical_span(plt, datetime(2020, 9, 18), datetime(2020, 9, 25), partial_lockdown)
+        vertical_span(plt, datetime(2020, 9, 25), datetime(2020, 10, 13), full_lockdown)
+        vertical_span(plt, datetime(2020, 10, 13), datetime(2020, 10, 17), partial_lockdown)
 
     # Third lockdown
     vertical_span(plt, datetime(2020, 12, 27), datetime(2021, 1, 8), partial_lockdown)
-    vertical_span(plt, datetime(2021, 1, 8), datetime.now(), full_lockdown)
+    vertical_span(plt, datetime(2021, 1, 8), datetime(2021, 1, 31), full_lockdown)
 
 
 def main():
 
-    # start_date = datetime(2020, 12, 15)
-    start_date = datetime(2020, 9, 10)
+    # start_date = datetime(2020, 3, 15)
+    # start_date = datetime(2020, 9, 10)
+    start_date = datetime(2020, 12, 25)
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
-        # factors=[1, 6],
+        # factors=[1, 5.5],
         # factors=second_wave_factors(),
         factors=population_factors(False),
-        only_diff=True,
+        # factors=no_factors(),
         aggregate=False
     )
 
+    # Averaging
     avg_window = 7
     dates = dates[avg_window-1:]
     value_lists = list(averager(value_lists, avg_window))
@@ -188,7 +182,7 @@ def main():
 
     fig.autofmt_xdate()
 
-    draw_events(plt)
+    draw_events(plt, start_date)
 
     plt.show()
 
