@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 
-AGES = 60  # +
+AGES = 80  # +
 SPLIT = AGES // 10 + 1
 
 
@@ -77,9 +77,10 @@ def read_ages(start_date, factors, aggregate):
         date = str_to_datetime(row[0])
         if date < start_date:
             prev_values = [v for v in row_to_values(row, aggregate)]
+            prev_date = date
             continue
 
-        if prev_date and prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
+        if prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
             # This is an update within the same-day - add to the previous value
             for i, value in enumerate(row_to_values(row, aggregate)):
                 value_lists[i][-1] += (value - prev_values[i]) * factors[i]
@@ -138,8 +139,8 @@ def draw_events(plt, start_date):
 def main():
 
     # start_date = datetime(2020, 3, 15)
-    # start_date = datetime(2020, 9, 10)
-    start_date = datetime(2020, 12, 25)
+    start_date = datetime(2020, 9, 10)
+    # start_date = datetime(2020, 12, 20)
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
