@@ -113,7 +113,8 @@ def vertical_span(plt, date, date_end, color):
 
 def vertical_line(plt, date, text, color):
     plt.axvline(x=date, color=color, alpha=0.5)
-    plt.text(date, 350, text, rotation=90)
+    bottom, top = plt.ylim()
+    plt.text(date, (bottom + top) / 100, text, rotation=90)
 
 
 def draw_events(plt, start_date):
