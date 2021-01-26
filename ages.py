@@ -76,6 +76,7 @@ def read_ages(start_date, factors, aggregate):
     for row in reader:
         date = str_to_datetime(row[0])
         if date < start_date:
+            prev_values = [v for v in row_to_values(row, aggregate)]
             continue
 
         if prev_date and prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
@@ -87,10 +88,7 @@ def read_ages(start_date, factors, aggregate):
             dates.append(mdates.date2num(date))
 
             for i, value in enumerate(row_to_values(row, aggregate)):
-                if prev_values is None:
-                    value_lists[i].append(0)
-                else:
-                    value_lists[i].append((value - prev_values[i]) * factors[i])
+                value_lists[i].append((value - prev_values[i]) * factors[i])
 
         prev_values = [v for v in row_to_values(row, aggregate)]
         prev_date = date
