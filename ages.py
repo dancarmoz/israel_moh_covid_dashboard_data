@@ -152,6 +152,9 @@ def main():
         aggregate=False
     )
 
+    value_lists = [v[:-1] for v in value_lists]
+    dates = dates[:-1]
+
     # Averaging
     avg_window = 7
     dates = dates[avg_window-1:]
