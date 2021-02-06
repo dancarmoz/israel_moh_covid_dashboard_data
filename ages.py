@@ -60,6 +60,10 @@ def no_factors():
     return [1] * 10
 
 
+def is_same_day(date1, date2):
+    return date1.strftime('%Y%m%d') == date2.strftime('%Y%m%d')
+
+
 def read_ages(start_date, factors, aggregate):
     reader = csv.reader(open('ages_dists.csv'))
     next(reader)  # Skip gender titles
@@ -81,7 +85,7 @@ def read_ages(start_date, factors, aggregate):
             prev_date = date
             continue
 
-        if prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
+        if is_same_day(prev_date, date):
             # This is an update within the same-day - add to the previous value
             for i, value in enumerate(row_to_values(row, aggregate)):
                 value_lists[i][-1] += (value - prev_values[i]) * factors[i]
@@ -146,19 +150,27 @@ def normalize_values_to_be_relative(value_lists):
             value_list[i] = value_list[i] / summed[i]
 
 
+def fill_vaccine_effect(ax, dates, value_lists):
+    vaccine_effect_date = datetime(2021, 1, 20)
+    for i, date in enumerate(dates):
+        if is_same_day(mdates.num2date(date), vaccine_effect_date):
+            break
+    ax.fill_between(dates[i:], value_lists[0][i:], value_lists[1][i:])
+
+
 def main():
 
     # start_date = datetime(2020, 6, 20)
-    start_date = datetime(2020, 9, 10)
+    start_date = datetime(2020, 8, 10)
     # start_date = datetime(2020, 12, 20)
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
-        # factors=[1, 7],
+        factors=[1, 6.7],
         # factors=second_wave_factors(),
         # factors=population_factors(False),
-        factors=no_factors(),
-        aggregate=False
+        # factors=no_factors(),
+        aggregate=True
     )
 
     value_lists = [v[:-1] for v in value_lists]
@@ -182,6 +194,8 @@ def main():
             fontsize=11,
             color=line.get_color())
 
+    fill_vaccine_effect(ax, dates, value_lists)
+
     # normalize_values_to_be_relative(value_lists)
     # ax.stackplot(dates, value_lists, labels=titles)
 
@@ -195,7 +209,7 @@ def main():
 
     fig.autofmt_xdate()
 
-    # draw_events(plt, start_date)
+    draw_events(plt, start_date)
 
     plt.show()
 
