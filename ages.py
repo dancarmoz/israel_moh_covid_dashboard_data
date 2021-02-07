@@ -1,4 +1,5 @@
 import csv
+import itertools
 from datetime import datetime, timedelta
 import numpy
 import matplotlib.pyplot as plt
@@ -38,7 +39,7 @@ def population_factors(aggregate):
 
     population = population[1 if aggregate else 0:SPLIT-1] + [sum(population[SPLIT-1:])]
     # return [10**7 / p for p in population]
-    return [700 / p for p in population]
+    return [100 / p for p in population]
 
 
 def second_wave_factors():
@@ -57,6 +58,10 @@ def second_wave_factors():
 
 def no_factors():
     return [1] * 10
+
+
+def is_same_day(date1, date2):
+    return date1.strftime('%Y%m%d') == date2.strftime('%Y%m%d')
 
 
 def read_ages(start_date, factors, aggregate):
@@ -80,7 +85,7 @@ def read_ages(start_date, factors, aggregate):
             prev_date = date
             continue
 
-        if prev_date.strftime('%Y%m%d') == date.strftime('%Y%m%d'):
+        if is_same_day(prev_date, date):
             # This is an update within the same-day - add to the previous value
             for i, value in enumerate(row_to_values(row, aggregate)):
                 value_lists[i][-1] += (value - prev_values[i]) * factors[i]
@@ -134,22 +139,38 @@ def draw_events(plt, start_date):
 
     # Third lockdown
     vertical_span(plt, datetime(2020, 12, 27), datetime(2021, 1, 8), partial_lockdown)
-    vertical_span(plt, datetime(2021, 1, 8), datetime(2021, 1, 31), full_lockdown)
+    vertical_span(plt, datetime(2021, 1, 8), datetime(2021, 2, 4), full_lockdown)
+
+
+def normalize_values_to_be_relative(value_lists):
+    zipped = itertools.zip_longest(*value_lists)
+    summed = [sum(v) for v in zipped]
+    for value_list in value_lists:
+        for i, v in enumerate(value_list):
+            value_list[i] = value_list[i] / summed[i]
+
+
+def fill_vaccine_effect(ax, dates, value_lists):
+    vaccine_effect_date = datetime(2021, 1, 20)
+    for i, date in enumerate(dates):
+        if is_same_day(mdates.num2date(date), vaccine_effect_date):
+            break
+    ax.fill_between(dates[i:], value_lists[0][i:], value_lists[1][i:])
 
 
 def main():
 
-    start_date = datetime(2020, 6, 20)
-    # start_date = datetime(2020, 9, 10)
+    # start_date = datetime(2020, 6, 20)
+    start_date = datetime(2020, 8, 10)
     # start_date = datetime(2020, 12, 20)
 
     dates, titles, value_lists = read_ages(
         start_date=start_date,
-        # factors=[1, 5.5],
+        factors=[1, 6.7],
         # factors=second_wave_factors(),
-        factors=population_factors(False),
+        # factors=population_factors(False),
         # factors=no_factors(),
-        aggregate=False
+        aggregate=True
     )
 
     value_lists = [v[:-1] for v in value_lists]
@@ -173,12 +194,15 @@ def main():
             fontsize=11,
             color=line.get_color())
 
+    fill_vaccine_effect(ax, dates, value_lists)
+
+    # normalize_values_to_be_relative(value_lists)
     # ax.stackplot(dates, value_lists, labels=titles)
 
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
     ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, len(dates) // 30)))
 
-    ax.set_ylabel(f'{avg_window}-day rolling daily cases')
+    ax.set_ylabel(f'{avg_window}-day rolling avg % of daily confirmed')
 
     ax.legend(loc='upper left')
     ax.grid(True)
