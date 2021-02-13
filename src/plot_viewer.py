@@ -19,6 +19,32 @@ class PlotViewer:
         self.plots.extend(plots)
 
     def show(self):
+        # Draw events
+        start_date = num_to_datetime(min(plot.x()[0] for plot in self.plots))
+        PlotEvents(plt).draw(start_date=start_date)
+
+        # Draw plots
+        alpha = 0.8
+        for plot in self.plots:
+            # Create new Y axis if necessary
+            ax = self.ax
+            color = None
+            if plot.separate_y_axis():
+                ax = ax.twinx()
+                color = 'r'
+
+            # Draw plots
+            x, y = plot.x(), plot.y()
+            ax.scatter(x, y, label=plot.label(), alpha=alpha)
+            line, = ax.plot(x, y, 'o--', alpha=alpha, color=color)
+
+            # Add floating label next to plot end
+            ax.text(x[-1] + 1, y[-1], plot.label(), fontsize=11, color=line.get_color())
+
+            # Colorize Y axis
+            if plot.separate_y_axis():
+                ax.tick_params(axis='y', labelcolor=line.get_color())
+
         # Draw x axis dates
         x_axis_size = max(len(plot.x()) for plot in self.plots)
         self.ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
@@ -28,20 +54,5 @@ class PlotViewer:
         self.ax.grid(True)
 
         self.fig.autofmt_xdate()
-
-        # Draw events
-        start_date = num_to_datetime(min(plot.x()[0] for plot in self.plots))
-        PlotEvents(plt).draw(start_date=start_date)
-
-        # Draw plots
-        alpha = 0.8
-        for plot in self.plots:
-            ax = self.ax
-            if plot.separate_y_axis():
-                ax = ax.twinx()
-            x, y = plot.x(), plot.y()
-            ax.scatter(x, y, label=plot.label(), alpha=alpha)
-            line, = ax.plot(x, y, 'o--', alpha=alpha)
-            ax.text(x[-1] + 1, y[-1], plot.label(), fontsize=11, color=line.get_color())
 
         plt.show()
