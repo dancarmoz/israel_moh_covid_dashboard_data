@@ -37,6 +37,8 @@ class CsvColumnPlot(Plot):
             # Record value
             self.values.append(float(row[column_index]))
 
+        self._label += f' ({self.y()[-1]})'
+
     def x(self):
         return self.dates
 
