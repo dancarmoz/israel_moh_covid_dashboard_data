@@ -51,7 +51,7 @@ def post_process_age_plots(ages, age_plots, should_group, should_normalize, mult
     if should_normalize:
         age_plots = normalize_plots_to_date(datetime(2021, 1, 13), age_plots)
 
-    age_plots = [Multiply(multiply, plot) for plot in age_plots]
+    age_plots = [Average(7, Multiply(multiply, plot)) for plot in age_plots]
 
     return age_plots
 
@@ -92,7 +92,7 @@ def main():
 
     # Apply global modifiers
     viewer.plots = [
-        Average(7, OnlyFromDate(datetime(2020, 9, 1), plot)) for plot in viewer.plots
+        OnlyFromDate(datetime(2020, 12, 10), plot) for plot in viewer.plots
     ]
 
     viewer.show()
