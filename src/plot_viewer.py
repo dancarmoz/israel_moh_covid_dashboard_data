@@ -24,19 +24,27 @@ class PlotViewer:
         PlotEvents(plt).draw(start_date=start_date)
 
         # Draw plots
-        alpha = 0.8
+        ax2 = None
         for plot in self.plots:
             # Create new Y axis if necessary
             ax = self.ax
             color = None
+            alpha = 0.8
             if plot.separate_y_axis():
-                ax = ax.twinx()
-                color = 'g'
+                if ax2:
+                    ax = ax2
+                else:
+                    ax = ax2 = ax.twinx()
+                color = '#8f128f'
+                alpha = 0.2
 
             # Draw plots
             x, y = plot.x(), plot.y()
             ax.scatter(x, y, label=plot.label(), alpha=alpha)
             line, = ax.plot(x, y, 'o--', alpha=alpha, color=color)
+
+            if plot.separate_y_axis():
+                ax.fill_between(x, y, [0] * len(y), alpha=0.1)
 
             # Add floating label next to plot end
             ax.text(x[-1] + 1, y[-1], plot.label(), fontsize=11, color=line.get_color())

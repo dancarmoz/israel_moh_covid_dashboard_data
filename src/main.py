@@ -62,7 +62,18 @@ def main():
     # Add Vaccinated
     viewer.add_plot(SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
-            column='Second dose population precentage')))
+            column='Vaccinated population percentage',
+            label='does #1')))
+    viewer.add_plot(SeparateYAxis(CsvColumnPlot(
+            path='vaccinated.csv',
+            column='Second dose population precentage',
+            label='does #2')))
+
+    # Add Severe
+    viewer.add_plot(CsvColumnPlot(
+            path='hospitalized_and_infected.csv',
+            column='Hard',
+            label='Severe'))
 
     # Add Hospitalized
     viewer.add_plot(CsvColumnPlot(
@@ -75,7 +86,7 @@ def main():
     age_plots = post_process_age_plots(ages, age_plots,
                                        should_group=True,
                                        should_normalize=True,
-                                       multiply=0.5)
+                                       multiply=0.4)
     viewer.add_plots(age_plots)
 
     # Apply global modifiers

@@ -8,8 +8,13 @@ from .plot import Plot
 
 class CsvColumnPlot(Plot):
 
-    def __init__(self, path, column, should_skip_first_line=False, start_date=datetime(2020, 3, 1)):
-        self._label = column
+    def __init__(self, path, column, label=None, should_skip_first_line=False, start_date=datetime(2020, 3, 1)):
+
+        if label:
+            self._label = label
+        else:
+            self._label = column
+
         reader = csv.reader(open(path))
 
         if should_skip_first_line:
