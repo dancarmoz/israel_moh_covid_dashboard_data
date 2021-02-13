@@ -35,12 +35,6 @@ def get_age_group_plots(age_groups):
                 path='ages_dists.csv',
                 should_skip_first_line=True,
                 column=age_group)))
-
-    # Apply global modifiers
-    age_plots = [
-        Average(3, plot) for plot in age_plots
-    ]
-
     return age_plots
 
 
@@ -59,7 +53,10 @@ def main():
 
     # Add age groups
     age_plots = get_age_group_plots(('10-19', '20-29', '30-39', '40-49', '50-59', '60+'))
-    age_plots = normalize_plots_to_date(datetime(2020, 10, 1), age_plots)
+    age_plots = (
+        Group(label='10-59', plots=(age_plots[:-1])),
+        age_plots[-1])
+    age_plots = normalize_plots_to_date(datetime(2021, 1, 13), age_plots)
     viewer.add_plots(age_plots)
 
     # Apply global modifiers
