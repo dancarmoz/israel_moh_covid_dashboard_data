@@ -1,6 +1,8 @@
 import numpy
 import itertools
 
+from . import date_utils
+
 
 class Modifier:
     def __init__(self, plot):
@@ -47,6 +49,25 @@ class ChopFromEnd(Modifier):
         super().__init__(plot)
         self._x = plot.x()[:-chop]
         self._y = plot.y()[:-chop]
+
+    def x(self):
+        return self._x
+
+    def y(self):
+        return self._y
+
+
+class ChopToDate(Modifier):
+    def __init__(self, date, plot):
+        super().__init__(plot)
+
+        chop = 0
+        for chop, x in enumerate(plot.x()):
+            if date <= date_utils.num_to_datetime(x):
+                break
+
+        self._x = plot.x()[chop:]
+        self._y = plot.y()[chop:]
 
     def x(self):
         return self._x
