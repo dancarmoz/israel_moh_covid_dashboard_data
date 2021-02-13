@@ -15,11 +15,8 @@ class PlotEvents:
         self.plt.text(date, bottom + top / 50, text, rotation=90)
 
     def draw(self, start_date):
-        # Vaccine milestones
-        vacc1_date = datetime(2021, 1, 1)
-        self.vertical_line(vacc1_date, 'Vaccine #1 (1 million)', 'g')
-        self.vertical_line(vacc1_date + timedelta(days=21), 'Vaccine #2', 'g')
-        self.vertical_line(vacc1_date + timedelta(days=28), 'Vaccine #2+week', 'g')
+        # Event example
+        # self.vertical_line(datetime(2021, 1, 1), 'Event', 'g')
 
         partial_lockdown = '#f0cccc'
         full_lockdown = '#f08888'

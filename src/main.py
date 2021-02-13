@@ -17,9 +17,9 @@ def expand_age_group(age_group):
     return all_age_groups[index:]
 
 
-def get_age_group_plots(age_groups):
+def create_age_plots(ages):
     age_plots = []
-    for age_group in age_groups:
+    for age_group in ages:
         if '+' in age_group:
             # Group several age groups together
             grouped_plots = []
@@ -38,6 +38,24 @@ def get_age_group_plots(age_groups):
     return age_plots
 
 
+def post_process_age_plots(ages, age_plots, should_group, should_normalize, multiply):
+    # Group lower ages
+    if should_group:
+        lowest_age = ages[0].split("-")[0]
+        highest_age = ages[-2].split("-")[1]
+        age_plots = (
+            Group(label=f'{lowest_age}-{highest_age}', plots=(age_plots[:-1])),
+            age_plots[-1])
+
+    # Normalize peak
+    if should_normalize:
+        age_plots = normalize_plots_to_date(datetime(2021, 1, 10), age_plots)
+
+    age_plots = [Multiply(multiply, plot) for plot in age_plots]
+
+    return age_plots
+
+
 def main():
     viewer = PlotViewer()
 
@@ -52,11 +70,12 @@ def main():
             column='Hospitalized'))
 
     # Add age groups
-    age_plots = get_age_group_plots(('10-19', '20-29', '30-39', '40-49', '50-59', '60+'))
-    age_plots = (
-        Group(label='10-59', plots=(age_plots[:-1])),
-        age_plots[-1])
-    age_plots = normalize_plots_to_date(datetime(2021, 1, 13), age_plots)
+    ages = ('10-19', '20-29', '30-39', '40-49', '50-59', '60+')
+    age_plots = create_age_plots(ages)
+    age_plots = post_process_age_plots(ages, age_plots,
+                                       should_group=True,
+                                       should_normalize=True,
+                                       multiply=0.5)
     viewer.add_plots(age_plots)
 
     # Apply global modifiers
