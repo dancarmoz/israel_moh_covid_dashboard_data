@@ -63,11 +63,12 @@ def main():
     viewer.add_plot(SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
             column='Vaccinated population percentage',
-            label='does #1')))
+            label='Dose #1')))
+
     viewer.add_plot(SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
             column='Second dose population precentage',
-            label='does #2')))
+            label='Dose #2')))
 
     # Add Severe
     viewer.add_plot(CsvColumnPlot(
