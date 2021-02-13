@@ -49,7 +49,7 @@ def post_process_age_plots(ages, age_plots, should_group, should_normalize, mult
 
     # Normalize peak
     if should_normalize:
-        age_plots = normalize_plots_to_date(datetime(2021, 1, 10), age_plots)
+        age_plots = normalize_plots_to_date(datetime(2021, 1, 13), age_plots)
 
     age_plots = [Multiply(multiply, plot) for plot in age_plots]
 
