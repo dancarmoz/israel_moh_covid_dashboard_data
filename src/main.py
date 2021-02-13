@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from .csv_column_plot import CsvColumnPlot
-from .modifiers import Multiply, Average, ChopFromEnd, OnlyFromDate, Group, DeriveToDays, SeparateYAxis
+from .modifiers import Multiply, Average, OnlyFromDate, Group, DeriveToDays, SeparateYAxis, QuantifyLabel
 from .plot_viewer import PlotViewer
 from .plot_utils import normalize_plots_to_date
 
@@ -59,35 +59,41 @@ def post_process_age_plots(ages, age_plots, should_group, should_normalize, mult
 def main():
     viewer = PlotViewer()
 
-    # Add Vaccinated
-    viewer.add_plot(SeparateYAxis(CsvColumnPlot(
+    # Vaccinated
+    viewer.add_plot(QuantifyLabel('({}%)', SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
             column='Vaccinated population percentage',
-            label='Dose #1')))
+            label='Dose #1'))))
 
-    viewer.add_plot(SeparateYAxis(CsvColumnPlot(
+    viewer.add_plot(QuantifyLabel('({}%)', SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
             column='Second dose population precentage',
-            label='Dose #2')))
+            label='Dose #2'))))
 
-    # Add Severe
-    viewer.add_plot(CsvColumnPlot(
+    # Severe Cases
+    viewer.add_plot(QuantifyLabel('({:0.0f})', CsvColumnPlot(
             path='hospitalized_and_infected.csv',
             column='Hard',
-            label='Severe'))
+            label='Severe')))
 
-    # Add Hospitalized
-    viewer.add_plot(CsvColumnPlot(
+    # Hospitalized
+    viewer.add_plot(QuantifyLabel('({:0.0f})', CsvColumnPlot(
             path='hospitalized_and_infected.csv',
-            column='Hospitalized'))
+            column='Hospitalized')))
 
-    # Add age groups
+    # Tests
+    viewer.add_plot(Multiply(0.03, QuantifyLabel('({:0.0f})', Average(7, CsvColumnPlot(
+        path='hospitalized_and_infected.csv',
+        column='Tests for idenitifaction',
+        label='Tests')))))
+
+    # Age groups
     ages = ('10-19', '20-29', '30-39', '40-49', '50-59', '60+')
     age_plots = create_age_plots(ages)
     age_plots = post_process_age_plots(ages, age_plots,
                                        should_group=True,
                                        should_normalize=True,
-                                       multiply=0.4)
+                                       multiply=0.3)
     viewer.add_plots(age_plots)
 
     # Apply global modifiers

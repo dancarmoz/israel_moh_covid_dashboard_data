@@ -1,4 +1,5 @@
 import numpy
+import math
 import itertools
 
 from . import date_utils
@@ -127,3 +128,25 @@ class SeparateYAxis(Modifier):
 
     def separate_y_axis(self):
         return True
+
+
+class AdjustForTests(Modifier):
+    def __init__(self, plot, tests):
+        super().__init__(plot)
+        self._y = [y * self.inverse(tests.y()[i+1]) for i, y in enumerate(plot.y())]
+
+    @staticmethod
+    def inverse(value):
+        return math.sqrt(100000 / value)
+
+    def y(self):
+        return self._y
+
+
+class QuantifyLabel(Modifier):
+    def __init__(self, suffix_format, plot):
+        super().__init__(plot)
+        self.suffix_format = suffix_format
+
+    def label(self):
+        return self.plot.label() + ' ' + self.suffix_format.format(self.y()[-1])
