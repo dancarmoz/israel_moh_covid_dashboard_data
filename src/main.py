@@ -3,6 +3,7 @@ from datetime import datetime
 from .csv_column_plot import CsvColumnPlot
 from .modifiers import Multiply, Average, ChopFromEnd, OnlyFromDate, Group, DeriveToDays
 from .plot_viewer import PlotViewer
+from .plot_utils import normalize_plots_to_date
 
 
 def expand_age_group(age_group):
@@ -34,30 +35,30 @@ def get_age_group_plots(age_groups):
                 path='ages_dists.csv',
                 should_skip_first_line=True,
                 column=age_group)))
-
-    age_plots = [Multiply(2, plot) for plot in age_plots]
-
     return age_plots
 
 
 def main():
     viewer = PlotViewer()
 
-    # Add plots
-    viewer.add_plot(Multiply(20, CsvColumnPlot(
+    # Add Vaccinated
+    viewer.add_plot(Multiply(10, CsvColumnPlot(
             path='vaccinated.csv',
-            column='Vaccinated population percentage')))
+            column='Second dose population precentage')))
 
-    viewer.add_plot(CsvColumnPlot(
+    # Add Hospitalized
+    viewer.add_plot(Multiply(0.5, CsvColumnPlot(
             path='hospitalized_and_infected.csv',
-            column='Hospitalized'))
+            column='Hospitalized')))
 
-    viewer.add_plots(get_age_group_plots(
-        age_groups=('10-19', '20-29', '30-39', '40-49', '50-59', '60+')))
+    # Add age groups
+    age_plots = get_age_group_plots(('10-19', '20-29', '30-39', '40-49', '50-59', '60+'))
+    age_plots = normalize_plots_to_date(datetime(2020, 10, 1), age_plots)
+    viewer.add_plots(age_plots)
 
     # Apply global modifiers
     viewer.plots = [
-        Average(7, ChopFromEnd(1, OnlyFromDate(datetime(2020, 12, 10), plot))) for plot in viewer.plots
+        Average(7, OnlyFromDate(datetime(2020, 9, 1), plot)) for plot in viewer.plots
     ]
 
     viewer.show()

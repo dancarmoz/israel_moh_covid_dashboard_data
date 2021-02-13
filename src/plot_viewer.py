@@ -30,7 +30,7 @@ class PlotViewer:
         # Draw x axis dates
         x_axis_size = len(self.plots[-1].x())
         self.ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-        self.ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, x_axis_size // 60)))
+        self.ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, x_axis_size // 30)))
 
         self.ax.legend(loc='upper left')
         self.ax.grid(True)
