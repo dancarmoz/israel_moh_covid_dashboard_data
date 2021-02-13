@@ -40,3 +40,6 @@ class CsvColumnPlot(Plot):
 
     def label(self):
         return self._label
+
+    def separate_y_axis(self):
+        return False

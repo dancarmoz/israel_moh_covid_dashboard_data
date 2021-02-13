@@ -19,16 +19,8 @@ class PlotViewer:
         self.plots.extend(plots)
 
     def show(self):
-        # Draw plots
-        for plot in self.plots:
-            alpha = 0.8
-            x, y = plot.x(), plot.y()
-            self.ax.scatter(x, y, label=plot.label(), alpha=alpha)
-            line, = self.ax.plot(x, y, 'o--', alpha=alpha)
-            self.ax.text(x[-1] + 1, y[-1], plot.label(), fontsize=11, color=line.get_color())
-
         # Draw x axis dates
-        x_axis_size = len(self.plots[-1].x())
+        x_axis_size = max(len(plot.x()) for plot in self.plots)
         self.ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
         self.ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, x_axis_size // 30)))
 
@@ -40,5 +32,16 @@ class PlotViewer:
         # Draw events
         start_date = num_to_datetime(min(plot.x()[0] for plot in self.plots))
         PlotEvents(plt).draw(start_date=start_date)
+
+        # Draw plots
+        alpha = 0.8
+        for plot in self.plots:
+            ax = self.ax
+            if plot.separate_y_axis():
+                ax = ax.twinx()
+            x, y = plot.x(), plot.y()
+            ax.scatter(x, y, label=plot.label(), alpha=alpha)
+            line, = ax.plot(x, y, 'o--', alpha=alpha)
+            ax.text(x[-1] + 1, y[-1], plot.label(), fontsize=11, color=line.get_color())
 
         plt.show()

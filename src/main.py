@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from .csv_column_plot import CsvColumnPlot
-from .modifiers import Multiply, Average, ChopFromEnd, OnlyFromDate, Group, DeriveToDays
+from .modifiers import Multiply, Average, ChopFromEnd, OnlyFromDate, Group, DeriveToDays, SeparateYAxis
 from .plot_viewer import PlotViewer
 from .plot_utils import normalize_plots_to_date
 
@@ -42,14 +42,14 @@ def main():
     viewer = PlotViewer()
 
     # Add Vaccinated
-    viewer.add_plot(Multiply(10, CsvColumnPlot(
+    viewer.add_plot(SeparateYAxis(CsvColumnPlot(
             path='vaccinated.csv',
             column='Second dose population precentage')))
 
     # Add Hospitalized
-    viewer.add_plot(Multiply(0.5, CsvColumnPlot(
+    viewer.add_plot(CsvColumnPlot(
             path='hospitalized_and_infected.csv',
-            column='Hospitalized')))
+            column='Hospitalized'))
 
     # Add age groups
     age_plots = get_age_group_plots(('10-19', '20-29', '30-39', '40-49', '50-59', '60+'))

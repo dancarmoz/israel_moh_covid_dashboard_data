@@ -13,3 +13,7 @@ class Plot(ABC):
     @abstractmethod
     def label(self):
         pass
+
+    @abstractmethod
+    def separate_y_axis(self):
+        pass

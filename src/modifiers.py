@@ -2,9 +2,10 @@ import numpy
 import itertools
 
 from . import date_utils
+from .plot import Plot
 
 
-class Modifier:
+class Modifier(Plot):
     def __init__(self, plot):
         self.plot = plot
 
@@ -16,6 +17,9 @@ class Modifier:
 
     def label(self):
         return self.plot.label()
+
+    def separate_y_axis(self):
+        return self.plot.separate_y_axis()
 
 
 class Multiply(Modifier):
@@ -115,3 +119,11 @@ class DeriveToDays(Modifier):
 
     def y(self):
         return self._y
+
+
+class SeparateYAxis(Modifier):
+    def __init__(self, plot):
+        super().__init__(plot)
+
+    def separate_y_axis(self):
+        return True
