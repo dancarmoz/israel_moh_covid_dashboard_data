@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from .csv_column_plot import CsvColumnPlot
-from .modifiers import Multiply, Average, ChopFromEnd, ChopToDate, Group
+from .modifiers import Multiply, Average, ChopFromEnd, OnlyFromDate, Group, DeriveToDays
 from .plot_viewer import PlotViewer
 
 
@@ -27,13 +27,15 @@ def get_age_group_plots(age_groups):
                     path='ages_dists.csv',
                     should_skip_first_line=True,
                     column=expanded_age_group))
-            age_plots.append(Group(label=age_group, plots=grouped_plots))
+            age_plots.append(DeriveToDays(Group(label=age_group, plots=grouped_plots)))
         else:
             # Add individual age group
-            age_plots.append(CsvColumnPlot(
+            age_plots.append(DeriveToDays(CsvColumnPlot(
                 path='ages_dists.csv',
                 should_skip_first_line=True,
-                column=age_group))
+                column=age_group)))
+
+    age_plots = [Multiply(2, plot) for plot in age_plots]
 
     return age_plots
 
@@ -55,7 +57,7 @@ def main():
 
     # Apply global modifiers
     viewer.plots = [
-        Average(7, ChopFromEnd(1, ChopToDate(datetime(2020, 12, 10), plot))) for plot in viewer.plots
+        Average(7, ChopFromEnd(1, OnlyFromDate(datetime(2020, 12, 10), plot))) for plot in viewer.plots
     ]
 
     viewer.show()

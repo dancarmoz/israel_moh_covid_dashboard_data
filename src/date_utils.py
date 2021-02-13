@@ -16,4 +16,10 @@ def num_to_datetime(num):
 
 
 def is_same_day(date1, date2):
+    if not isinstance(date1, datetime):
+        date1 = num_to_datetime(date1)
+
+    if not isinstance(date2, datetime):
+        date2 = num_to_datetime(date2)
+
     return date1.strftime('%Y%m%d') == date2.strftime('%Y%m%d')

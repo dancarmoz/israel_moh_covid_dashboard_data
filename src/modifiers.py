@@ -57,7 +57,7 @@ class ChopFromEnd(Modifier):
         return self._y
 
 
-class ChopToDate(Modifier):
+class OnlyFromDate(Modifier):
     def __init__(self, date, plot):
         super().__init__(plot)
 
@@ -88,3 +88,30 @@ class Group(Modifier):
 
     def label(self):
         return self._label
+
+
+class DeriveToDays(Modifier):
+    def __init__(self, plot):
+        super().__init__(plot)
+
+        self._x = []
+        self._y = []
+
+        delta = 0
+        prev_x = plot.x()[0]
+        for i, x in enumerate(plot.x()):
+            if i == 0:
+                continue
+            if date_utils.is_same_day(prev_x, x):
+                delta += plot.y()[i] - plot.y()[i-1]
+            else:
+                self._x.append(prev_x)
+                self._y.append(delta)
+                delta = 0
+            prev_x = x
+
+    def x(self):
+        return self._x
+
+    def y(self):
+        return self._y
