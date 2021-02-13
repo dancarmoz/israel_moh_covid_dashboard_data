@@ -31,7 +31,7 @@ class PlotViewer:
             color = None
             if plot.separate_y_axis():
                 ax = ax.twinx()
-                color = 'r'
+                color = 'g'
 
             # Draw plots
             x, y = plot.x(), plot.y()
