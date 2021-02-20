@@ -78,6 +78,56 @@ names_trans = {
     'nurses' : u'\u05d0\u05d7\u05d9\u05dd/\u05d5\u05ea',
     'others' : u'\u05de\u05e7\u05e6\u05d5\u05e2\u05d5\u05ea\n\u05d0\u05d7\u05e8\u05d9\u05dd'}
 
+
+heb_map = {
+    u'\u05e6\u05d4\u05d5\u05d1': 'yellow',
+    u'\u05e6\u05d4\u05d5\u05d1 ': 'yellow',
+    u'\u05d0\u05d3\u05d5\u05dd': 'red',
+    u'\u05d0\u05d3\u05d5\u05dd ': 'red',
+    u'\u05db\u05ea\u05d5\u05dd': 'orange',
+    u'\u05db\u05ea\u05d5\u05dd ': 'orange',
+    u'\u05d9\u05e8\u05d5\u05e7': 'green',
+    u'\u05d9\u05e8\u05d5\u05e7 ': 'green',
+    u'\u05d0\u05e4\u05d5\u05e8': 'gray',
+    u'\u05d0\u05e4\u05d5\u05e8 ': 'gray',
+    u' \u05e7\u05d8\u05df \u05de-15 ': '<15'
+}
+
+heb_translit = {
+    u'\u05d0': 'a',
+    u'\u05d1': 'b',
+    u'\u05d2': 'g',
+    u'\u05d3': 'd',
+    u'\u05d4': 'h',
+    u'\u05d5': 'v',
+    u'\u05d6': 'z',
+    u'\u05d7': 'j',
+    u'\u05d8': 't',
+    u'\u05d9': 'y',
+    u'\u05da': 'C',
+    u'\u05db': 'c',
+    u'\u05dc': 'l',
+    u'\u05dd': 'M',
+    u'\u05de': 'm',
+    u'\u05df': 'N',
+    u'\u05e0': 'n',
+    u'\u05e1': 's',
+    u'\u05e2': 'e',
+    u'\u05e3': 'f',
+    u'\u05e4': 'p',
+    u'\u05e5': 'X',
+    u'\u05e6': 'x',
+    u'\u05e7': 'q',
+    u'\u05e8': 'r',
+    u'\u05e9': 'SH',
+    u'\u05ea': 'T',
+    '"' : '', 
+    ' ': '_'
+}
+
+def safe_str(s):
+    return '%s'%(heb_map.get(s, s))
+
 def update_git(new_date):
     assert os.system('git add '+DATA_FNAME) == 0
     assert os.system('git commit -m "Update to %s"'%(new_date)) == 0
@@ -139,7 +189,8 @@ def patients_to_csv_line(pat):
             'CountEasyStatus', 'CountMediumStatus', 'CountHardStatus',
             'CountCriticalStatus' ,'CountBreath', 'CountDeath',
             'CountSeriousCriticalCum', 'CountBreathCum', 'CountDeathCum',
-            'new_hospitalized', 'patients_hotel', 'patients_home',
+            'new_hospitalized', 'serious_critical_new',
+            'patients_hotel', 'patients_home',
             ]
     return ','.join([pat['date'][:10]]+[str(pat[key]) for key in keys])
 
@@ -165,7 +216,7 @@ def create_patients_csv(data):
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated', 'New deaths',
                            'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
-                           'New hosptialized', 'In hotels', 'At home',
+                           'New hosptialized', 'New serious', 'In hotels', 'At home',
                            'New infected', 'New receovered', 'Total tests',
                            'Tests for idenitifaction', 'Tests for Magen', 'Survey tests'])
     csv_data = '\n'.join([title_line] + [p+','+e for p,e in zip(pat_lines, epi_lines)])
@@ -235,6 +286,45 @@ def update_isolated_csv(data):
     assert os.system('git add '+ISOLATED_FNAME) == 0    
 
 
+city_title_line = ','.join(['Date']+[
+    'sickCount', 'actualSick', 'patientDiffPopulationForTenThousands', 'testLast7Days',
+    'verifiedLast7Days'] + [
+    u'activeSick', u'activeSickTo1000',u'sickTo10000', u'growthLastWeek', u'positiveTests',
+    u'score', u'color', u'governmentColor', u'firstDose', u'secondDose'
+])
+
+def create_city_line(cpp_ent, spp_ent, date):
+    cpp_keys = ['sickCount', 'actualSick', 'patientDiffPopulationForTenThousands', 'testLast7Days',
+                'verifiedLast7Days']
+    spp_keys = [u'activeSick', u'activeSickTo1000',u'sickTo10000', u'growthLastWeek', u'positiveTests',
+                u'score', u'color', u'governmentColor', u'firstDose', u'secondDose']
+    line = ','.join([date]+[safe_str(cpp_ent.get(key, '')) for key in cpp_keys] + \
+                    [safe_str(spp_ent.get(key, '')) for key in spp_keys])
+    return line
+
+
+def strip_name(name):
+    return ''.join([heb_translit.get(c,c) for c in name])
+
+    
+def update_cities(new_data):
+    date = new_data['lastUpdate']['lastUpdate']
+    cd_dict = {a['city'] : a for a in new_data['contagionDataPerCityPublic']}
+    sp_dict = {a['name'] : a for a in new_data['spotlightPublic']}
+    for n in set(sp_dict.keys())|set(cd_dict.keys()):
+        line = create_city_line(cd_dict.get(n, {}), sp_dict.get(n, {}), date)
+        fname = 'cities/%s.csv'%(strip_name(n))
+        try:
+            add_line_to_file(fname, line)
+        except IOError:
+            # file didn't exist - new city name encountered
+            print 'New city!'
+            print fname
+            file(fname, 'w').write(city_title_line+'\n'+line+'\n')
+            assert os.system('git add ' + fname) == 0
+            add_line_to_file('cities_transliteration.csv', ('%s,%s'%(n, strip_name(n))).encode('utf-8'))
+
+
 def update_json():
     prev_date = json.load(file(DATA_FNAME,'r'))['lastUpdate']['lastUpdate']
     new_data = get_api_data()
@@ -246,7 +336,10 @@ def update_json():
     print time.ctime()+': ', 'Data updated! New time:', new_date
     # update_ages_csv(new_data) # Obsolete
     update_all_ages_csvs(new_data)
-    create_patients_csv(new_data)
+    try:
+        create_patients_csv(new_data)
+    except:
+        print 'Exception in patients csv'
     try:
         create_vaccinated_csv(new_data)
     except:
@@ -254,6 +347,10 @@ def update_json():
     # extend_hospital_csv(new_data)
     try:
         update_age_vaccinations_csv(new_data)
+    except:
+        print 'Exception in vaccination ages csv'
+    try:
+        update_cities(new_data)
     except:
         print 'Exception in vaccination ages csv'
     update_isolated_csv(new_data)
