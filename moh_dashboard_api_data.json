@@ -13276,52 +13276,57 @@
       "date": "2021-06-11T00:00:00.000Z", 
       "dailyDoublingRate": -13, 
       "numberOfDoublingDays": -4.977286305106924
+    }, 
+    {
+      "date": "2021-06-12T00:00:00.000Z", 
+      "dailyDoublingRate": -1.14942528735632, 
+      "numberOfDoublingDays": -59.95656334063457
     }
   ], 
   "vaccinationsPerAge": [
     {
       "age_group_population": 1538337, 
-      "vaccinated_second_dose": 325813, 
+      "vaccinated_second_dose": 325522, 
       "age_group": "10-19", 
       "percent_vaccinated_first_dose": 24.2, 
-      "vaccinated_first_dose": 372154, 
+      "vaccinated_first_dose": 371886, 
       "persent_vaccinated_second_dose": 21.2
     }, 
     {
       "age_group_population": 1300361, 
-      "vaccinated_second_dose": 930052, 
+      "vaccinated_second_dose": 930117, 
       "age_group": "20-29", 
       "percent_vaccinated_first_dose": 77.6, 
-      "vaccinated_first_dose": 1009218, 
+      "vaccinated_first_dose": 1009294, 
       "persent_vaccinated_second_dose": 71.5
     }, 
     {
       "age_group_population": 1197026, 
-      "vaccinated_second_dose": 916130, 
+      "vaccinated_second_dose": 916144, 
       "age_group": "30-39", 
       "percent_vaccinated_first_dose": 81.6, 
-      "vaccinated_first_dose": 976536, 
+      "vaccinated_first_dose": 976554, 
       "persent_vaccinated_second_dose": 76.5
     }, 
     {
       "age_group_population": 1098556, 
-      "vaccinated_second_dose": 882690, 
+      "vaccinated_second_dose": 882702, 
       "age_group": "40-49", 
       "percent_vaccinated_first_dose": 85.1, 
-      "vaccinated_first_dose": 935371, 
+      "vaccinated_first_dose": 935384, 
       "persent_vaccinated_second_dose": 80.4
     }, 
     {
       "age_group_population": 849966, 
-      "vaccinated_second_dose": 719212, 
+      "vaccinated_second_dose": 719288, 
       "age_group": "50-59", 
       "percent_vaccinated_first_dose": 89.6, 
-      "vaccinated_first_dose": 761177, 
+      "vaccinated_first_dose": 761251, 
       "persent_vaccinated_second_dose": 84.6
     }, 
     {
       "age_group_population": 741639, 
-      "vaccinated_second_dose": 642412, 
+      "vaccinated_second_dose": 642410, 
       "age_group": "60-69", 
       "percent_vaccinated_first_dose": 90.4, 
       "vaccinated_first_dose": 670702, 
@@ -13329,26 +13334,26 @@
     }, 
     {
       "age_group_population": 490784, 
-      "vaccinated_second_dose": 467738, 
+      "vaccinated_second_dose": 467835, 
       "age_group": "70-79", 
       "percent_vaccinated_first_dose": 98.3, 
-      "vaccinated_first_dose": 482527, 
+      "vaccinated_first_dose": 482627, 
       "persent_vaccinated_second_dose": 95.3
     }, 
     {
       "age_group_population": 225538, 
-      "vaccinated_second_dose": 209754, 
+      "vaccinated_second_dose": 209791, 
       "age_group": "80-89", 
       "percent_vaccinated_first_dose": 96, 
-      "vaccinated_first_dose": 216430, 
+      "vaccinated_first_dose": 216468, 
       "persent_vaccinated_second_dose": 93
     }, 
     {
       "age_group_population": 51496, 
-      "vaccinated_second_dose": 48692, 
+      "vaccinated_second_dose": 48720, 
       "age_group": "90+", 
       "percent_vaccinated_first_dose": 99, 
-      "vaccinated_first_dose": 50960, 
+      "vaccinated_first_dose": 50988, 
       "persent_vaccinated_second_dose": 94.6
     }
   ], 
@@ -15690,8 +15695,13 @@
     }, 
     {
       "date": "2021-06-12T00:00:00.000Z", 
-      "amount": 0, 
-      "total": 6428
+      "amount": 1, 
+      "total": 6429
+    }, 
+    {
+      "date": "2021-06-13T00:00:00.000Z", 
+      "amount": 1, 
+      "total": 6430
     }
   ], 
   "contagionDataPerCityPublic": [
@@ -17913,18 +17923,18 @@
   "HospitalBedStatusSegmentation": {
     "easy_occupancy": {
       "amount": 13, 
-      "percent": 21
+      "percent": 22
     }, 
     "hard_occupancy": {
       "amount": 10, 
-      "percent": 16
+      "percent": 17
     }, 
     "critical_occupancy": {
-      "amount": 22, 
+      "amount": 21, 
       "percent": 36
     }, 
     "total_occupancy": {
-      "amount": 61, 
+      "amount": 58, 
       "percent": 2
     }, 
     "total_beds": {
@@ -17933,7 +17943,7 @@
     }, 
     "medium_occupancy": {
       "amount": 14, 
-      "percent": 23
+      "percent": 24
     }
   }, 
   "isolatedVerifiedDoctorsAndNurses": [
@@ -17974,7 +17984,7 @@
     }
   ], 
   "lastUpdate": {
-    "lastUpdate": "2021-06-12T17:24:20.043Z"
+    "lastUpdate": "2021-06-13T07:25:28.430Z"
   }, 
   "testResultsPerDate": [
     {
@@ -25259,7 +25269,7 @@
       "section": "20-29", 
       "male": {
         "amount": 22, 
-        "percentage": 1.1
+        "percentage": 1.2
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
@@ -25276,7 +25286,7 @@
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 4, 
-        "percentage": 0.9
+        "percentage": 1
       }
     }, 
     {
@@ -25307,7 +25317,7 @@
       "section": "20-29", 
       "male": {
         "amount": 29, 
-        "percentage": 0.9
+        "percentage": 0.8
       }, 
       "period": "\u05e9\u05e0\u05d4", 
       "female": {
@@ -25323,7 +25333,7 @@
       }, 
       "period": "\u05e9\u05e0\u05d4", 
       "female": {
-        "amount": 65, 
+        "amount": 64, 
         "percentage": 1.9
       }
     }, 
@@ -25335,20 +25345,20 @@
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 48, 
+        "amount": 47, 
         "percentage": 2.5
       }
     }, 
     {
       "section": "30-39", 
       "male": {
-        "amount": 10, 
-        "percentage": 2.3
+        "amount": 9, 
+        "percentage": 2.2
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 20, 
-        "percentage": 4.7
+        "percentage": 4.8
       }
     }, 
     {
@@ -25371,7 +25381,7 @@
       }, 
       "period": "\u05de\u05ea\u05d7\u05d9\u05dc\u05ea \u05e7\u05d5\u05e8\u05d5\u05e0\u05d4", 
       "female": {
-        "amount": 68, 
+        "amount": 67, 
         "percentage": 1.8
       }
     }, 
@@ -25390,25 +25400,25 @@
     {
       "section": "40-49", 
       "male": {
-        "amount": 96, 
+        "amount": 95, 
         "percentage": 5
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 51, 
-        "percentage": 2.7
+        "amount": 49, 
+        "percentage": 2.6
       }
     }, 
     {
       "section": "40-49", 
       "male": {
         "amount": 30, 
-        "percentage": 7
+        "percentage": 7.2
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 10, 
-        "percentage": 2.3
+        "percentage": 2.4
       }
     }, 
     {
@@ -25438,25 +25448,25 @@
     {
       "section": "50-59", 
       "male": {
-        "amount": 198, 
+        "amount": 197, 
         "percentage": 10.3
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 85, 
-        "percentage": 4.4
+        "percentage": 4.5
       }
     }, 
     {
       "section": "50-59", 
       "male": {
-        "amount": 59, 
-        "percentage": 13.8
+        "amount": 58, 
+        "percentage": 14
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 34, 
-        "percentage": 7.9
+        "amount": 33, 
+        "percentage": 8
       }
     }, 
     {
@@ -25498,24 +25508,24 @@
     {
       "section": "60-69", 
       "male": {
-        "amount": 57, 
-        "percentage": 13.3
+        "amount": 53, 
+        "percentage": 12.8
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 44, 
-        "percentage": 10.3
+        "amount": 41, 
+        "percentage": 9.9
       }
     }, 
     {
       "section": "60-69", 
       "male": {
         "amount": 307, 
-        "percentage": 16
+        "percentage": 16.1
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 160, 
+        "amount": 159, 
         "percentage": 8.3
       }
     }, 
@@ -25534,7 +25544,7 @@
     {
       "section": "60-69", 
       "male": {
-        "amount": 628, 
+        "amount": 629, 
         "percentage": 17
       }, 
       "period": "\u05de\u05ea\u05d7\u05d9\u05dc\u05ea \u05e7\u05d5\u05e8\u05d5\u05e0\u05d4", 
@@ -25546,7 +25556,7 @@
     {
       "section": "60-69", 
       "male": {
-        "amount": 578, 
+        "amount": 580, 
         "percentage": 17
       }, 
       "period": "\u05e9\u05e0\u05d4", 
@@ -25571,30 +25581,30 @@
       "section": "70-79", 
       "male": {
         "amount": 43, 
-        "percentage": 10
+        "percentage": 10.4
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 48, 
-        "percentage": 11.2
+        "amount": 46, 
+        "percentage": 11.1
       }
     }, 
     {
       "section": "70-79", 
       "male": {
-        "amount": 312, 
+        "amount": 311, 
         "percentage": 16.3
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 185, 
-        "percentage": 9.6
+        "percentage": 9.7
       }
     }, 
     {
       "section": "70-79", 
       "male": {
-        "amount": 618, 
+        "amount": 619, 
         "percentage": 18.1
       }, 
       "period": "\u05e9\u05e0\u05d4", 
@@ -25606,25 +25616,25 @@
     {
       "section": "70-79", 
       "male": {
-        "amount": 675, 
+        "amount": 676, 
         "percentage": 18.2
       }, 
       "period": "\u05de\u05ea\u05d7\u05d9\u05dc\u05ea \u05e7\u05d5\u05e8\u05d5\u05e0\u05d4", 
       "female": {
         "amount": 339, 
-        "percentage": 9.2
+        "percentage": 9.1
       }
     }, 
     {
       "section": "80-89", 
       "male": {
         "amount": 28, 
-        "percentage": 6.5
+        "percentage": 6.7
       }, 
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 19, 
-        "percentage": 4.4
+        "amount": 18, 
+        "percentage": 4.3
       }
     }, 
     {
@@ -25643,11 +25653,11 @@
       "section": "80-89", 
       "male": {
         "amount": 177, 
-        "percentage": 9.2
+        "percentage": 9.3
       }, 
       "period": "6 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
-        "amount": 142, 
+        "amount": 141, 
         "percentage": 7.4
       }
     }, 
@@ -25708,7 +25718,7 @@
       "period": "3 \u05d7\u05d5\u05d3\u05e9\u05d9\u05dd", 
       "female": {
         "amount": 4, 
-        "percentage": 0.9
+        "percentage": 1
       }
     }, 
     {
@@ -25738,21 +25748,15 @@
   ], 
   "sickPerDateTwoDays": [
     {
-      "date": "2021-06-11T18:48:51.948Z", 
-      "amount": 224
+      "date": "2021-06-12T07:49:24.019Z", 
+      "amount": 220
     }, 
     {
-      "date": "2021-06-12T18:48:51.948Z", 
-      "amount": -2
+      "date": "2021-06-13T07:49:24.019Z", 
+      "amount": -10
     }
   ], 
   "averageInfectedPerWeek": [
-    {
-      "averageInfected": 26, 
-      "begin_date": "2021-05-16T00:00:00.000Z", 
-      "isCurrentWeek": false, 
-      "end_date": "2021-05-22T00:00:00.000Z"
-    }, 
     {
       "averageInfected": 19, 
       "begin_date": "2021-05-23T00:00:00.000Z", 
@@ -25766,9 +25770,9 @@
       "end_date": "2021-06-05T00:00:00.000Z"
     }, 
     {
-      "averageInfected": 13, 
+      "averageInfected": 12, 
       "begin_date": "2021-06-06T00:00:00.000Z", 
-      "isCurrentWeek": true, 
+      "isCurrentWeek": false, 
       "end_date": "2021-06-12T00:00:00.000Z"
     }
   ], 
@@ -35702,18 +35706,6 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
-      "name": "\u05e4\u05d5\u05e8\u05d9\u05d4", 
-      "isolatedTeam": 0
-    }, 
-    {
-      "coronaOccupancy": null, 
-      "normalOccupancy": null, 
-      "name": "\u05de\u05d0\u05d9\u05e8", 
-      "isolatedTeam": 0
-    }, 
-    {
-      "coronaOccupancy": null, 
-      "normalOccupancy": null, 
       "name": "\u05d4\u05e1\u05e7\u05d5\u05d8\u05d9", 
       "isolatedTeam": 0
     }, 
@@ -35780,7 +35772,7 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
-      "name": "\u05e9\u05de\u05d9\u05e8", 
+      "name": "\u05d4\u05e9\u05e8\u05d5\u05df \u05e7. \u05d2\u05d5\u05dc\u05d3\u05d4", 
       "isolatedTeam": 0
     }, 
     {
@@ -35792,7 +35784,7 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
-      "name": "\u05d9\u05d5\u05e1\u05e4\u05d8\u05dc", 
+      "name": "\u05de\u05d0\u05d9\u05e8", 
       "isolatedTeam": 0
     }, 
     {
@@ -35828,6 +35820,12 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
+      "name": "\u05e4\u05d5\u05e8\u05d9\u05d4", 
+      "isolatedTeam": 0
+    }, 
+    {
+      "coronaOccupancy": null, 
+      "normalOccupancy": null, 
       "name": "\u05e7\u05e4\u05dc\u05df", 
       "isolatedTeam": 0
     }, 
@@ -35852,6 +35850,12 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
+      "name": "\u05e9\u05de\u05d9\u05e8", 
+      "isolatedTeam": 0
+    }, 
+    {
+      "coronaOccupancy": null, 
+      "normalOccupancy": null, 
       "name": "\u05e1\u05e0\u05d8 \u05d2'\u05d5\u05d6\u05e3", 
       "isolatedTeam": 0
     }, 
@@ -35864,25 +35868,11 @@
     {
       "coronaOccupancy": null, 
       "normalOccupancy": null, 
-      "name": "\u05d4\u05e9\u05e8\u05d5\u05df \u05e7. \u05d2\u05d5\u05dc\u05d3\u05d4", 
+      "name": "\u05d9\u05d5\u05e1\u05e4\u05d8\u05dc", 
       "isolatedTeam": 0
     }
   ], 
   "spotlightPublic": [
-    {
-      "sickTo10000": "0.0", 
-      "growthLastWeek": 0, 
-      "name": "\u05e7\u05d3\u05d9\u05de\u05d4-\u05e6\u05d5\u05e8\u05df", 
-      "color": "\u05d9\u05e8\u05d5\u05e7", 
-      "firstDose": 63.58592752410727, 
-      "secondDose": 61.23024085245036, 
-      "score": 2, 
-      "date": "2021-06-11T00:00:00.000Z", 
-      "positiveTests": 0, 
-      "activeSickTo1000": "0.0", 
-      "governmentColor": "\u05d9\u05e8\u05d5\u05e7", 
-      "activeSick": " 0 "
-    }, 
     {
       "sickTo10000": "0.2", 
       "growthLastWeek": 0, 
@@ -35896,6 +35886,20 @@
       "activeSickTo1000": null, 
       "governmentColor": "\u05d9\u05e8\u05d5\u05e7", 
       "activeSick": " \u05e7\u05d8\u05df \u05de-15 "
+    }, 
+    {
+      "sickTo10000": "0.0", 
+      "growthLastWeek": 0, 
+      "name": "\u05e4\u05d3\u05d5\u05d0\u05dc", 
+      "color": "\u05e6\u05d4\u05d5\u05d1", 
+      "firstDose": 55.33169533169533, 
+      "secondDose": 51.44963144963145, 
+      "score": 2, 
+      "date": "2021-06-11T00:00:00.000Z", 
+      "positiveTests": 0, 
+      "activeSickTo1000": "0.0", 
+      "governmentColor": "\u05e6\u05d4\u05d5\u05d1", 
+      "activeSick": " 0 "
     }, 
     {
       "sickTo10000": "0.0", 
@@ -37832,15 +37836,15 @@
     {
       "sickTo10000": "0.0", 
       "growthLastWeek": 0, 
-      "name": "\u05e4\u05d3\u05d5\u05d0\u05dc", 
-      "color": "\u05e6\u05d4\u05d5\u05d1", 
-      "firstDose": 55.33169533169533, 
-      "secondDose": 51.44963144963145, 
+      "name": "\u05e7\u05d3\u05d9\u05de\u05d4-\u05e6\u05d5\u05e8\u05df", 
+      "color": "\u05d9\u05e8\u05d5\u05e7", 
+      "firstDose": 63.58592752410727, 
+      "secondDose": 61.23024085245036, 
       "score": 2, 
       "date": "2021-06-11T00:00:00.000Z", 
       "positiveTests": 0, 
       "activeSickTo1000": "0.0", 
-      "governmentColor": "\u05e6\u05d4\u05d5\u05d1", 
+      "governmentColor": "\u05d9\u05e8\u05d5\u05e7", 
       "activeSick": " 0 "
     }, 
     {
