@@ -211,15 +211,18 @@ def create_patients_csv(data):
     pat_lines = map(patients_to_csv_line, patients)
     
     recs = data['recoveredPerDay'][-N:]
-    assert recs[0]['date'] == start_date
+    inf = data['infectedPerDate'][-N:]
+    assert recs[0]['date'] == inf[0]['date'] == start_date
 
     tests = [t for t in data['testResultsPerDate'] if t['positiveAmount']!=-1][-N:]
     tests2 = data['testsPerDate'][-N:]
     assert tests[0]['date'] == tests2[0]['date'] == start_date
-    epi_lines = [','.join(map(str, [t['positiveAmount'],r['amount'],t['amount'],
-                                    t['amountVirusDiagnosis'],t['amountMagen'],
+    epi_lines = [','.join(map(str, [t['positiveAmount'], i['sum'],
+                                    i['amount'], r['amount'],
+                                    t['amount'], t['amountVirusDiagnosis'],
+                                    t['amountPersonTested'], t['amountMagen'],
                                     t2['amountSurvey']])) for \
-                 r, t, t2 in zip(recs, tests, tests2)]
+                 i, r, t, t2 in zip(inf, recs, tests, tests2)]
 
     inff = data['infectionFactor']
     def repr_if_not_none(x):
@@ -232,8 +235,10 @@ def create_patients_csv(data):
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated', 'New deaths',
                            'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
                            'New hosptialized', 'New serious', 'In hotels', 'At home',
-                           'New infected', 'New receovered', 'Total tests',
-                           'Tests for idenitifaction', 'Tests for Magen', 'Survey tests',
+                           
+                           'Positive results', 'Total infected', 'New infected',
+                           'New receovered', 'Total tests', 'Tests for idenitifaction',
+                           'People tested', 'Tests for Magen', 'Survey tests',
                            'Official R'])
     csv_data = '\n'.join([title_line] + [
         ','.join([p,e,i]) for p,e,i in zip(pat_lines, epi_lines, inff_lines)])
