@@ -59,8 +59,10 @@ GIT_DIR = r'C:\GitHub\israel_moh_covid_dashboard_data'
 os.chdir(GIT_DIR)
 DATA_FNAME = 'moh_dashboard_api_data.json'
 COMMIT_HIST_FNAME = 'commit_history.json'
-AGES_FNAME = 'ages_dists.csv'
-ALL_AGES_FNAMES = {'infected':'ages_dists_v2.csv', 'dead':'deaths_ages_dists_v2.csv',
+##AGES_FNAME = 'ages_dists.csv'
+ALL_AGES_FNAMES = {'infected':'ages_dists.csv', 'dead':'deaths_ages_dists.csv',
+                   'severe':'severe_ages_dists.csv', 'breathe':'ventilated_ages_dists.csv'}
+ALL_AGES_FNAMES_V2 = {'infected':'ages_dists_v2.csv', 'dead':'deaths_ages_dists_v2.csv',
                    'severe':'severe_ages_dists_v2.csv', 'breathe':'ventilated_ages_dists_v2.csv'}
 HOSP_FNAME = 'hospitalized_and_infected.csv'
 VAC_FNAME = 'vaccinated.csv'
@@ -161,10 +163,10 @@ def ages_csv_line(data, prefix='infected'):
     ages_dicts = data[prefix + 'ByPeriodAndAgeAndGender']
     period = u'\u05de\u05ea\u05d7\u05d9\u05dc\u05ea \u05e7\u05d5\u05e8\u05d5\u05e0\u05d4'
     secs = [ent for ent in ages_dicts if ent['period'] == period]
-##    assert ''.join([s['section'][0] for s in secs]) == '0123456789'
-    assert [s['section'] for s in secs] == [
-        '0-9', '10-11', '12-15', '16-19', '20-29', '30-39',
-        '40-49', '50-59', '60-69', '70-74', '75+']
+    assert ''.join([s['section'][0] for s in secs]) == '0123456789'
+##    assert [s['section'] for s in secs] == [
+##        '0-9', '10-11', '12-15', '16-19', '20-29', '30-39',
+##        '40-49', '50-59', '60-69', '70-74', '75+']
     males = [safe_int(sec['male']['amount']) for sec in secs]
     females = [safe_int(sec['female']['amount']) for sec in secs]
     totals = [m+f for m,f in zip(males, females)]
@@ -187,10 +189,11 @@ def update_all_ages_csvs(data):
 def update_age_vaccinations_csv(data):
     vac_ages = data['vaccinationsPerAge']
     # Check for surprising age group
-    assert len(vac_ages) == 9
-    new_line = data['lastUpdate']['lastUpdate']+',' + ','.join(['%d,%d,%d'%(
-        g['age_group_population'],g['vaccinated_first_dose'],g['vaccinated_second_dose'])
-                                                  for g in vac_ages])
+    assert len(vac_ages) == 10
+    new_line = data['lastUpdate']['lastUpdate']+','*5 + ','.join(['%d,%d,%d,%d'%(
+        g['age_group_population'],g['vaccinated_first_dose'],
+        g['vaccinated_second_dose'],g['vaccinated_third_dose'])
+        for g in vac_ages])
     add_line_to_file(VAC_AGES_FNAME, new_line)
 
 def patients_to_csv_line(pat):
@@ -289,12 +292,17 @@ def update_cases_by_vaccinations_ages(data):
 def create_vaccinated_csv(data):
     vac = data['vaccinated']
     title_line = ','.join([
-        'Date', 'Vaccinated (daily)','Vaccinated (cumu)','Vaccinated population percentage',
-        'Second dose (daily)','Second dose (cumu)','Second dose population precentage'])
+        'Date',
+        'Vaccinated (daily)','Vaccinated (cumu)','Vaccinated population percentage',
+        'Second dose (daily)','Second dose (cumu)','Second dose population precentage',
+        'Third dose (daily)','Third dose (cumu)','Third dose population precentage'])
     data_lines = [','.join([d['Day_Date'][:10]]+map(str, [
         d['vaccinated'], d['vaccinated_cum'], d['vaccinated_population_perc'],
         d['vaccinated_seconde_dose'], d['vaccinated_seconde_dose_cum'],
-        d['vaccinated_seconde_dose_population_perc']])) for d in vac]
+        d['vaccinated_seconde_dose_population_perc'],
+        d['vaccinated_third_dose'], d['vaccinated_third_dose_cum'],
+        d['vaccinated_third_dose_population_perc'],
+        ])) for d in vac]
     csv_data = '\n'.join([title_line]+data_lines)
     file(VAC_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+VAC_FNAME) == 0
