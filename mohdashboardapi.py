@@ -58,7 +58,11 @@ api_query = {'requests': [
     {'id': '38', 'queryName': 'SeriousVaccinationStatusDaily', 'single': False, 'parameters': {}},
     {'id': '39', 'queryName': 'VerfiiedVaccinationStatusDaily', 'single': False, 'parameters': {}},
     {'id': '40', 'queryName': 'VaccinationStatusAgg', 'single': False, 'parameters': {}},
-    ]}
+    {'id': '41', 'queryName': 'arrivingAboardCountry', 'single': False, 'parameters': {}},
+    {'id': '42', 'queryName': 'arrivingAboardDaily', 'single': False, 'parameters': {}},
+    {'id': '43', 'queryName': 'positiveArrivingAboardDaily', 'single': False, 'parameters': {}},
+    {'id': '44', 'queryName': 'hardPatient', 'single': True, 'parameters': {}},
+]}
 api_address = 'https://datadashboardapi.health.gov.il/api/queries/_batch'
 def get_api_data():
     data = requests.post(api_address, json=api_query).json()
@@ -89,6 +93,7 @@ HOSP_HEB_FIELD_NAMES = [
     '\xd7\xaa\xd7\xa4\xd7\x95\xd7\xa1\xd7\xaa \xd7\xa7\xd7\x95\xd7\xa8\xd7\x95\xd7\xa0\xd7\x94',
     '\xd7\xa6\xd7\x95\xd7\x95\xd7\xaa \xd7\x91\xd7\x91\xd7\x99\xd7\x93\xd7\x95\xd7\x93']
 ISOLATED_FNAME = 'isolated_staff.csv'
+ABROAD_FNAME = 'from_abroad.csv'
 
 names_trans = {
     'doctors' : u'\u05e8\u05d5\u05e4\u05d0\u05d9\u05dd/\u05d5\u05ea',
@@ -429,7 +434,28 @@ def update_cases_by_vaccinations_ages_old(data):
 
 
 
+def create_abroad_csv(data):
+    inc, pos = data['arrivingAboardDaily'], data['positiveArrivingAboardDaily']
+    dates = sorted(set([i['date'] for i in inc]))
+    all_co=u'\u05db\u05dc\u05dc \u05d4\u05de\u05d3\u05d9\u05e0\u05d5\u05ea'
+    countries = sorted(set([i['visited_country'] for i in inc]),
+                       key=lambda x:(x if x!=all_co else ''))
+    c2data = {c : {d : (0,0,0,0) for d in dates} for c in countries}
+    for  i, p in zip(inc, pos):
+        c,d = i['visited_country'], i['date']
+        assert (c,d) == (p['visited_country'], p['date'])
+        c2data[c][d] = (
+            p['positive_None_vaccination_ind'], p['positive_Vaccination_ind'],
+            i['none_vaccination_ind'], i['vaccination_ind'])
+##    for d in dates:
+##        c2data['Total'][d] = tuple(map(sum,zip(*[c2data[c][d] for c in countries[1:]])))
 
+    lines = ','+',,,,'.join(countries)+',,,' + '\n'
+    lines += 'Date' + ',Positive non-vacc,Positive vacc,Incoming non-vacc,Incoming vacc'*len(countries) + '\n'
+    lines += '\n'.join([
+        ','.join([d] + ['%d,%d,%d,%d'%(c2data[c][d]) for c in countries]) for d in dates]) + '\n'
+    file(ABROAD_FNAME, 'w').write(lines.encode('utf8'))
+    assert os.system('git add '+ABROAD_FNAME) == 0
         
 def create_vaccinated_csv(data):
     vac = data['vaccinated']
@@ -593,6 +619,12 @@ def update_json():
         update_cases_by_vaccinations_ages(new_data)
     except:
         print 'Exception in cases by vaccinations ages csv'
+
+    try:
+        print 'creating incomings/cases from abroad csv'
+        create_abroad_csv(new_data)
+    except:
+        print 'Exception in incomings/cases from abroad csv'
 
     try:
         print 'updating cities csvs'
