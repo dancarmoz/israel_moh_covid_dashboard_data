@@ -3,6 +3,11 @@ import os
 import requests
 import subprocess
 import time
+from collections import defaultdict
+try:
+    from pprint import pprint as out
+except:
+    pass
 
 # TODO list:
 ### a) Fix exception in cities, update format?
@@ -281,11 +286,11 @@ def simulate_vvd(data):
     assert len(set([tuple([x['day_date'] for x in d]) for d in dailys])) == 1
     assert len(set([tuple([x['age_group'] for x in d]) for d in dailys])) == 1
     merged = [dict(x.items()+y.items()+z.items()) for x,y,z in zip(*dailys)]
-    for m in merged:
-        m.update({s.lower():m[s] for s in [
-            'new_Serious_amount_boost_vaccinated', 'new_Serious_boost_vaccinated_normalized']})
-        m.update({
-            'death_boost_vaccinated_normalized':m['death_amount_boost_vaccinated_normalized']})
+##    for m in merged:
+##        m.update({s.lower():m[s] for s in [
+##            'new_Serious_amount_boost_vaccinated', 'new_Serious_boost_vaccinated_normalized']})
+##        m.update({
+##            'death_boost_vaccinated_normalized':m['death_amount_boost_vaccinated_normalized']})
     return merged
 
 def create_cases_by_vaccinations_absolute(data):
@@ -295,9 +300,9 @@ def create_cases_by_vaccinations_absolute(data):
         for suf in [
             'Daily verified', 'Total serious', 'New serious', 'Total deaths']
         ]) + ','*2 + '\n'
-    res += 'Date'+',Booster vaccinated,Fully vaccinated,Not vaccinated'*12+'\n'
+    res += 'Date'+',Recently vaccinated,Expired vaccinated,Not vaccinated'*12+'\n'
     vvd = simulate_vvd(data)
-    vacc_types = ['boost_vaccinated', 'vaccinated', 'not_vaccinated']
+    vacc_types = ['vaccinated', 'expired', 'not_vaccinated']
     case_types = ['verified', 'serious', 'new_serious', 'death']
     for i in range(0, len(vvd), 3):
         s = sorted(vvd[i:i+3], key=lambda x: x['age_group'])
@@ -316,9 +321,9 @@ def create_cases_by_vaccinations_normalized(data):
         for suf in [
             'Daily verified', 'Total serious', 'New serious', 'Total deaths']
         ]) + ','*2 + '\n'
-    res += 'Date'+',Booster vaccinated,Fully vaccinated,Not vaccinated'*12+'\n'
+    res += 'Date'+',Recently vaccinated,Expired vaccinated,Not vaccinated'*12+'\n'
     vvd = simulate_vvd(data)
-    vacc_types = ['boost_vaccinated', 'vaccinated', 'not_vaccinated']
+    vacc_types = ['vaccinated', 'expired', 'not_vaccinated']
     case_types = ['verified', 'serious', 'new_serious', 'death']
     for i in range(0, len(vvd), 3):
         s = sorted(vvd[i:i+3], key=lambda x: x['age_group'])
@@ -418,7 +423,7 @@ def update_cases_by_vaccinations_ages(data):
         for case_type in [
             'active_amount_%s', 'active_%s_normalized', 'serious_amount_%s', 'serious_%s_normalized']
         for ss in vvba
-        for vacc_type in ['boost_vaccinated', 'vaccinated', 'not_vaccinated']])
+        for vacc_type in ['vaccinated', 'vaccinated_expired', 'not_vaccinated']])
     add_line_to_file(VAC_CASES_AGES, new_line)
 
 
