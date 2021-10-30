@@ -223,7 +223,7 @@ def update_age_vaccinations_csv(data):
 def patients_to_csv_line(pat):
     keys = ['Counthospitalized', 'Counthospitalized_without_release',
             'CountEasyStatus', 'CountMediumStatus', 'CountHardStatus',
-            'CountCriticalStatus' ,'CountBreath', 'CountDeath',
+            'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'CountDeath',
             'CountSeriousCriticalCum', 'CountBreathCum', 'CountDeathCum',
             'new_hospitalized', 'serious_critical_new',
             'patients_hotel', 'patients_home',
@@ -267,7 +267,8 @@ def create_patients_csv(data):
     inff_lines = [inff_dict.get(p['date'], '') for p in patients]
     
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
-                           'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated', 'New deaths',
+                           'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated',
+                           'ECMO', 'New deaths',
                            'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
                            'New hosptialized', 'New serious', 'In hotels', 'At home',
                            
