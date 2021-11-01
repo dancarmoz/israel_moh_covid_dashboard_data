@@ -231,7 +231,7 @@ def patients_to_csv_line(pat):
             'new_hospitalized', 'serious_critical_new',
             'patients_hotel', 'patients_home',
             ]
-    return ','.join([pat['date'][:10]]+[str(pat[key]) for key in keys])
+    return str(','.join([pat['date'][:10]]+[str(pat[key]) for key in keys]))
 
 
 def create_patients_csv(data):
@@ -268,6 +268,11 @@ def create_patients_csv(data):
         return repr(x)
     inff_dict = {i['day_date']:repr_if_not_none(i['R']) for i in inff}
     inff_lines = [inff_dict.get(p['date'], '') for p in patients]
+
+    def utf_if_not_none(x):
+        if x is None: return ''
+        return x.encode('utf8')
+    event_lines = [utf_if_not_none(i['coronaEvents']) for i in inf]
     
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated',
@@ -278,9 +283,9 @@ def create_patients_csv(data):
                            'Positive results', 'Total infected', 'New infected',
                            'New receovered', 'Total tests', 'Tests for idenitifaction',
                            'People tested', 'Tests for Magen', 'Survey tests',
-                           'Official R'])
+                           'Official R', 'Epidemiological Event'])
     csv_data = '\n'.join([title_line] + [
-        ','.join([p,e,i]) for p,e,i in zip(pat_lines, epi_lines, inff_lines)])
+        ','.join([p,e,i,ev]) for p,e,i,ev in zip(pat_lines, epi_lines, inff_lines, event_lines)])
     file(HOSP_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+HOSP_FNAME) == 0    
 
