@@ -236,7 +236,7 @@ def patients_to_csv_line(pat):
 
 def create_patients_csv(data):
     start_date = u'2020-03-02T00:00:00.000Z'
-    patients = data['patientsPerDate']
+    patients = sorted(data['patientsPerDate'], key = lambda x: x['date'])
     assert patients[0]['date'] == start_date
     N = len(patients)
     # Sometimes the json contains multiple entires... argh
