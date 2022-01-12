@@ -10,6 +10,11 @@ except:
     pass
 
 # TODO list:
+### d) Fix issue in incomings
+### e) Fix the main csv when it's back to normal
+### f) Add csvs for flu shots
+### g) Restore hospital occupancy data
+### 
 ### a) Fix exception in cities, update format?
 ###    a1) activeKidsCity - add to other city info?
 ### b) Add JSON tree tracking
@@ -77,6 +82,13 @@ api_query = {'requests': [
     {'id': '51', 'queryName': 'isolatedKidsAgeDaily', 'single': False, 'parameters': {}},
     {'id': '52', 'queryName': 'sickReturnsAgeVaccination', 'single': False, 'parameters': {}},
     {'id': '53', 'queryName': 'dailyReturnSick', 'single': False, 'parameters': {}},
+    {'id': '54', 'queryName': 'externalLinksPublic', 'single': False, 'parameters': {}},
+    {'id': '55', 'queryName': 'infectedByAgeAndGender', 'single': False, 'parameters': {}},
+    {'id': '56', 'queryName': 'isolatedNewAndActive', 'single': False, 'parameters': {}},
+    {'id': '57', 'queryName': 'flueVaccinationsDaily', 'single': False, 'parameters': {}},
+    {'id': '58', 'queryName': 'flueVaccinationsAge', 'single': False, 'parameters': {}},
+    {'id': '59', 'queryName': 'ocuppancies', 'single': False, 'parameters': {}},
+    {'id': '60', 'queryName': 'ocuppanciesDaily', 'single': False, 'parameters': {}},
 ]}
 
 api_address = 'https://datadashboardapi.health.gov.il/api/queries/_batch'
@@ -169,12 +181,15 @@ heb_translit = {
 def safe_str(s):
     return '%s'%(heb_map.get(s, s))
 
-def update_git(new_date):
+def update_git(new_date, force=False):
     assert os.system('git add '+DATA_FNAME) == 0
     print 'committing...',
     assert os.system('git commit -m "Update to %s"'%(new_date)) == 0
     print 'pushing...'
-    assert os.system('git push') == 0
+    if not force:
+        assert os.system('git push') == 0
+    else:
+        assert os.system('git push --force') == 0
     print 'git committed and pushed successfully'
 
 def update_git_history(new_date):
@@ -264,9 +279,24 @@ def update_sick_returns_ages_csv(data):
     add_line_to_file(SICK_RETS_AGES_FNAME, new_line)
 
 
+def patients_to_csv_line_temp((pat, hos, dead)):
+    keys = ['Counthospitalized', 'Counthospitalized_without_release',
+            'countEasyStatus', 'countMediumStatus', 'CountHardStatus',
+            'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'amount',
+            'CountSeriousCriticalCum', 'CountBreathCum', 'total',
+            'new_hospitalized', 'serious_critical_new',
+            'patients_hotel', 'patients_home',
+            ]
+    srcs = [{}, {},
+            hos, hos, pat,
+            {}, {}, {}, dead,
+            pat, pat, dead,
+            {}, pat,
+            {}, {}]
+    return str(','.join([pat['date'][:10]]+[str(src.get(key, '')) for key,src in zip(keys, srcs)]))
 
 
-def patients_to_csv_line(pat):
+def patients_to_csv_line_old(pat):
     keys = ['Counthospitalized', 'Counthospitalized_without_release',
             'CountEasyStatus', 'CountMediumStatus', 'CountHardStatus',
             'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'CountDeath',
@@ -274,7 +304,7 @@ def patients_to_csv_line(pat):
             'new_hospitalized', 'serious_critical_new',
             'patients_hotel', 'patients_home',
             ]
-    return str(','.join([pat['date'][:10]]+[str(pat[key]) for key in keys]))
+    return str(','.join([pat['date'][:10]]+[str(pat.get(key, '')) for key in keys]))
 
 
 def create_patients_csv(data):
@@ -287,9 +317,12 @@ def create_patients_csv(data):
         rev_pat_dates = [p['date'] for p in patients[::-1]]
         pat_dates_fil = sorted(set(rev_pat_dates))
         patients = [patients[N-1-rev_pat_dates.index(date)] for date in pat_dates_fil]
-        N = len(patients)       
+        N = len(patients)
+    hosps = data['hospitalizationStatusDaily']
+    deaths = data['deadPatientsPerDate']
+    assert len(deaths) == N == len(hosps)
     
-    pat_lines = map(patients_to_csv_line, patients)
+    pat_lines = map(patients_to_csv_line_temp, zip(patients, hosps, deaths))
     
     # recs = data['recoveredPerDay'][-N:]
     inf = data['infectedPerDate'][-N:]
@@ -507,7 +540,7 @@ def create_kids_ages_daily(data):
         for suf in ['verified', 'verified normalized', 'isolated', 'isolated normalized']
         for age in ['0-4', '5-11', '12-15', '16-19']) + '\n'
     for i in range(0, N, 4):
-        line = vers[0]['dayDate'][:10]+','+','.join(
+        line = vers[i]['dayDate'][:10]+','+','.join(
             str(arr[j][item]) for arr,item in [
                 (vers, 'verified'), (vers, 'verifiedNormalized'),
                 (isols, 'isolated'), (isols, 'isolatedNormalized')]
@@ -660,7 +693,7 @@ def try_func(func, pref, name, data):
         print 'Exception in ' + name
 
 
-def update_json():
+def update_json(force=False):
     prev_date = json.load(file(DATA_FNAME,'r'))['lastUpdate']['lastUpdate']
     new_data = get_api_data()
     new_date = new_data['lastUpdate']['lastUpdate']
@@ -693,7 +726,7 @@ def update_json():
     # extend_hospital_csv(new_data) # Broken long ago
     
     json.dump(new_data, file(DATA_FNAME,'w'), indent = 2)
-    update_git(new_date)
+    update_git(new_date, force)
     update_git_history(new_date)
 
 
