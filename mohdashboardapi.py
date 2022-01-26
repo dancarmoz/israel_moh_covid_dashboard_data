@@ -243,6 +243,18 @@ def update_age_vaccinations_csv(data):
     vac_ages = data['vaccinationsPerAge']
     # Check for surprising age group
     assert len(vac_ages) == 11
+    new_line = data['lastUpdate']['lastUpdate'] + ',' + ','.join([','.join(map(repr, (
+        g['percent_vaccinated_first_dose'], g['persent_vaccinated_second_dose'],
+        g['persent_vaccinated_third_dose'], g['persent_vaccinated_fourth_dose'],
+        g['not_vaccinated_amount_perc'], g['vaccinated_amount_perc'],
+        g['vaccinated_expired_amount_perc'])))
+        for g in vac_ages])
+    add_line_to_file(VAC_AGES_FNAME, new_line)
+
+def update_age_vaccinations_csv_old(data):
+    vac_ages = data['vaccinationsPerAge']
+    # Check for surprising age group
+    assert len(vac_ages) == 11
     new_line = data['lastUpdate']['lastUpdate']+','*10 + ','.join([('%d,'*3 +'%.1f,'*6)[:-1]%(
         g['vaccinated_first_dose'],g['vaccinated_second_dose'],g['vaccinated_third_dose'],
         g['percent_vaccinated_first_dose'],g['persent_vaccinated_second_dose'],
@@ -279,6 +291,19 @@ def update_sick_returns_ages_csv(data):
     add_line_to_file(SICK_RETS_AGES_FNAME, new_line)
 
 
+def patients_to_csv_line((pat, hos, dead)):
+    keys = ['countEasyStatus', 'countMediumStatus', 'countHardStatus',
+            'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'amount',
+            'CountSeriousCriticalCum', 'CountBreathCum', 'total',
+            'new_hospitalized', 'serious_critical_new','medium_new','easy_new',
+            ]
+    srcs = [hos, hos, hos,
+            {}, {}, {}, dead,
+            {}, {}, dead,
+            {}, pat ,pat, pat]
+    return str(','.join([pat['date'][:10]]+[str(src.get(key, '')) for key,src in zip(keys, srcs)]))
+
+
 def patients_to_csv_line_temp((pat, hos, dead)):
     keys = ['Counthospitalized', 'Counthospitalized_without_release',
             'countEasyStatus', 'countMediumStatus', 'CountHardStatus',
@@ -288,7 +313,7 @@ def patients_to_csv_line_temp((pat, hos, dead)):
             'patients_hotel', 'patients_home',
             ]
     srcs = [{}, {},
-            hos, hos, pat,
+            hos, hos, hos,
             {}, {}, {}, dead,
             pat, pat, dead,
             {}, pat,
@@ -322,7 +347,7 @@ def create_patients_csv(data):
     deaths = data['deadPatientsPerDate']
     assert len(deaths) == N == len(hosps)
     
-    pat_lines = map(patients_to_csv_line_temp, zip(patients, hosps, deaths))
+    pat_lines = map(patients_to_csv_line, zip(patients, hosps, deaths))
     
     # recs = data['recoveredPerDay'][-N:]
     inf = data['infectedPerDate'][-N:]
@@ -331,9 +356,12 @@ def create_patients_csv(data):
     tests = [t for t in data['testResultsPerDate'] if t['positiveAmount']!=-1][-N:]
     tests2 = data['testsPerDate'][-N:]
     rets = data['dailyReturnSick'][-N:]
-    assert tests[0]['date'] == tests2[0]['date'] == rets[0]['date'] == start_date
+    isols = data['isolatedNewAndActive'][-N:]
+    assert tests[0]['date'] == tests2[0]['date'] == rets[0]['date'] == isols[0]['date'] == start_date
 
-    epi_lines = [','.join(map(str, [t['positiveAmount'], i['sum'],
+    epi_lines = [','.join(map(str, [s['active_isolations'], s['new_isolations_contact_verified'],
+                                    s['new_isolations_return_abroad'], s['new_isolations_other_reason'],
+                                    t['positiveAmount'], i['sum'],
                                     i['amount'], i['recovered'],
                                     t['amount'], t['amountVirusDiagnosis'],
                                     t['amountPersonTested'], t['amountMagen'],
@@ -342,7 +370,7 @@ def create_patients_csv(data):
                                     r['verifiedReturnsNotVaccinated'],
                                     r['verifiedReturnsCumPerc']
                                     ])) for \
-                 i, t, t2, r in zip(inf, tests, tests2, rets)]
+                 s, i, t, t2, r in zip(isols, inf, tests, tests2, rets)]
 
     inff = data['infectionFactor']
     def repr_if_not_none(x):
@@ -356,12 +384,15 @@ def create_patients_csv(data):
         return x.encode('utf8')
     event_lines = [utf_if_not_none(i['coronaEvents']) for i in inf]
     
-    title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
+    title_line = ','.join(['Date', # 'Hospitalized', 'Hospitalized without release',
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated',
                            'ECMO', 'New deaths',
                            'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
-                           'New hosptialized', 'New serious', 'In hotels', 'At home',
-                           
+                           'New hosptialized', 'New serious', 'New medium', 'New easy',
+                           # 'In hotels', 'At home',
+
+                           'Active isolations', 'New contact isolations',
+                           'New abroad isolations', 'New other isolations',
                            'Positive results', 'Total infected', 'New infected',
                            'New receovered', 'Total tests', 'Tests for idenitifaction',
                            'People tested', 'Tests for Magen', 'Official antigen tests',
@@ -582,15 +613,20 @@ def create_vaccinated_csv(data):
     vac = data['vaccinated']
     title_line = ','.join([
         'Date',
-        'Vaccinated (daily)','Vaccinated (cumu)','Vaccinated population percentage',
-        'Second dose (daily)','Second dose (cumu)','Second dose population precentage',
-        'Third dose (daily)','Third dose (cumu)','Third dose population precentage'])
+        'Valid vaccinated pop. perc.', 'Expired vaccinated pop. perc.', 'Not vaccinated pop. perc.',
+        'Vaccinated (daily)','Vaccinated (cumu)','Vaccinated pop. perc.',
+        'Second dose (daily)','Second dose (cumu)','Second dose pop. perc.',
+        'Third dose (daily)','Third dose (cumu)','Third dose pop. perc.',
+        'Fourth dose (daily)','Fourth dose (cumu)','Fourth dose pop. perc.',])
     data_lines = [','.join([d['Day_Date'][:10]]+map(str, [
+        d['vaccinated_validity_perc'], d['vaccinated_expired_perc'], d['not_vaccinated_perc'],
         d['vaccinated'], d['vaccinated_cum'], d['vaccinated_population_perc'],
         d['vaccinated_seconde_dose'], d['vaccinated_seconde_dose_cum'],
         d['vaccinated_seconde_dose_population_perc'],
         d['vaccinated_third_dose'], d['vaccinated_third_dose_cum'],
         d['vaccinated_third_dose_population_perc'],
+        d['vaccinated_fourth_dose'], d['vaccinated_fourth_dose_cum'],
+        d['vaccinated_fourth_dose_population_perc'],
         ])) for d in vac]
     csv_data = '\n'.join([title_line]+data_lines)
     file(VAC_FNAME, 'w').write(csv_data+'\n')
