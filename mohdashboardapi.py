@@ -89,6 +89,7 @@ api_query = {'requests': [
     {'id': '58', 'queryName': 'flueVaccinationsAge', 'single': False, 'parameters': {}},
     {'id': '59', 'queryName': 'ocuppancies', 'single': False, 'parameters': {}},
     {'id': '60', 'queryName': 'ocuppanciesDaily', 'single': False, 'parameters': {}},
+    {'id': '61', 'queryName': 'hospitalizationStatus', 'single': False, 'parameters': {}},
 ]}
 
 api_address = 'https://datadashboardapi.health.gov.il/api/queries/_batch'
@@ -291,7 +292,7 @@ def update_sick_returns_ages_csv(data):
     add_line_to_file(SICK_RETS_AGES_FNAME, new_line)
 
 
-def patients_to_csv_line((pat, hos, dead)):
+def patients_to_csv_line_temp2((pat, hos, dead)):
     keys = ['countEasyStatus', 'countMediumStatus', 'countHardStatus',
             'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'amount',
             'CountSeriousCriticalCum', 'CountBreathCum', 'total',
@@ -321,33 +322,54 @@ def patients_to_csv_line_temp((pat, hos, dead)):
     return str(','.join([pat['date'][:10]]+[str(src.get(key, '')) for key,src in zip(keys, srcs)]))
 
 
-def patients_to_csv_line_old(pat):
-    keys = ['Counthospitalized', 'Counthospitalized_without_release',
-            'CountEasyStatus', 'CountMediumStatus', 'CountHardStatus',
-            'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'CountDeath',
-            'CountSeriousCriticalCum', 'CountBreathCum', 'CountDeathCum',
-            'new_hospitalized', 'serious_critical_new',
-            'patients_hotel', 'patients_home',
+def patients_to_csv_line(pat):
+    keys = ['countHospitalized', 'countHospitalizedWithoutRelease',
+            'countEasyStatus', 'countMediumStatus', 'countHardStatus',
+            'countCriticalStatus' ,'countBreath', 'countEcmo', 'countDeath',
+            'countSeriousCriticalCum', 'countBreathCum', 'countDeathCum',
+            'newHospitalized', 'seriousCriticalNew',
+            'mediumNew','easyNew',
+            'patientsHotel', 'patientsHome',
             ]
-    return str(','.join([pat['date'][:10]]+[str(pat.get(key, '')) for key in keys]))
+    return str(','.join([pat['dayDate'][:10]]+[str(pat.get(key,'')) for key in keys]))
+
+def remove_date_duplicates(table,datename ='date'):
+    table = sorted(table, key = lambda x: x[datename])
+    rev_dates = [p[datename] for p in table[::-1]]
+    dates_dict = {}
+    for i, date in enumerate(rev_dates):
+        dates_dict[date] = dates_dict.get(date, -i-1)
+    dates_fil = sorted(dates_dict.keys())
+    return [table[dates_dict[date]] for date in dates_fil]    
 
 
 def create_patients_csv(data):
     start_date = u'2020-03-02T00:00:00.000Z'
-    patients = sorted(data['patientsPerDate'], key = lambda x: x['date'])
-    assert patients[0]['date'] == start_date
+##    patients = sorted(data['patientsPerDate'], key = lambda x: x['date'])
+##    assert patients[0]['date'] == start_date
+##    N = len(patients)
+##    # Sometimes the json contains multiple entires... argh
+##    if len(set([p['date'] for p in patients])) != N:
+##        rev_pat_dates = [p['date'] for p in patients[::-1]]
+##        pat_dates_fil = sorted(set(rev_pat_dates))
+##        patients = [patients[N-1-rev_pat_dates.index(date)] for date in pat_dates_fil]
+##        N = len(patients)
+##    hosps = data['hospitalizationStatusDaily']
+##    deaths = data['deadPatientsPerDate']
+##    assert len(deaths) == N == len(hosps)
+##
+##    patients, hosps, deaths = [remove_date_duplicates(data[k],datename) for k,datename in zip(
+##        ['patientsPerDate', 'hospitalizationStatusDaily', 'deadPatientsPerDate'],
+##        ['date','dayDate','date'])]
+##    N = len(patients)
+##    assert len(deaths) == N == len(hosps)
+##    assert patients[0]['date'] == start_date
+
+    patients = remove_date_duplicates(data['hospitalizationStatus'], 'dayDate')
     N = len(patients)
-    # Sometimes the json contains multiple entires... argh
-    if len(set([p['date'] for p in patients])) != N:
-        rev_pat_dates = [p['date'] for p in patients[::-1]]
-        pat_dates_fil = sorted(set(rev_pat_dates))
-        patients = [patients[N-1-rev_pat_dates.index(date)] for date in pat_dates_fil]
-        N = len(patients)
-    hosps = data['hospitalizationStatusDaily']
-    deaths = data['deadPatientsPerDate']
-    assert len(deaths) == N == len(hosps)
+    assert patients[0]['dayDate'] == start_date
     
-    pat_lines = map(patients_to_csv_line, zip(patients, hosps, deaths))
+    pat_lines = map(patients_to_csv_line, patients)
     
     # recs = data['recoveredPerDay'][-N:]
     inf = data['infectedPerDate'][-N:]
@@ -377,19 +399,19 @@ def create_patients_csv(data):
         if x is None: return ''
         return repr(x)
     inff_dict = {i['day_date']:repr_if_not_none(i['R']) for i in inff}
-    inff_lines = [inff_dict.get(p['date'], '') for p in patients]
+    inff_lines = [inff_dict.get(p['dayDate'], '') for p in patients]
 
     def utf_if_not_none(x):
         if x is None: return ''
         return x.encode('utf8')
     event_lines = [utf_if_not_none(i['coronaEvents']) for i in inf]
     
-    title_line = ','.join(['Date', # 'Hospitalized', 'Hospitalized without release',
+    title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated',
                            'ECMO', 'New deaths',
                            'Serious (cumu)', 'Ventilated (cumu)', 'Dead (cumu)',
                            'New hosptialized', 'New serious', 'New medium', 'New easy',
-                           # 'In hotels', 'At home',
+                           'In hotels', 'At home',
 
                            'Active isolations', 'New contact isolations',
                            'New abroad isolations', 'New other isolations',
