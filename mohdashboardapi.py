@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import json
 import os
 import requests
@@ -184,7 +186,7 @@ def safe_str(s):
 
 def update_git(new_date, force=False):
     assert os.system('git add '+DATA_FNAME) == 0
-    print 'committing...',
+    print('committing...', end=' ')
     assert os.system('git commit -m "Update to %s"'%(new_date)) == 0
     print('pushing...')
     if not force:
@@ -292,7 +294,8 @@ def update_sick_returns_ages_csv(data):
     add_line_to_file(SICK_RETS_AGES_FNAME, new_line)
 
 
-def patients_to_csv_line_temp2((pat, hos, dead)):
+def patients_to_csv_line_temp2(pat_hos_dead):
+    pat, hos, dead = pat_hos_dead
     keys = ['countEasyStatus', 'countMediumStatus', 'countHardStatus',
             'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'amount',
             'CountSeriousCriticalCum', 'CountBreathCum', 'total',
@@ -305,7 +308,8 @@ def patients_to_csv_line_temp2((pat, hos, dead)):
     return str(','.join([pat['date'][:10]]+[str(src.get(key, '')) for key,src in zip(keys, srcs)]))
 
 
-def patients_to_csv_line_temp((pat, hos, dead)):
+def patients_to_csv_line_temp(pat_hos_dead):
+    pat, hos, dead = pat_hos_dead
     keys = ['Counthospitalized', 'Counthospitalized_without_release',
             'countEasyStatus', 'countMediumStatus', 'CountHardStatus',
             'CountCriticalStatus' ,'CountBreath', 'count_ecmo', 'amount',
@@ -757,10 +761,10 @@ def update_json(force=False):
     new_data = get_api_data()
     new_date = new_data['lastUpdate']['lastUpdate']
     if new_date == prev_date:
-        print time.ctime()+': ', 'No update since', prev_date
+        print(time.ctime()+': ', 'No update since', prev_date)
         return
     
-    print time.ctime()+': ', 'Data updated! New time:', new_date
+    print(time.ctime()+': ', 'Data updated! New time:', new_date)
     # update_ages_csv(new_data) # Obsolete
     try_func(update_all_ages_csvs, 'updating', 'ages csvs', new_data)
     try_func(create_patients_csv, 'creating', 'patients csv', new_data)
@@ -794,9 +798,9 @@ def update_json_loop():
     while True:
         try:
             update_json()
-            time.sleep(60*60 - 4)
-        except Exception, e:
-            print e
+            time.sleep(60*30 - 4)
+        except Exception as e:
+            print(e)
             if type(e) is ValueError and e.message == "No JSON object could be decoded":
                 time.sleep(10)
             else:
