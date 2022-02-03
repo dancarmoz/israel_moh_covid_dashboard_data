@@ -186,20 +186,20 @@ def update_git(new_date, force=False):
     assert os.system('git add '+DATA_FNAME) == 0
     print 'committing...',
     assert os.system('git commit -m "Update to %s"'%(new_date)) == 0
-    print 'pushing...'
+    print('pushing...')
     if not force:
         assert os.system('git push') == 0
     else:
         assert os.system('git push --force') == 0
-    print 'git committed and pushed successfully'
+    print('git committed and pushed successfully')
 
 def update_git_history(new_date):
-    history = json.load(file(COMMIT_HIST_FNAME,'r'))
+    history = json.load(open(COMMIT_HIST_FNAME,'r'))
     curr_commit_hash = subprocess.check_output('git log').split()[1]
     history.append((new_date, curr_commit_hash))
-    json.dump(history, file(COMMIT_HIST_FNAME,'w'), indent = 2)
+    json.dump(history, open(COMMIT_HIST_FNAME,'w'), indent = 2)
     assert os.system('git add '+COMMIT_HIST_FNAME) == 0
-    print 'updated git history file'
+    print('updated git history file')
     
 
 def safe_int(x):
@@ -207,9 +207,9 @@ def safe_int(x):
     return x if x else 0
 
 def add_line_to_file(fname, new_line):
-    prev_file = file(fname, 'r').read()
+    prev_file = open(fname, 'r').read()
     new_file = prev_file + new_line + '\n'
-    file(fname, 'w').write(new_file)
+    open(fname, 'w').write(new_file)
     assert os.system('git add ' + fname) == 0
 
 def ages_csv_line(data, prefix='infected'):
@@ -423,7 +423,7 @@ def create_patients_csv(data):
                            'Official R', 'Epidemiological Event'])
     csv_data = '\n'.join([title_line] + [
         ','.join([p,e,i,ev]) for p,e,i,ev in zip(pat_lines, epi_lines, inff_lines, event_lines)])
-    file(HOSP_FNAME, 'w').write(csv_data+'\n')
+    open(HOSP_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+HOSP_FNAME) == 0
 
 
@@ -431,7 +431,8 @@ def simulate_vvd(data):
     dailys = [data[pre + 'VaccinationStatusDaily'] for pre in ['death', 'Serious', 'Verfiied']]
     assert len(set([tuple([x['day_date'] for x in d]) for d in dailys])) == 1
     assert len(set([tuple([x['age_group'] for x in d]) for d in dailys])) == 1
-    merged = [dict(x.items()+y.items()+z.items()) for x,y,z in zip(*dailys)]
+    # ugly merge, but works in both python 2 and 3...
+    merged = [dict(list(x.items())+list(y.items())+list(z.items())) for x,y,z in zip(*dailys)]
 ##    for m in merged:
 ##        m.update({s.lower():m[s] for s in [
 ##            'new_Serious_amount_boost_vaccinated', 'new_Serious_boost_vaccinated_normalized']})
@@ -457,7 +458,7 @@ def create_cases_by_vaccinations_absolute(data):
             str(ss[case_type + '_amount_' + vacc_type])
             for ss in s for case_type in case_types for vacc_type in vacc_types])
         res += line + '\n'
-    file(VAC_CASES_DAILY_ABS, 'w').write(res)
+    open(VAC_CASES_DAILY_ABS, 'w').write(res)
     assert os.system('git add '+VAC_CASES_DAILY_ABS) == 0
 
 def create_cases_by_vaccinations_normalized(data):
@@ -478,7 +479,7 @@ def create_cases_by_vaccinations_normalized(data):
             str(ss[case_type + '_' + vacc_type + '_normalized'])
             for ss in s for case_type in case_types for vacc_type in vacc_types])
         res += line + '\n'
-    file(VAC_CASES_DAILY_NORM, 'w').write(res)
+    open(VAC_CASES_DAILY_NORM, 'w').write(res)
     assert os.system('git add '+VAC_CASES_DAILY_NORM) == 0
 
 
@@ -503,7 +504,7 @@ def create_cases_by_vaccinations_daily_old_old(data):
             str(ss[case_type%vacc_type])
             for ss in s for vacc_type in vacc_types for case_type in case_types])
         res += line + '\n'
-    file(VAC_CASES_DAILY, 'w').write(res)
+    open(VAC_CASES_DAILY, 'w').write(res)
     assert os.system('git add '+VAC_CASES_DAILY) == 0
 
 def create_cases_by_vaccinations_absolute_old(data):
@@ -527,7 +528,7 @@ def create_cases_by_vaccinations_absolute_old(data):
                 str(ss[case_type + '_amount_' + vacc_type])
                 for case_type in case_types for vacc_type in vacc_types])
         res += line + '\n'
-    file(VAC_CASES_DAILY_ABS, 'w').write(res)
+    open(VAC_CASES_DAILY_ABS, 'w').write(res)
     assert os.system('git add '+VAC_CASES_DAILY_ABS) == 0
 
 def safe_normalize(cases, population):
@@ -557,7 +558,7 @@ def create_cases_by_vaccinations_normalized_old(data):
                     ss[case_type + '_amount_' + vacc_type], ss[vacc_type + '_amount_cum']))
                 for case_type in case_types for vacc_type in vacc_types])
         res += line + '\n'
-    file(VAC_CASES_DAILY_NORM, 'w').write(res)
+    open(VAC_CASES_DAILY_NORM, 'w').write(res)
     assert os.system('git add '+VAC_CASES_DAILY_NORM) == 0
 
 
@@ -599,7 +600,7 @@ def create_kids_ages_daily(data):
                 (isols, 'isolated'), (isols, 'isolatedNormalized')]
             for j in range(i, i+4) )
         lines += line + '\n'
-    file(KIDS_AGES_DAILY, 'w').write(lines)
+    open(KIDS_AGES_DAILY, 'w').write(lines)
     assert os.system('git add '+KIDS_AGES_DAILY) == 0
 
 
@@ -628,7 +629,7 @@ def create_abroad_csv(data):
              ',Positive foreign,Positive Israeli perc,Positive foreign perc'*len(countries) + '\n'
     lines += '\n'.join([
         ','.join([d] + ['%d,%d,%d,%d,%.1f,%.1f'%(c2data[c][d]) for c in countries]) for d in dates]) + '\n'
-    file(ABROAD_FNAME, 'w').write(lines.encode('utf8'))
+    open(ABROAD_FNAME, 'w').write(lines.encode('utf8'))
     assert os.system('git add '+ABROAD_FNAME) == 0
         
 def create_vaccinated_csv(data):
@@ -651,19 +652,19 @@ def create_vaccinated_csv(data):
         d['vaccinated_fourth_dose_population_perc'],
         ])) for d in vac]
     csv_data = '\n'.join([title_line]+data_lines)
-    file(VAC_FNAME, 'w').write(csv_data+'\n')
+    open(VAC_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+VAC_FNAME) == 0
 
 
 def extend_hospital_csv(data):
-    csv_prev_lines = file(HOSPITALS_FNAME).read().splitlines()
+    csv_prev_lines = open(HOSPITALS_FNAME).read().splitlines()
     keys = [k.split(':')[0] for k in csv_prev_lines[0].split(',')[1::3]]
     hosp_dict = dict([(z['name'].encode('utf8').replace('"','').replace("'",""),
                        (z['normalOccupancy'], z['coronaOccupancy'], z['isolatedTeam']))
                       for z in data['hospitalStatus']])
     new_line = [data['lastUpdate']['lastUpdate'].encode('utf8')]
     for k in keys:
-        if k in hosp_dict.keys():
+        if k in hosp_dict:
             no, co, it = hosp_dict[k]
             if no is None:
                 no = 'None'
@@ -684,12 +685,12 @@ def extend_hospital_csv(data):
             no = '%.2f'%(no)
         new_line.append('%s,%.2f,%d'%(no,co,it))
     csv_prev_lines.append(','.join(new_line))
-    file(HOSPITALS_FNAME, 'w').write('\n'.join(csv_prev_lines))
+    open(HOSPITALS_FNAME, 'w').write('\n'.join(csv_prev_lines))
     assert os.system('git add '+HOSPITALS_FNAME) == 0
 
 
 def update_isolated_csv(data):
-    csv_lines = file(ISOLATED_FNAME).read().splitlines()
+    csv_lines = open(ISOLATED_FNAME).read().splitlines()
     isolveris = {item['name'] : item['amount'] for item in data['isolatedVerifiedDoctorsAndNurses']}
     # veris = {item['name'] : item['amount'] for item in data['verifiedDoctorsAndNurses']}
     new_line = [data['lastUpdate']['lastUpdate']] + [str(isolveris[names_trans[k]]) for k in
@@ -697,7 +698,7 @@ def update_isolated_csv(data):
 ##    new_line = [data['lastUpdate']['lastUpdate']] + [str(data['isolatedDoctorsAndNurses'][k]) for k in
 ##                 ['Verified_Doctors', 'Verified_Nurses', 'isolated_Doctors', 'isolated_Nurses', 'isolated_Other_Sector']]
     if new_line[1:] == csv_lines[-1].split(',')[1:]: return
-    file(ISOLATED_FNAME, 'w').write('\n'.join(csv_lines + [','.join(new_line)]))
+    open(ISOLATED_FNAME, 'w').write('\n'.join(csv_lines + [','.join(new_line)]))
     assert os.system('git add '+ISOLATED_FNAME) == 0
 
 
@@ -733,9 +734,9 @@ def update_cities(new_data):
             add_line_to_file(fname, line)
         except IOError:
             # file didn't exist - new city name encountered
-            print 'New city!'
-            print fname
-            file(fname, 'w').write(city_title_line+'\n'+line+'\n')
+            print('New city!')
+            print(fname)
+            open(fname, 'w').write(city_title_line+'\n'+line+'\n')
             assert os.system('git add ' + fname) == 0
             add_line_to_file('cities_transliteration.csv', ('%s,%s'%(n, strip_name(n))).encode('utf-8'))
 
@@ -745,14 +746,14 @@ def get_json_tree(data):
 
 def try_func(func, pref, name, data):
     try:
-        print pref + ' ' + name
+        print(pref + ' ' + name)
         func(data)
     except:
-        print 'Exception in ' + name
+        print('Exception in ' + name)
 
 
 def update_json(force=False):
-    prev_date = json.load(file(DATA_FNAME,'r'))['lastUpdate']['lastUpdate']
+    prev_date = json.load(open(DATA_FNAME,'r'))['lastUpdate']['lastUpdate']
     new_data = get_api_data()
     new_date = new_data['lastUpdate']['lastUpdate']
     if new_date == prev_date:
@@ -783,7 +784,7 @@ def update_json(force=False):
 
     # extend_hospital_csv(new_data) # Broken long ago
     
-    json.dump(new_data, file(DATA_FNAME,'w'), indent = 2)
+    json.dump(new_data, open(DATA_FNAME,'w'), indent = 2)
     update_git(new_date, force)
     update_git_history(new_date)
 
@@ -804,7 +805,7 @@ def update_json_loop():
 
 
 def fetch_historic_data(index):
-    history = json.load(file(COMMIT_HIST_FNAME,'r'))
+    history = json.load(open(COMMIT_HIST_FNAME,'r'))
     if type(index) == int:
         commit_hash = history[index][1]
     elif type(index) == str:
@@ -813,21 +814,21 @@ def fetch_historic_data(index):
         raise TypeError('argument index of type %s, expected int or str'%(type(index)))
 
     assert os.system('git checkout %s -- %s'%(commit_hash, DATA_FNAME)) == 0
-    data = json.load(file(DATA_FNAME,'r'))
+    data = json.load(open(DATA_FNAME,'r'))
     assert os.system('git checkout master -- ' + DATA_FNAME) == 0
 
     return data
 
 
 def get_all_historic_data(start = 0, end = None):
-    history = json.load(file(COMMIT_HIST_FNAME,'r'))
+    history = json.load(open(COMMIT_HIST_FNAME,'r'))
     if end == None:
         end = len(history)
     dataa = []
     for i in range(start, end):
         commit_hash = history[i][1]
         assert os.system('git checkout %s -- %s'%(commit_hash, DATA_FNAME)) == 0
-        dataa.append(json.load(file(DATA_FNAME,'r')))
+        dataa.append(json.load(open(DATA_FNAME,'r')))
 
     assert os.system('git checkout master -- ' + DATA_FNAME) == 0
     return dataa
