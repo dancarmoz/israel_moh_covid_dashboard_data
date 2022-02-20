@@ -4,6 +4,7 @@ import json
 import os
 import requests
 import subprocess
+import sys
 import time
 from collections import defaultdict
 try:
@@ -102,8 +103,13 @@ def get_api_data():
         for i, r in enumerate(api_query['requests'])}
     return data_dict
 
-GIT_DIR = r'C:\GitHub\israel_moh_covid_dashboard_data'
-os.chdir(GIT_DIR)
+try:
+    GIT_DIR = os.environ['MOH_GIT_DIR']
+    os.chdir(GIT_DIR)
+except:
+    print('MOH_GIT_DIR environment variable undefined, or directory does not exist')
+    print('WARNING: Working in current directory!')
+
 DATA_FNAME = 'moh_dashboard_api_data.json'
 COMMIT_HIST_FNAME = 'commit_history.json'
 ##AGES_FNAME = 'ages_dists.csv'
@@ -183,6 +189,16 @@ heb_translit = {
 
 def safe_str(s):
     return '%s'%(heb_map.get(s, s))
+
+if sys.version_info.major == 2:
+    def encode_utf(x):
+        # convert from unicode to str
+        return x.encode('utf8')
+else:
+    def encode_utf(x):
+        # (don't) convert from str to str
+        return x
+
 
 def update_git(new_date, force=False):
     assert os.system('git add '+DATA_FNAME) == 0
@@ -407,7 +423,7 @@ def create_patients_csv(data):
 
     def utf_if_not_none(x):
         if x is None: return ''
-        return x.encode('utf8')
+        return encode_utf(x)
     event_lines = [utf_if_not_none(i['coronaEvents']) for i in inf]
     
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
@@ -633,7 +649,7 @@ def create_abroad_csv(data):
              ',Positive foreign,Positive Israeli perc,Positive foreign perc'*len(countries) + '\n'
     lines += '\n'.join([
         ','.join([d] + ['%d,%d,%d,%d,%.1f,%.1f'%(c2data[c][d]) for c in countries]) for d in dates]) + '\n'
-    open(ABROAD_FNAME, 'w').write(lines.encode('utf8'))
+    open(ABROAD_FNAME, 'w').write(encode_utf(lines))
     assert os.system('git add '+ABROAD_FNAME) == 0
         
 def create_vaccinated_csv(data):
@@ -645,7 +661,7 @@ def create_vaccinated_csv(data):
         'Second dose (daily)','Second dose (cumu)','Second dose pop. perc.',
         'Third dose (daily)','Third dose (cumu)','Third dose pop. perc.',
         'Fourth dose (daily)','Fourth dose (cumu)','Fourth dose pop. perc.',])
-    data_lines = [','.join([d['Day_Date'][:10]]+map(str, [
+    data_lines = [','.join([d['Day_Date'][:10]]+list(map(str, [
         d['vaccinated_validity_perc'], d['vaccinated_expired_perc'], d['not_vaccinated_perc'],
         d['vaccinated'], d['vaccinated_cum'], d['vaccinated_population_perc'],
         d['vaccinated_seconde_dose'], d['vaccinated_seconde_dose_cum'],
@@ -654,7 +670,7 @@ def create_vaccinated_csv(data):
         d['vaccinated_third_dose_population_perc'],
         d['vaccinated_fourth_dose'], d['vaccinated_fourth_dose_cum'],
         d['vaccinated_fourth_dose_population_perc'],
-        ])) for d in vac]
+        ]))) for d in vac]
     csv_data = '\n'.join([title_line]+data_lines)
     open(VAC_FNAME, 'w').write(csv_data+'\n')
     assert os.system('git add '+VAC_FNAME) == 0
@@ -663,10 +679,10 @@ def create_vaccinated_csv(data):
 def extend_hospital_csv(data):
     csv_prev_lines = open(HOSPITALS_FNAME).read().splitlines()
     keys = [k.split(':')[0] for k in csv_prev_lines[0].split(',')[1::3]]
-    hosp_dict = dict([(z['name'].encode('utf8').replace('"','').replace("'",""),
+    hosp_dict = dict([(encode_utf(z['name']).replace('"','').replace("'",""),
                        (z['normalOccupancy'], z['coronaOccupancy'], z['isolatedTeam']))
                       for z in data['hospitalStatus']])
-    new_line = [data['lastUpdate']['lastUpdate'].encode('utf8')]
+    new_line = [encode_utf(data['lastUpdate']['lastUpdate'])]
     for k in keys:
         if k in hosp_dict:
             no, co, it = hosp_dict[k]
