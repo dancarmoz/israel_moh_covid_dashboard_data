@@ -316,7 +316,7 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2021-01-10,50.93,79.55,95.13,116.86,None,None,None,None,None,None,None,None
 2021-01-11,77.53,109.84,144.35,156.43,None,None,None,None,None,None,None,None
 2021-01-12,80.44,103.62,125.16,142.22,None,None,None,None,None,None,None,None
-2021-01-13,83.36,108.06,133.02,142.39,None,None,None,None,None,None,None,None
+2021-01-13,83.36,108.06,132.87,142.39,None,None,None,None,None,None,None,None
 2021-01-14,79.18,102,122.96,138.67,None,None,None,None,None,None,None,None
 2021-01-15,81.58,102.17,114.47,126.83,None,None,None,None,None,None,None,None
 2021-01-16,45.86,55.65,61.48,76.61,None,None,None,None,None,None,None,None
@@ -336,7 +336,7 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2021-01-30,31.54,27.54,31.29,47.52,None,None,None,None,None,None,None,None
 2021-01-31,53.33,50.96,60.22,105.02,None,None,None,None,None,None,None,None
 2021-02-01,98.31,99.82,118.87,161.84,None,None,None,None,None,None,None,None
-2021-02-02,91.59,92.63,100.16,144.42,None,None,None,None,None,None,None,None
+2021-02-02,91.59,92.63,100.16,144.25,None,None,None,None,None,None,None,None
 2021-02-03,86.9,82.62,100.48,143.91,None,None,None,None,None,None,None,None
 2021-02-04,93.36,87.06,98.75,132.24,None,None,None,None,None,None,None,None
 2021-02-05,84.12,72.12,80.82,117.87,None,None,None,None,None,None,None,None
@@ -533,8 +533,8 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2021-08-15,55.87,76.24,57.71,41.77,None,None,None,None,None,None,None,None
 2021-08-16,91.34,128.17,105.82,76.61,None,None,None,None,None,None,None,None
 2021-08-17,77.53,125.99,88.21,61.89,None,None,None,None,None,None,None,None
-2021-08-18,85.13,131.08,89,70.35,None,None,None,None,None,None,None,None
-2021-08-19,84.75,124.78,87.27,67.64,None,None,None,None,None,None,None,None
+2021-08-18,85.13,131.08,89,70.52,None,None,None,None,None,None,None,None
+2021-08-19,84.88,124.78,87.27,67.64,None,None,None,None,None,None,None,None
 2021-08-20,87.54,135.52,89.63,74.75,None,None,None,None,None,None,None,None
 2021-08-21,64.1,88.84,56.61,51.07,None,None,None,None,None,None,None,None
 2021-08-22,70.44,102.65,68.24,59.02,None,None,None,None,None,None,None,None
@@ -687,7 +687,7 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2022-01-16,455.3,905.92,942.02,857.56,None,None,None,None,None,None,None,None
 2022-01-17,552.97,1022.54,1069.39,871.76,None,None,None,None,None,None,None,None
 2022-01-18,597.81,1084.97,1054.77,884.11,None,None,None,None,None,None,None,None
-2022-01-19,615.3,1101.69,1070.65,872.1,None,None,None,None,None,None,None,None
+2022-01-19,615.3,1101.85,1070.65,872.1,None,None,None,None,None,None,None,None
 2022-01-20,619.35,1064.45,1049.89,882.08,None,None,None,None,None,None,None,None
 2022-01-21,525.48,887.58,862.15,717.36,None,None,None,None,None,None,None,None
 2022-01-22,615.17,1061.63,959.79,828.13,None,None,None,None,None,None,None,None
@@ -709,10 +709,10 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2022-02-07,452.51,661.45,546.88,442.73,None,None,None,None,None,None,None,None
 2022-02-08,366.87,572.37,471.72,365.11,None,None,None,None,None,None,None,None
 2022-02-09,452,694.48,503.8,332.3,None,None,None,None,None,None,None,None
-2022-02-10,287.32,426.35,359.14,253.5,None,None,None,None,None,None,None,None
+2022-02-10,287.44,426.35,359.14,253.5,None,None,None,None,None,None,None,None
 2022-02-11,228.28,293.17,251.9,207.84,None,None,None,None,None,None,None,None
 2022-02-12,215.74,314.49,237.27,215.78,None,None,None,None,None,None,None,None
-2022-02-13,389.67,566.63,450.65,310.99,None,None,None,None,None,None,None,None
+2022-02-13,389.67,566.71,450.65,310.99,None,None,None,None,None,None,None,None
 2022-02-14,227.9,331.37,282.87,219.84,None,None,None,None,None,None,None,None
 2022-02-15,194.84,274.11,250.8,205.81,None,None,None,None,None,None,None,None
 2022-02-16,247.79,365.45,287.91,192.45,None,None,None,None,None,None,None,None
@@ -737,7 +737,8 @@ Date,0-4 verified normalized,5-11 verified normalized,12-15 verified normalized,
 2022-03-07,52.7,72.69,62.74,64.6,None,None,None,None,None,None,None,None
 2022-03-08,46.62,65.09,63.52,60.54,None,None,None,None,None,None,None,None
 2022-03-09,60.3,83.43,68.24,53.95,None,None,None,None,None,None,None,None
-2022-03-10,41.68,52.82,54.4,51.24,None,None,None,None,None,None,None,None
-2022-03-11,27.36,40.54,45.13,47.01,None,None,None,None,None,None,None,None
-2022-03-12,27.24,36.67,36.64,42.28,None,None,None,None,None,None,None,None
-2022-03-13,39.9,44.82,49.22,52.76,None,None,None,None,None,None,None,None
+2022-03-10,41.68,52.9,54.4,51.24,None,None,None,None,None,None,None,None
+2022-03-11,27.36,40.54,45.29,47.01,None,None,None,None,None,None,None,None
+2022-03-12,27.24,36.75,36.64,42.28,None,None,None,None,None,None,None,None
+2022-03-13,43.83,48.54,53.78,58.17,None,None,None,None,None,None,None,None
+2022-03-14,4.43,7.35,6.6,4.74,None,None,None,None,None,None,None,None
