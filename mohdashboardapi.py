@@ -423,8 +423,8 @@ def create_patients_csv(data):
 
     def utf_if_not_none(x):
         if x is None: return ''
-        return encode_utf(x)
-    event_lines = [utf_if_not_none(i['coronaEvents']) for i in inf]
+        return encode_utf(x).replace(',',';').replace('\n',' ')
+    event_lines = [utf_if_not_none(i['coronaEvents']).replace(',',';') for i in inf]
     
     title_line = ','.join(['Date', 'Hospitalized', 'Hospitalized without release',
                            'Easy', 'Medium', 'Hard', 'Critical', 'Ventilated',
